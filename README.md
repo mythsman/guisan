@@ -6,9 +6,9 @@
 
 Guisan was forked from Guichan to create a simple GUI construction toolkit that is compatible with SDL 2.0.0+
 
-It was originally forked from [![ORIGIN](https://github.com/kallisti5/guisan)](https://github.com/kallisti5/guisan).
+It was originally forked from [https://github.com/kallisti5/guisan](https://github.com/kallisti5/guisan).
 
-This version is modified by mythsman ,you can fork it from [![NEW](https://github.com/mythsman/guisan)](https://github.com/mythsman/guisan)
+This version is modified by mythsman ,you can fork it from [https://github.com/mythsman/guisan](https://github.com/mythsman/guisan)
 
 ## New feature
 * using makefile instead of scons

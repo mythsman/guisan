@@ -1,0 +1,282 @@
+\hypertarget{classgcn_1_1GenericInput}{}\section{gcn\+:\+:Generic\+Input Class Reference}
+\label{classgcn_1_1GenericInput}\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+
+
+{\ttfamily \#include $<$genericinput.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Generic\+Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classgcn_1_1GenericInput__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Generic\+Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classgcn_1_1GenericInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1GenericInput_a5faf6486010b0c13c14ac2d80fc05609}{Generic\+Input} ()
+\item 
+void \hyperlink{classgcn_1_1GenericInput_a347258d8ee30fe5637f5eeb1e15e8eb4}{push\+Key\+Pressed} (int unicode)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_a8db8d150eef492434df647351731dbe3}{push\+Key\+Released} (int unicode)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_af951a9c1b061685a6f653ba01b4abb73}{push\+Mouse\+Button\+Pressed} (int x, int y, int button)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_a87a8597cb766115cddca7844df852ba4}{push\+Mouse\+Button\+Released} (int x, int y, int button)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_a7e070cf0ce34e720519b427489fdb86a}{push\+Mouse\+Wheel\+Moved\+Up} (int x, int y)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_ab0a4399fe1487dc8355f4a6ce5c3d6d1}{push\+Mouse\+Wheel\+Moved\+Down} (int x, int y)
+\item 
+void \hyperlink{classgcn_1_1GenericInput_aa07fa9d97d110e0d5e97763112e156d8}{push\+Mouse\+Moved} (int x, int y)
+\item 
+virtual bool \hyperlink{classgcn_1_1GenericInput_a095d139685ca11045a3f6d8041fe97f1}{is\+Key\+Queue\+Empty} ()
+\item 
+virtual \hyperlink{classgcn_1_1KeyInput}{Key\+Input} \hyperlink{classgcn_1_1GenericInput_a2a1ee4f5f85ec92e2d79e96a394c7880}{dequeue\+Key\+Input} ()
+\item 
+virtual bool \hyperlink{classgcn_1_1GenericInput_a67de2fb91e717d67b018fea8243ecd3d}{is\+Mouse\+Queue\+Empty} ()
+\item 
+virtual \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \hyperlink{classgcn_1_1GenericInput_acdc29660e3b837cd9152d99a7457dcd1}{dequeue\+Mouse\+Input} ()
+\item 
+virtual void \hyperlink{classgcn_1_1GenericInput_aaa13d9c4a0c39efcf5ff18aeecfd5f86}{\+\_\+poll\+Input} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \hyperlink{classgcn_1_1KeyInput}{Key\+Input} $>$ {\bfseries m\+Key\+Input\+Queue}\hypertarget{classgcn_1_1GenericInput_aa324311178de5455719b754fe05ac059}{}\label{classgcn_1_1GenericInput_aa324311178de5455719b754fe05ac059}
+
+\item 
+std\+::queue$<$ \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} $>$ {\bfseries m\+Mouse\+Input\+Queue}\hypertarget{classgcn_1_1GenericInput_a6403fa3f08d98d46e9edf4f666e419df}{}\label{classgcn_1_1GenericInput_a6403fa3f08d98d46e9edf4f666e419df}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic input which can be used with any backend. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!Generic\+Input@{Generic\+Input}}
+\index{Generic\+Input@{Generic\+Input}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{Generic\+Input()}{GenericInput()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Generic\+Input\+::\+Generic\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_a5faf6486010b0c13c14ac2d80fc05609}{}\label{classgcn_1_1GenericInput_a5faf6486010b0c13c14ac2d80fc05609}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!\+\_\+poll\+Input@{\+\_\+poll\+Input}}
+\index{\+\_\+poll\+Input@{\+\_\+poll\+Input}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+poll\+Input()}{_pollInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::\+\_\+poll\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1GenericInput_aaa13d9c4a0c39efcf5ff18aeecfd5f86}{}\label{classgcn_1_1GenericInput_aaa13d9c4a0c39efcf5ff18aeecfd5f86}
+Polls all exsisting input. It exists for \hyperlink{classgcn_1_1Input}{Input} implementation compatibility. It is used internally by the library. 
+
+Implements \hyperlink{classgcn_1_1Input_a8e852901ad206985f18ae25e99867cb6}{gcn\+::\+Input}.
+
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!dequeue\+Key\+Input@{dequeue\+Key\+Input}}
+\index{dequeue\+Key\+Input@{dequeue\+Key\+Input}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{dequeue\+Key\+Input()}{dequeueKeyInput()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Key\+Input} gcn\+::\+Generic\+Input\+::dequeue\+Key\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1GenericInput_a2a1ee4f5f85ec92e2d79e96a394c7880}{}\label{classgcn_1_1GenericInput_a2a1ee4f5f85ec92e2d79e96a394c7880}
+Dequeues the key input queue.
+
+\begin{DoxyReturn}{Returns}
+key input. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a3c4c2e5a0328dff6f90d81fb22e30d6c}{gcn\+::\+Input}.
+
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!dequeue\+Mouse\+Input@{dequeue\+Mouse\+Input}}
+\index{dequeue\+Mouse\+Input@{dequeue\+Mouse\+Input}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{dequeue\+Mouse\+Input()}{dequeueMouseInput()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse\+Input} gcn\+::\+Generic\+Input\+::dequeue\+Mouse\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1GenericInput_acdc29660e3b837cd9152d99a7457dcd1}{}\label{classgcn_1_1GenericInput_acdc29660e3b837cd9152d99a7457dcd1}
+Dequeues the mouse input queue.
+
+\begin{DoxyReturn}{Returns}
+mouse input. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a974c5ffa91c1f80185f32ac10a5de3e2}{gcn\+::\+Input}.
+
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!is\+Key\+Queue\+Empty@{is\+Key\+Queue\+Empty}}
+\index{is\+Key\+Queue\+Empty@{is\+Key\+Queue\+Empty}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{is\+Key\+Queue\+Empty()}{isKeyQueueEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Generic\+Input\+::is\+Key\+Queue\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1GenericInput_a095d139685ca11045a3f6d8041fe97f1}{}\label{classgcn_1_1GenericInput_a095d139685ca11045a3f6d8041fe97f1}
+Checks whether the key queue is empty or not.
+
+\begin{DoxyReturn}{Returns}
+true if the key queue is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a99c69c2e8d9b4378c4cea1f8beed0cf3}{gcn\+::\+Input}.
+
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!is\+Mouse\+Queue\+Empty@{is\+Mouse\+Queue\+Empty}}
+\index{is\+Mouse\+Queue\+Empty@{is\+Mouse\+Queue\+Empty}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{is\+Mouse\+Queue\+Empty()}{isMouseQueueEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Generic\+Input\+::is\+Mouse\+Queue\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1GenericInput_a67de2fb91e717d67b018fea8243ecd3d}{}\label{classgcn_1_1GenericInput_a67de2fb91e717d67b018fea8243ecd3d}
+Checks whether the mouse queue is empyt or not.
+
+\begin{DoxyReturn}{Returns}
+true if the mouse queue is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a9c59ac0d0ae6c2eb4967f3eb6d9e059f}{gcn\+::\+Input}.
+
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Key\+Pressed@{push\+Key\+Pressed}}
+\index{push\+Key\+Pressed@{push\+Key\+Pressed}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Key\+Pressed(int unicode)}{pushKeyPressed(int unicode)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{unicode}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_a347258d8ee30fe5637f5eeb1e15e8eb4}{}\label{classgcn_1_1GenericInput_a347258d8ee30fe5637f5eeb1e15e8eb4}
+Pushes a key pressed event.
+
+N\+O\+TE\+: If a special key is pressed, like the F1 key, the corresponding Guichan key value found in the enum in \hyperlink{classgcn_1_1Key}{Key} should be pushed as the unicode value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em unicode} & the unicode value of the key. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Key\+Released@{push\+Key\+Released}}
+\index{push\+Key\+Released@{push\+Key\+Released}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Key\+Released(int unicode)}{pushKeyReleased(int unicode)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Key\+Released (
+\begin{DoxyParamCaption}
+\item[{int}]{unicode}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_a8db8d150eef492434df647351731dbe3}{}\label{classgcn_1_1GenericInput_a8db8d150eef492434df647351731dbe3}
+Pushes a key released event.
+
+N\+O\+TE\+: If a special key is pressed, like the F1 key, the corresponding Guichan key value found in the enum in \hyperlink{classgcn_1_1Key}{Key} should be pushed as the unicode value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em unicode} & the unicode value of the key. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Mouse\+Button\+Pressed@{push\+Mouse\+Button\+Pressed}}
+\index{push\+Mouse\+Button\+Pressed@{push\+Mouse\+Button\+Pressed}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Mouse\+Button\+Pressed(int x, int y, int button)}{pushMouseButtonPressed(int x, int y, int button)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Mouse\+Button\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_af951a9c1b061685a6f653ba01b4abb73}{}\label{classgcn_1_1GenericInput_af951a9c1b061685a6f653ba01b4abb73}
+Pushes a mouse button pressed event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse event. \\
+\hline
+{\em y} & the y coordinate of the mouse event. \\
+\hline
+{\em button} & the button of the mouse event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Mouse\+Button\+Released@{push\+Mouse\+Button\+Released}}
+\index{push\+Mouse\+Button\+Released@{push\+Mouse\+Button\+Released}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Mouse\+Button\+Released(int x, int y, int button)}{pushMouseButtonReleased(int x, int y, int button)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Mouse\+Button\+Released (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_a87a8597cb766115cddca7844df852ba4}{}\label{classgcn_1_1GenericInput_a87a8597cb766115cddca7844df852ba4}
+Pushes a mouse button released event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse event. \\
+\hline
+{\em y} & the y coordinate of the mouse event. \\
+\hline
+{\em button} & the button of the mouse event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Mouse\+Moved@{push\+Mouse\+Moved}}
+\index{push\+Mouse\+Moved@{push\+Mouse\+Moved}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Mouse\+Moved(int x, int y)}{pushMouseMoved(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Mouse\+Moved (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_aa07fa9d97d110e0d5e97763112e156d8}{}\label{classgcn_1_1GenericInput_aa07fa9d97d110e0d5e97763112e156d8}
+Pushes a mouse moved event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse event. \\
+\hline
+{\em y} & the y coordinate of the mouse event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Mouse\+Wheel\+Moved\+Down@{push\+Mouse\+Wheel\+Moved\+Down}}
+\index{push\+Mouse\+Wheel\+Moved\+Down@{push\+Mouse\+Wheel\+Moved\+Down}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Mouse\+Wheel\+Moved\+Down(int x, int y)}{pushMouseWheelMovedDown(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Mouse\+Wheel\+Moved\+Down (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_ab0a4399fe1487dc8355f4a6ce5c3d6d1}{}\label{classgcn_1_1GenericInput_ab0a4399fe1487dc8355f4a6ce5c3d6d1}
+Pushes a mouse wheel moved down event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse event. \\
+\hline
+{\em y} & the y coordinate of the mouse event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}!push\+Mouse\+Wheel\+Moved\+Up@{push\+Mouse\+Wheel\+Moved\+Up}}
+\index{push\+Mouse\+Wheel\+Moved\+Up@{push\+Mouse\+Wheel\+Moved\+Up}!gcn\+::\+Generic\+Input@{gcn\+::\+Generic\+Input}}
+\subsubsection[{\texorpdfstring{push\+Mouse\+Wheel\+Moved\+Up(int x, int y)}{pushMouseWheelMovedUp(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Generic\+Input\+::push\+Mouse\+Wheel\+Moved\+Up (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1GenericInput_a7e070cf0ce34e720519b427489fdb86a}{}\label{classgcn_1_1GenericInput_a7e070cf0ce34e720519b427489fdb86a}
+Pushes a mouse wheel moved up event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the mouse event. \\
+\hline
+{\em y} & the y coordinate of the mouse event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/genericinput.\+hpp\item 
+src/genericinput.\+cpp\end{DoxyCompactItemize}

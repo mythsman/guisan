@@ -1,0 +1,82 @@
+\hypertarget{classgcn_1_1ListModel}{}\section{gcn\+:\+:List\+Model Class Reference}
+\label{classgcn_1_1ListModel}\index{gcn\+::\+List\+Model@{gcn\+::\+List\+Model}}
+
+
+{\ttfamily \#include $<$listmodel.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:List\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classgcn_1_1ListModel__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgcn_1_1ListModel_a2f18ef154cae00725dc593cc6e8175d2}{$\sim$\+List\+Model} ()
+\item 
+virtual int \hyperlink{classgcn_1_1ListModel_afc92c70252b9888f22b0164bc28f452c}{get\+Number\+Of\+Elements} ()=0
+\item 
+virtual std\+::string \hyperlink{classgcn_1_1ListModel_a60c9432c539666c3e2ac6a2bee91e87f}{get\+Element\+At} (int i)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a list. It is used in certain Widgets, like the \hyperlink{classgcn_1_1ListBox}{List\+Box}, to handle a list with string elements. If you want to use Widgets like \hyperlink{classgcn_1_1ListBox}{List\+Box}, you should inherit from this class and implement it\textquotesingle{}s functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+List\+Model@{gcn\+::\+List\+Model}!````~List\+Model@{$\sim$\+List\+Model}}
+\index{````~List\+Model@{$\sim$\+List\+Model}!gcn\+::\+List\+Model@{gcn\+::\+List\+Model}}
+\subsubsection[{\texorpdfstring{$\sim$\+List\+Model()}{~ListModel()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+List\+Model\+::$\sim$\+List\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1ListModel_a2f18ef154cae00725dc593cc6e8175d2}{}\label{classgcn_1_1ListModel_a2f18ef154cae00725dc593cc6e8175d2}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+List\+Model@{gcn\+::\+List\+Model}!get\+Element\+At@{get\+Element\+At}}
+\index{get\+Element\+At@{get\+Element\+At}!gcn\+::\+List\+Model@{gcn\+::\+List\+Model}}
+\subsubsection[{\texorpdfstring{get\+Element\+At(int i)=0}{getElementAt(int i)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string gcn\+::\+List\+Model\+::get\+Element\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1ListModel_a60c9432c539666c3e2ac6a2bee91e87f}{}\label{classgcn_1_1ListModel_a60c9432c539666c3e2ac6a2bee91e87f}
+Gets an element at a certain index in the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & an index in the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an element as a string. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classDemoListModel_a7df8cb4e14e5cf7b8859e91ab97ba8e7}{Demo\+List\+Model}, \hyperlink{classDemoListModel_a7df8cb4e14e5cf7b8859e91ab97ba8e7}{Demo\+List\+Model}, and \hyperlink{classStringListModel_a39ff68874c8ebf82762de4ff6c56848d}{String\+List\+Model}.
+
+\index{gcn\+::\+List\+Model@{gcn\+::\+List\+Model}!get\+Number\+Of\+Elements@{get\+Number\+Of\+Elements}}
+\index{get\+Number\+Of\+Elements@{get\+Number\+Of\+Elements}!gcn\+::\+List\+Model@{gcn\+::\+List\+Model}}
+\subsubsection[{\texorpdfstring{get\+Number\+Of\+Elements()=0}{getNumberOfElements()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int gcn\+::\+List\+Model\+::get\+Number\+Of\+Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1ListModel_afc92c70252b9888f22b0164bc28f452c}{}\label{classgcn_1_1ListModel_afc92c70252b9888f22b0164bc28f452c}
+Gets the number of elements in the \hyperlink{classgcn_1_1ListModel}{List\+Model}.
+
+\begin{DoxyReturn}{Returns}
+the number of elements in the \hyperlink{classgcn_1_1ListModel}{List\+Model} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classDemoListModel_a117af5914b15d9e2ed8350017a6e7b87}{Demo\+List\+Model}, \hyperlink{classDemoListModel_a117af5914b15d9e2ed8350017a6e7b87}{Demo\+List\+Model}, and \hyperlink{classStringListModel_a780110add6a7813db1e09458b0f64de4}{String\+List\+Model}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/listmodel.\+hpp\end{DoxyCompactItemize}

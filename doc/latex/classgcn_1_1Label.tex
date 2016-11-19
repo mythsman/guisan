@@ -1,0 +1,205 @@
+\hypertarget{classgcn_1_1Label}{}\section{gcn\+:\+:Label Class Reference}
+\label{classgcn_1_1Label}\index{gcn\+::\+Label@{gcn\+::\+Label}}
+
+
+{\ttfamily \#include $<$label.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Label\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classgcn_1_1Label__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Label\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1Label__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Label_a82f9a1bb5dfa2936dd016806c5f628a2}{Label} ()
+\item 
+\hyperlink{classgcn_1_1Label_aba680408e8eeb8d95040809cecec4881}{Label} (const std\+::string \&caption)
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1Label_abbf14d079c93a024a2d673cd8e18c6b8}{get\+Caption} () const 
+\item 
+void \hyperlink{classgcn_1_1Label_af17f617d0b4500dec5f09ba1d35463ba}{set\+Caption} (const std\+::string \&caption)
+\item 
+void \hyperlink{classgcn_1_1Label_aabcf9f7d28c743f378803aac5b3580e7}{set\+Alignment} (unsigned int alignment)
+\item 
+unsigned int \hyperlink{classgcn_1_1Label_afdf8e5bce3c95f8e737bce4b78f66132}{get\+Alignment} () const 
+\item 
+void \hyperlink{classgcn_1_1Label_a300b8388c26af668dec996f910d81912}{adjust\+Size} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Label_a46b49030a7c72393c2960c6355574ab0}{draw} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1Label_aa43832b869987ff3e44f3ea8d004ddd3}{draw\+Border} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classgcn_1_1Label_a28ee6b71529d6bd7e662c01449b6b4d5}{m\+Caption}
+\item 
+unsigned int \hyperlink{classgcn_1_1Label_a2558f49c5f6ff298242cc920a8865dc1}{m\+Alignment}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation of a label capable of displaying a caption. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!Label@{Label}}
+\index{Label@{Label}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{Label()}{Label()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Label\+::\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Label_a82f9a1bb5dfa2936dd016806c5f628a2}{}\label{classgcn_1_1Label_a82f9a1bb5dfa2936dd016806c5f628a2}
+Constructor. \index{gcn\+::\+Label@{gcn\+::\+Label}!Label@{Label}}
+\index{Label@{Label}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{Label(const std\+::string \&caption)}{Label(const std::string &caption)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Label\+::\+Label (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Label_aba680408e8eeb8d95040809cecec4881}{}\label{classgcn_1_1Label_aba680408e8eeb8d95040809cecec4881}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the label. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!adjust\+Size@{adjust\+Size}}
+\index{adjust\+Size@{adjust\+Size}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{adjust\+Size()}{adjustSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Label\+::adjust\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Label_a300b8388c26af668dec996f910d81912}{}\label{classgcn_1_1Label_a300b8388c26af668dec996f910d81912}
+Adjusts the label\textquotesingle{}s size to fit the caption size. \index{gcn\+::\+Label@{gcn\+::\+Label}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{draw(\+Graphics $\ast$graphics)}{draw(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Label\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Label_a46b49030a7c72393c2960c6355574ab0}{}\label{classgcn_1_1Label_a46b49030a7c72393c2960c6355574ab0}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Label@{gcn\+::\+Label}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{draw\+Border(\+Graphics $\ast$graphics)}{drawBorder(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Label\+::draw\+Border (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Label_aa43832b869987ff3e44f3ea8d004ddd3}{}\label{classgcn_1_1Label_aa43832b869987ff3e44f3ea8d004ddd3}
+Draws the widget border. A border is drawn around a widget. The width and height of the border is therefore the widgets height+2$\ast$bordersize. Think of a painting that has a certain size, the border surrounds the painting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Widget_a58c3b2f513d8e029e321fd88a974f5c4}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Label@{gcn\+::\+Label}!get\+Alignment@{get\+Alignment}}
+\index{get\+Alignment@{get\+Alignment}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{get\+Alignment() const }{getAlignment() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gcn\+::\+Label\+::get\+Alignment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Label_afdf8e5bce3c95f8e737bce4b78f66132}{}\label{classgcn_1_1Label_afdf8e5bce3c95f8e737bce4b78f66132}
+Gets the alignment for the caption. The alignment is relative to the center of the label.
+
+\begin{DoxyReturn}{Returns}
+alignment of caption. Graphics\+::\+L\+E\+FT, Graphics\+::\+C\+E\+N\+T\+ER or Graphics\+::\+R\+I\+G\+HT. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+set\+Alignmentm \hyperlink{classgcn_1_1Graphics}{Graphics} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!get\+Caption@{get\+Caption}}
+\index{get\+Caption@{get\+Caption}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{get\+Caption() const }{getCaption() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Label\+::get\+Caption (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Label_abbf14d079c93a024a2d673cd8e18c6b8}{}\label{classgcn_1_1Label_abbf14d079c93a024a2d673cd8e18c6b8}
+Gets the caption of the label.
+
+\begin{DoxyReturn}{Returns}
+The caption of the label. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Label_af17f617d0b4500dec5f09ba1d35463ba}{set\+Caption} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!set\+Alignment@{set\+Alignment}}
+\index{set\+Alignment@{set\+Alignment}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{set\+Alignment(unsigned int alignment)}{setAlignment(unsigned int alignment)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Label\+::set\+Alignment (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{alignment}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Label_aabcf9f7d28c743f378803aac5b3580e7}{}\label{classgcn_1_1Label_aabcf9f7d28c743f378803aac5b3580e7}
+Sets the alignment for the caption. The alignment is relative to the center of the label.
+
+
+\begin{DoxyParams}{Parameters}
+{\em alignemnt} & Graphics\+::\+L\+E\+FT, Graphics\+::\+C\+E\+N\+T\+ER or Graphics\+::\+R\+I\+G\+HT. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Label_afdf8e5bce3c95f8e737bce4b78f66132}{get\+Alignment}, \hyperlink{classgcn_1_1Graphics}{Graphics} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!set\+Caption@{set\+Caption}}
+\index{set\+Caption@{set\+Caption}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{set\+Caption(const std\+::string \&caption)}{setCaption(const std::string &caption)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Label\+::set\+Caption (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Label_af17f617d0b4500dec5f09ba1d35463ba}{}\label{classgcn_1_1Label_af17f617d0b4500dec5f09ba1d35463ba}
+Sets the caption of the label. It\textquotesingle{}s advisable to call adjust\+Size after setting of the caption to adjust the label\textquotesingle{}s size to fit the caption.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the label. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Label_abbf14d079c93a024a2d673cd8e18c6b8}{get\+Caption}, \hyperlink{classgcn_1_1Label_a300b8388c26af668dec996f910d81912}{adjust\+Size} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\index{gcn\+::\+Label@{gcn\+::\+Label}!m\+Alignment@{m\+Alignment}}
+\index{m\+Alignment@{m\+Alignment}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{m\+Alignment}{mAlignment}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gcn\+::\+Label\+::m\+Alignment\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1Label_a2558f49c5f6ff298242cc920a8865dc1}{}\label{classgcn_1_1Label_a2558f49c5f6ff298242cc920a8865dc1}
+Holds the alignment of the caption. \index{gcn\+::\+Label@{gcn\+::\+Label}!m\+Caption@{m\+Caption}}
+\index{m\+Caption@{m\+Caption}!gcn\+::\+Label@{gcn\+::\+Label}}
+\subsubsection[{\texorpdfstring{m\+Caption}{mCaption}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string gcn\+::\+Label\+::m\+Caption\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1Label_a28ee6b71529d6bd7e662c01449b6b4d5}{}\label{classgcn_1_1Label_a28ee6b71529d6bd7e662c01449b6b4d5}
+Holds the caption of the label. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/label.\+hpp\item 
+src/widgets/label.\+cpp\end{DoxyCompactItemize}

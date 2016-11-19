@@ -1,0 +1,262 @@
+\hypertarget{classgcn_1_1SDLTrueTypeFont}{}\section{gcn\+:\+:S\+D\+L\+True\+Type\+Font Class Reference}
+\label{classgcn_1_1SDLTrueTypeFont}\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+
+
+{\ttfamily \#include $<$sdltruetypefont.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:S\+D\+L\+True\+Type\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classgcn_1_1SDLTrueTypeFont__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:S\+D\+L\+True\+Type\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classgcn_1_1SDLTrueTypeFont__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1SDLTrueTypeFont_af89eed91df080e8b59050c73c12e8847}{S\+D\+L\+True\+Type\+Font} (const std\+::string \&filename, int size)
+\item 
+virtual \hyperlink{classgcn_1_1SDLTrueTypeFont_aa5082b898f1f397033ef75bdedf66904}{$\sim$\+S\+D\+L\+True\+Type\+Font} ()
+\item 
+virtual void \hyperlink{classgcn_1_1SDLTrueTypeFont_aba7a35796661bc7b4cf8085f8ae2553c}{set\+Row\+Spacing} (int spacing)
+\item 
+virtual int \hyperlink{classgcn_1_1SDLTrueTypeFont_a9d340d39bb001202b92dc067fc93c0ca}{get\+Row\+Spacing} ()
+\item 
+virtual void \hyperlink{classgcn_1_1SDLTrueTypeFont_a24100d3d41649b0a181c929e5b2d362f}{set\+Glyph\+Spacing} (int spacing)
+\item 
+virtual int \hyperlink{classgcn_1_1SDLTrueTypeFont_a7cf6e7ed8265eee01856ac0cd81cadc9}{get\+Glyph\+Spacing} ()
+\item 
+virtual void \hyperlink{classgcn_1_1SDLTrueTypeFont_a18d9a7930e0b74eb3dccffabe435d638}{set\+Anti\+Alias} (bool anti\+Alias)
+\item 
+virtual bool \hyperlink{classgcn_1_1SDLTrueTypeFont_a572194dbc45327851344b239212e784e}{is\+Anti\+Alias} ()
+\item 
+virtual int \hyperlink{classgcn_1_1SDLTrueTypeFont_a3389cfeda7002e3888be2731ff8560d7}{get\+Width} (const std\+::string \&text) const 
+\item 
+virtual int \hyperlink{classgcn_1_1SDLTrueTypeFont_aded39281128e4543eaf2d2e0e858f9a6}{get\+Height} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1SDLTrueTypeFont_a15bd720b4412b4fb49080bc1fd38a363}{draw\+String} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics, const std\+::string \&text, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries m\+Font}\hypertarget{classgcn_1_1SDLTrueTypeFont_a498a8ab1a3b6378976effc2dd92187d4}{}\label{classgcn_1_1SDLTrueTypeFont_a498a8ab1a3b6378976effc2dd92187d4}
+
+\item 
+int {\bfseries m\+Height}\hypertarget{classgcn_1_1SDLTrueTypeFont_a3c369099a6bdb53036e0f9b33253640a}{}\label{classgcn_1_1SDLTrueTypeFont_a3c369099a6bdb53036e0f9b33253640a}
+
+\item 
+int {\bfseries m\+Glyph\+Spacing}\hypertarget{classgcn_1_1SDLTrueTypeFont_a7528da9faf1166b0481eaaa76e214a38}{}\label{classgcn_1_1SDLTrueTypeFont_a7528da9faf1166b0481eaaa76e214a38}
+
+\item 
+int {\bfseries m\+Row\+Spacing}\hypertarget{classgcn_1_1SDLTrueTypeFont_a713726875dc1626bbf3a21184d00c70c}{}\label{classgcn_1_1SDLTrueTypeFont_a713726875dc1626bbf3a21184d00c70c}
+
+\item 
+std\+::string {\bfseries m\+Filename}\hypertarget{classgcn_1_1SDLTrueTypeFont_a6c6dbcd04d7ad6e7590149477e092d4d}{}\label{classgcn_1_1SDLTrueTypeFont_a6c6dbcd04d7ad6e7590149477e092d4d}
+
+\item 
+bool {\bfseries m\+Anti\+Alias}\hypertarget{classgcn_1_1SDLTrueTypeFont_aec0ad04b6423cf1b10a3ec719ac5d668}{}\label{classgcn_1_1SDLTrueTypeFont_aec0ad04b6423cf1b10a3ec719ac5d668}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+DL True Type \hyperlink{classgcn_1_1Font}{Font} implementation of \hyperlink{classgcn_1_1Font}{Font}. It uses the S\+D\+L\+\_\+ttf library to display True Type Fonts with S\+DL.
+
+N\+O\+TE\+: You must initialize the S\+D\+L\+\_\+ttf library before using this class. Also, remember to call the S\+D\+L\+\_\+ttf libraries quit function.
+
+\begin{DoxyAuthor}{Author}
+Walluce Pinkham 
+
+Olof Naessén 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!S\+D\+L\+True\+Type\+Font@{S\+D\+L\+True\+Type\+Font}}
+\index{S\+D\+L\+True\+Type\+Font@{S\+D\+L\+True\+Type\+Font}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{S\+D\+L\+True\+Type\+Font(const std\+::string \&filename, int size)}{SDLTrueTypeFont(const std::string &filename, int size)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+S\+D\+L\+True\+Type\+Font\+::\+S\+D\+L\+True\+Type\+Font (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1SDLTrueTypeFont_af89eed91df080e8b59050c73c12e8847}{}\label{classgcn_1_1SDLTrueTypeFont_af89eed91df080e8b59050c73c12e8847}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of the True Type \hyperlink{classgcn_1_1Font}{Font}. \\
+\hline
+{\em size} & the size the font should be in. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!````~S\+D\+L\+True\+Type\+Font@{$\sim$\+S\+D\+L\+True\+Type\+Font}}
+\index{````~S\+D\+L\+True\+Type\+Font@{$\sim$\+S\+D\+L\+True\+Type\+Font}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{$\sim$\+S\+D\+L\+True\+Type\+Font()}{~SDLTrueTypeFont()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+S\+D\+L\+True\+Type\+Font\+::$\sim$\+S\+D\+L\+True\+Type\+Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_aa5082b898f1f397033ef75bdedf66904}{}\label{classgcn_1_1SDLTrueTypeFont_aa5082b898f1f397033ef75bdedf66904}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{draw\+String(\+Graphics $\ast$graphics, const std\+::string \&text, int x, int y)}{drawString(Graphics *graphics, const std::string &text, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+True\+Type\+Font\+::draw\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics, }
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a15bd720b4412b4fb49080bc1fd38a363}{}\label{classgcn_1_1SDLTrueTypeFont_a15bd720b4412b4fb49080bc1fd38a363}
+Draws a string.
+
+N\+O\+TE\+: You normally won\textquotesingle{}t use this function to draw text since \hyperlink{classgcn_1_1Graphics}{Graphics} contains better functions for drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to use for drawing. \\
+\hline
+{\em text} & the string to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the string. \\
+\hline
+{\em y} & the y coordinate where to draw the string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Font_a055c403050f483cc2c67477443d98eee}{gcn\+::\+Font}.
+
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!get\+Glyph\+Spacing@{get\+Glyph\+Spacing}}
+\index{get\+Glyph\+Spacing@{get\+Glyph\+Spacing}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{get\+Glyph\+Spacing()}{getGlyphSpacing()}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+True\+Type\+Font\+::get\+Glyph\+Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a7cf6e7ed8265eee01856ac0cd81cadc9}{}\label{classgcn_1_1SDLTrueTypeFont_a7cf6e7ed8265eee01856ac0cd81cadc9}
+Gets the spacing between letters in pixels.
+
+\begin{DoxyReturn}{Returns}
+the spacing. 
+\end{DoxyReturn}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+True\+Type\+Font\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_aded39281128e4543eaf2d2e0e858f9a6}{}\label{classgcn_1_1SDLTrueTypeFont_aded39281128e4543eaf2d2e0e858f9a6}
+Gets the height of the glyphs in the font.
+
+\begin{DoxyReturn}{Returns}
+the height of the glyphs int the font. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_aa270d8934a16d4065143e3617b1fa926}{gcn\+::\+Font}.
+
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!get\+Row\+Spacing@{get\+Row\+Spacing}}
+\index{get\+Row\+Spacing@{get\+Row\+Spacing}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{get\+Row\+Spacing()}{getRowSpacing()}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+True\+Type\+Font\+::get\+Row\+Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a9d340d39bb001202b92dc067fc93c0ca}{}\label{classgcn_1_1SDLTrueTypeFont_a9d340d39bb001202b92dc067fc93c0ca}
+Gets the spacing between rows in pixels.
+
+\begin{DoxyReturn}{Returns}
+the spacing. 
+\end{DoxyReturn}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{get\+Width(const std\+::string \&text) const }{getWidth(const std::string &text) const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+True\+Type\+Font\+::get\+Width (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a3389cfeda7002e3888be2731ff8560d7}{}\label{classgcn_1_1SDLTrueTypeFont_a3389cfeda7002e3888be2731ff8560d7}
+Gets the width of a string. The width of a string is not necesserily the sum of all the widths of it\textquotesingle{}s glyphs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the string to return the width of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of a string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_abb88894b1ebeda28edcac75c537f8e0f}{gcn\+::\+Font}.
+
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!is\+Anti\+Alias@{is\+Anti\+Alias}}
+\index{is\+Anti\+Alias@{is\+Anti\+Alias}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{is\+Anti\+Alias()}{isAntiAlias()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+S\+D\+L\+True\+Type\+Font\+::is\+Anti\+Alias (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a572194dbc45327851344b239212e784e}{}\label{classgcn_1_1SDLTrueTypeFont_a572194dbc45327851344b239212e784e}
+Checks if anti aliasing is used.
+
+\begin{DoxyReturn}{Returns}
+true if anti aliasing is used. 
+\end{DoxyReturn}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!set\+Anti\+Alias@{set\+Anti\+Alias}}
+\index{set\+Anti\+Alias@{set\+Anti\+Alias}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{set\+Anti\+Alias(bool anti\+Alias)}{setAntiAlias(bool antiAlias)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+True\+Type\+Font\+::set\+Anti\+Alias (
+\begin{DoxyParamCaption}
+\item[{bool}]{anti\+Alias}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a18d9a7930e0b74eb3dccffabe435d638}{}\label{classgcn_1_1SDLTrueTypeFont_a18d9a7930e0b74eb3dccffabe435d638}
+Sets the use of anti aliasing..
+
+
+\begin{DoxyParams}{Parameters}
+{\em anta\+Alias} & true for use of antia aliasing. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!set\+Glyph\+Spacing@{set\+Glyph\+Spacing}}
+\index{set\+Glyph\+Spacing@{set\+Glyph\+Spacing}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{set\+Glyph\+Spacing(int spacing)}{setGlyphSpacing(int spacing)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+True\+Type\+Font\+::set\+Glyph\+Spacing (
+\begin{DoxyParamCaption}
+\item[{int}]{spacing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_a24100d3d41649b0a181c929e5b2d362f}{}\label{classgcn_1_1SDLTrueTypeFont_a24100d3d41649b0a181c929e5b2d362f}
+Sets the spacing between letters in pixels. Default is 0 pixels. The spacing can be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spacing} & the spacing in pixels. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}!set\+Row\+Spacing@{set\+Row\+Spacing}}
+\index{set\+Row\+Spacing@{set\+Row\+Spacing}!gcn\+::\+S\+D\+L\+True\+Type\+Font@{gcn\+::\+S\+D\+L\+True\+Type\+Font}}
+\subsubsection[{\texorpdfstring{set\+Row\+Spacing(int spacing)}{setRowSpacing(int spacing)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+True\+Type\+Font\+::set\+Row\+Spacing (
+\begin{DoxyParamCaption}
+\item[{int}]{spacing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLTrueTypeFont_aba7a35796661bc7b4cf8085f8ae2553c}{}\label{classgcn_1_1SDLTrueTypeFont_aba7a35796661bc7b4cf8085f8ae2553c}
+Sets the spacing between rows in pixels. Default is 0 pixels. The spacing can be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spacing} & the spacing in pixels. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/sdl/sdltruetypefont.\+hpp\item 
+src/sdl/sdltruetypefont.\+cpp\end{DoxyCompactItemize}

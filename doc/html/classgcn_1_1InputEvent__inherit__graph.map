@@ -1,0 +1,5 @@
+<map id="gcn::InputEvent" name="gcn::InputEvent">
+<area shape="rect" id="node3" href="$classgcn_1_1KeyEvent.html" title="gcn::KeyEvent" alt="" coords="5,155,113,181"/>
+<area shape="rect" id="node4" href="$classgcn_1_1MouseEvent.html" title="gcn::MouseEvent" alt="" coords="137,155,261,181"/>
+<area shape="rect" id="node2" href="$classgcn_1_1Event.html" title="gcn::Event" alt="" coords="86,5,171,32"/>
+</map>

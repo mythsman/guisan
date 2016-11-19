@@ -1,0 +1,140 @@
+\hypertarget{classgcn_1_1Icon}{}\section{gcn\+:\+:Icon Class Reference}
+\label{classgcn_1_1Icon}\index{gcn\+::\+Icon@{gcn\+::\+Icon}}
+
+
+{\ttfamily \#include $<$icon.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Icon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classgcn_1_1Icon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Icon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1Icon__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Icon_ade352edc3f6c185035db9c642006fbd3}{Icon} (const std\+::string \&filename)
+\item 
+\hyperlink{classgcn_1_1Icon_a4dcc025bfd07f33f829f020dcc3298f0}{Icon} (\hyperlink{classgcn_1_1Image}{Image} $\ast$image)
+\item 
+virtual \hyperlink{classgcn_1_1Icon_a3d626c3c0768ed5d6ba8631aee79ea58}{$\sim$\+Icon} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Icon_ac490339b9e1824a291a5da93581215d1}{draw} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1Icon_a1533b6c01b209ff077b9fc37af364db7}{draw\+Border} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Image}{Image} $\ast$ \hyperlink{classgcn_1_1Icon_afeed96d96fc1f8cbe51fff7a1933dcc7}{m\+Image}
+\item 
+bool \hyperlink{classgcn_1_1Icon_add136055bf50bf4cf6da058903d89239}{m\+Internal\+Image}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements an icon capable of displaying an image. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!Icon@{Icon}}
+\index{Icon@{Icon}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{Icon(const std\+::string \&filename)}{Icon(const std::string &filename)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Icon\+::\+Icon (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Icon_ade352edc3f6c185035db9c642006fbd3}{}\label{classgcn_1_1Icon_ade352edc3f6c185035db9c642006fbd3}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image to display. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!Icon@{Icon}}
+\index{Icon@{Icon}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{Icon(\+Image $\ast$image)}{Icon(Image *image)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Icon\+::\+Icon (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} $\ast$}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Icon_a4dcc025bfd07f33f829f020dcc3298f0}{}\label{classgcn_1_1Icon_a4dcc025bfd07f33f829f020dcc3298f0}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to display. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!````~Icon@{$\sim$\+Icon}}
+\index{````~Icon@{$\sim$\+Icon}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{$\sim$\+Icon()}{~Icon()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Icon\+::$\sim$\+Icon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Icon_a3d626c3c0768ed5d6ba8631aee79ea58}{}\label{classgcn_1_1Icon_a3d626c3c0768ed5d6ba8631aee79ea58}
+Descructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{draw(\+Graphics $\ast$graphics)}{draw(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Icon\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Icon_ac490339b9e1824a291a5da93581215d1}{}\label{classgcn_1_1Icon_ac490339b9e1824a291a5da93581215d1}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{draw\+Border(\+Graphics $\ast$graphics)}{drawBorder(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Icon\+::draw\+Border (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Icon_a1533b6c01b209ff077b9fc37af364db7}{}\label{classgcn_1_1Icon_a1533b6c01b209ff077b9fc37af364db7}
+Draws the widget border. A border is drawn around a widget. The width and height of the border is therefore the widgets height+2$\ast$bordersize. Think of a painting that has a certain size, the border surrounds the painting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Widget_a58c3b2f513d8e029e321fd88a974f5c4}{gcn\+::\+Widget}.
+
+
+
+\subsection{Member Data Documentation}
+\index{gcn\+::\+Icon@{gcn\+::\+Icon}!m\+Image@{m\+Image}}
+\index{m\+Image@{m\+Image}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{m\+Image}{mImage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image}$\ast$ gcn\+::\+Icon\+::m\+Image\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1Icon_afeed96d96fc1f8cbe51fff7a1933dcc7}{}\label{classgcn_1_1Icon_afeed96d96fc1f8cbe51fff7a1933dcc7}
+The image to display. \index{gcn\+::\+Icon@{gcn\+::\+Icon}!m\+Internal\+Image@{m\+Internal\+Image}}
+\index{m\+Internal\+Image@{m\+Internal\+Image}!gcn\+::\+Icon@{gcn\+::\+Icon}}
+\subsubsection[{\texorpdfstring{m\+Internal\+Image}{mInternalImage}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Icon\+::m\+Internal\+Image\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1Icon_add136055bf50bf4cf6da058903d89239}{}\label{classgcn_1_1Icon_add136055bf50bf4cf6da058903d89239}
+True if the image has been loaded internally, false otherwise. An image not loaded internally should not be deleted in the destructor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/icon.\+hpp\item 
+src/widgets/icon.\+cpp\end{DoxyCompactItemize}

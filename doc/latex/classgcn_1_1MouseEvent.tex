@@ -1,0 +1,213 @@
+\hypertarget{classgcn_1_1MouseEvent}{}\section{gcn\+:\+:Mouse\+Event Class Reference}
+\label{classgcn_1_1MouseEvent}\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+
+
+{\ttfamily \#include $<$mouseevent.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Mouse\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classgcn_1_1MouseEvent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Mouse\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1MouseEvent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries M\+O\+V\+ED} = 0, 
+{\bfseries P\+R\+E\+S\+S\+ED}, 
+{\bfseries R\+E\+L\+E\+A\+S\+ED}, 
+{\bfseries W\+H\+E\+E\+L\+\_\+\+M\+O\+V\+E\+D\+\_\+\+D\+O\+WN}, 
+\\*
+{\bfseries W\+H\+E\+E\+L\+\_\+\+M\+O\+V\+E\+D\+\_\+\+UP}, 
+{\bfseries C\+L\+I\+C\+K\+ED}, 
+{\bfseries E\+N\+T\+E\+R\+ED}, 
+{\bfseries E\+X\+I\+T\+ED}, 
+\\*
+{\bfseries D\+R\+A\+G\+G\+ED}
+ \}
+\item 
+enum \{ {\bfseries E\+M\+P\+TY} = 0, 
+{\bfseries L\+E\+FT}, 
+{\bfseries R\+I\+G\+HT}, 
+{\bfseries M\+I\+D\+D\+LE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1MouseEvent_a09d83adcea12e2e526b387e660ef53a9}{Mouse\+Event} (\hyperlink{classgcn_1_1Widget}{Widget} $\ast$source, bool \hyperlink{classgcn_1_1InputEvent_a15d5dbb808b46dfbf305fd7d9f595538}{is\+Shift\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae70fd17f3725f442353a9ef22a8c6260}{is\+Control\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae3cb422a3cc849aaa4241a93715ba85f}{is\+Alt\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae28913ad630a9728fff150ab14a4b909}{is\+Meta\+Pressed}, unsigned int type, unsigned int button, int x, int y, int click\+Count)
+\item 
+unsigned int \hyperlink{classgcn_1_1MouseEvent_a3b7af159f8fbc3d345505c48c9440d97}{get\+Button} () const 
+\item 
+int \hyperlink{classgcn_1_1MouseEvent_a27e26b123fed3773fc5cedf7c8161659}{getX} () const 
+\item 
+int \hyperlink{classgcn_1_1MouseEvent_a64ec004a7d5cd4bafea7ec7589702848}{getY} () const 
+\item 
+int \hyperlink{classgcn_1_1MouseEvent_a6e421480605a3e9b50e8cd43cea2fe06}{get\+Click\+Count} () const 
+\item 
+unsigned int \hyperlink{classgcn_1_1MouseEvent_a0bcdf573490c93776e183ccedcad1163}{get\+Type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries m\+Type}\hypertarget{classgcn_1_1MouseEvent_a97f31b6d769618e55b405233ef14bdf1}{}\label{classgcn_1_1MouseEvent_a97f31b6d769618e55b405233ef14bdf1}
+
+\item 
+unsigned int {\bfseries m\+Button}\hypertarget{classgcn_1_1MouseEvent_aa8a4f65e020bc2f96731673745aff317}{}\label{classgcn_1_1MouseEvent_aa8a4f65e020bc2f96731673745aff317}
+
+\item 
+int {\bfseries mX}\hypertarget{classgcn_1_1MouseEvent_a9b07220f231e1f64513f6c6fcf283587}{}\label{classgcn_1_1MouseEvent_a9b07220f231e1f64513f6c6fcf283587}
+
+\item 
+int {\bfseries mY}\hypertarget{classgcn_1_1MouseEvent_ab908803fb70cea515c47c82b4e0e6940}{}\label{classgcn_1_1MouseEvent_ab908803fb70cea515c47c82b4e0e6940}
+
+\item 
+int {\bfseries m\+Click\+Count}\hypertarget{classgcn_1_1MouseEvent_ae784cba72ed8b5b499372a4a7921f24f}{}\label{classgcn_1_1MouseEvent_ae784cba72ed8b5b499372a4a7921f24f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Gui}\hypertarget{classgcn_1_1MouseEvent_a2bb4ffbad57a036036984d978a76d27b}{}\label{classgcn_1_1MouseEvent_a2bb4ffbad57a036036984d978a76d27b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a mouse event.
+
+\begin{DoxyAuthor}{Author}
+Olof Naessén 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{classgcn_1_1MouseEvent_af29f8d41a81f402912ad934284290e2b}{}\label{classgcn_1_1MouseEvent_af29f8d41a81f402912ad934284290e2b}
+Mouse event types. \subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{classgcn_1_1MouseEvent_a5b29fe410dbff7c5a6fd7746f3eb2c0a}{}\label{classgcn_1_1MouseEvent_a5b29fe410dbff7c5a6fd7746f3eb2c0a}
+Mouse button types. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!Mouse\+Event@{Mouse\+Event}}
+\index{Mouse\+Event@{Mouse\+Event}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{Mouse\+Event(\+Widget $\ast$source, bool is\+Shift\+Pressed, bool is\+Control\+Pressed, bool is\+Alt\+Pressed, bool is\+Meta\+Pressed, unsigned int type, unsigned int button, int x, int y, int click\+Count)}{MouseEvent(Widget *source, bool isShiftPressed, bool isControlPressed, bool isAltPressed, bool isMetaPressed, unsigned int type, unsigned int button, int x, int y, int clickCount)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Mouse\+Event\+::\+Mouse\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Widget} $\ast$}]{source, }
+\item[{bool}]{is\+Shift\+Pressed, }
+\item[{bool}]{is\+Control\+Pressed, }
+\item[{bool}]{is\+Alt\+Pressed, }
+\item[{bool}]{is\+Meta\+Pressed, }
+\item[{unsigned int}]{type, }
+\item[{unsigned int}]{button, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{click\+Count}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1MouseEvent_a09d83adcea12e2e526b387e660ef53a9}{}\label{classgcn_1_1MouseEvent_a09d83adcea12e2e526b387e660ef53a9}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source widget of the event. \\
+\hline
+{\em is\+Shift\+Pressed} & true if shift is pressed, false otherwise. \\
+\hline
+{\em is\+Control\+Pressed} & true if control is pressed, false otherwise. \\
+\hline
+{\em is\+Alt\+Pressed} & true if alt is pressed, false otherwise. \\
+\hline
+{\em is\+Meta\+Pressed} & true if meta is pressed, false otherwise. \\
+\hline
+{\em the} & type of the event. \\
+\hline
+{\em button} & the button of the event. \\
+\hline
+{\em the} & x coordinate of the event relative to the source widget. \\
+\hline
+{\em the} & y coordinate of the event relative the source widget. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!get\+Button@{get\+Button}}
+\index{get\+Button@{get\+Button}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{get\+Button() const }{getButton() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gcn\+::\+Mouse\+Event\+::get\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1MouseEvent_a3b7af159f8fbc3d345505c48c9440d97}{}\label{classgcn_1_1MouseEvent_a3b7af159f8fbc3d345505c48c9440d97}
+Gets the button of the mouse event.
+
+\begin{DoxyReturn}{Returns}
+the button of the mouse event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!get\+Click\+Count@{get\+Click\+Count}}
+\index{get\+Click\+Count@{get\+Click\+Count}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{get\+Click\+Count() const }{getClickCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Mouse\+Event\+::get\+Click\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1MouseEvent_a6e421480605a3e9b50e8cd43cea2fe06}{}\label{classgcn_1_1MouseEvent_a6e421480605a3e9b50e8cd43cea2fe06}
+Gets the click count.
+
+\begin{DoxyReturn}{Returns}
+the click count of the mouse event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{get\+Type() const }{getType() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gcn\+::\+Mouse\+Event\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1MouseEvent_a0bcdf573490c93776e183ccedcad1163}{}\label{classgcn_1_1MouseEvent_a0bcdf573490c93776e183ccedcad1163}
+Gets the type of the event.
+
+\begin{DoxyReturn}{Returns}
+the type of the event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!getX@{getX}}
+\index{getX@{getX}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{get\+X() const }{getX() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Mouse\+Event\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1MouseEvent_a27e26b123fed3773fc5cedf7c8161659}{}\label{classgcn_1_1MouseEvent_a27e26b123fed3773fc5cedf7c8161659}
+Gets the x coordinate of the mouse event. The coordinate is relative to the source \hyperlink{classgcn_1_1Widget}{Widget}.
+
+\begin{DoxyReturn}{Returns}
+the x coordinate of the mouse event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}!getY@{getY}}
+\index{getY@{getY}!gcn\+::\+Mouse\+Event@{gcn\+::\+Mouse\+Event}}
+\subsubsection[{\texorpdfstring{get\+Y() const }{getY() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Mouse\+Event\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1MouseEvent_a64ec004a7d5cd4bafea7ec7589702848}{}\label{classgcn_1_1MouseEvent_a64ec004a7d5cd4bafea7ec7589702848}
+Gets the y coordinate of the mouse event. The coordinate is relative to the source \hyperlink{classgcn_1_1Widget}{Widget}.
+
+\begin{DoxyReturn}{Returns}
+the y coordinate of the mouse event. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/mouseevent.\+hpp\item 
+src/mouseevent.\+cpp\end{DoxyCompactItemize}

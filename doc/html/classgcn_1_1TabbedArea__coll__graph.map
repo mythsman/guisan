@@ -1,0 +1,16 @@
+<map id="gcn::TabbedArea" name="gcn::TabbedArea">
+<area shape="rect" id="node13" href="$classgcn_1_1Tab.html" title="gcn::Tab" alt="" coords="1623,74,1696,100"/>
+<area shape="rect" id="node2" href="$classgcn_1_1ActionListener.html" title="gcn::ActionListener" alt="" coords="1067,79,1202,106"/>
+<area shape="rect" id="node3" href="$classgcn_1_1BasicContainer.html" title="gcn::BasicContainer" alt="" coords="796,116,936,143"/>
+<area shape="rect" id="node15" href="$classgcn_1_1Container.html" title="gcn::Container" alt="" coords="1081,231,1188,258"/>
+<area shape="rect" id="node4" href="$classgcn_1_1Widget.html" title="gcn::Widget" alt="" coords="431,299,523,326"/>
+<area shape="rect" id="node9" href="$classgcn_1_1FocusHandler.html" title="gcn::FocusHandler" alt="" coords="800,295,932,322"/>
+<area shape="rect" id="node14" href="$classgcn_1_1Label.html" title="gcn::Label" alt="" coords="960,359,1043,386"/>
+<area shape="rect" id="node5" href="$classgcn_1_1DefaultFont.html" title="gcn::DefaultFont" alt="" coords="132,192,251,219"/>
+<area shape="rect" id="node6" href="$classgcn_1_1Font.html" title="gcn::Font" alt="" coords="5,235,83,262"/>
+<area shape="rect" id="node7" href="$classgcn_1_1Color.html" title="gcn::Color" alt="" coords="150,338,233,364"/>
+<area shape="rect" id="node8" href="$classgcn_1_1Rectangle.html" title="gcn::Rectangle" alt="" coords="136,388,247,415"/>
+<area shape="rect" id="node10" href="$classgcn_1_1DeathListener.html" title="gcn::DeathListener" alt="" coords="411,83,543,110"/>
+<area shape="rect" id="node11" href="$classgcn_1_1KeyListener.html" title="gcn::KeyListener" alt="" coords="1075,180,1195,207"/>
+<area shape="rect" id="node12" href="$classgcn_1_1MouseListener.html" title="gcn::MouseListener" alt="" coords="1067,28,1203,55"/>
+</map>

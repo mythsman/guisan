@@ -1,0 +1,72 @@
+\hypertarget{classgcn_1_1DeathListener}{}\section{gcn\+:\+:Death\+Listener Class Reference}
+\label{classgcn_1_1DeathListener}\index{gcn\+::\+Death\+Listener@{gcn\+::\+Death\+Listener}}
+
+
+{\ttfamily \#include $<$deathlistener.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Death\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1DeathListener__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgcn_1_1DeathListener_a1372819e4a4a727d00ac32163fb620c4}{$\sim$\+Death\+Listener} ()
+\item 
+virtual void \hyperlink{classgcn_1_1DeathListener_a526e786e21fcf1266a56f20617babf90}{death} (const \hyperlink{classgcn_1_1Event}{Event} \&event)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Listener of death events from Widgets. To be able to listen for deaths you must make a class which inherits from this class and implements the death function.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Widget_a874a4f734daddf0fdc4d9d70ebb1ee26}{Widget\+::add\+Death\+Listener} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Olof Naessén 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Death\+Listener@{gcn\+::\+Death\+Listener}!````~Death\+Listener@{$\sim$\+Death\+Listener}}
+\index{````~Death\+Listener@{$\sim$\+Death\+Listener}!gcn\+::\+Death\+Listener@{gcn\+::\+Death\+Listener}}
+\subsubsection[{\texorpdfstring{$\sim$\+Death\+Listener()}{~DeathListener()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+Death\+Listener\+::$\sim$\+Death\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1DeathListener_a1372819e4a4a727d00ac32163fb620c4}{}\label{classgcn_1_1DeathListener_a1372819e4a4a727d00ac32163fb620c4}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Death\+Listener@{gcn\+::\+Death\+Listener}!death@{death}}
+\index{death@{death}!gcn\+::\+Death\+Listener@{gcn\+::\+Death\+Listener}}
+\subsubsection[{\texorpdfstring{death(const Event \&event)=0}{death(const Event &event)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Death\+Listener\+::death (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1DeathListener_a526e786e21fcf1266a56f20617babf90}{}\label{classgcn_1_1DeathListener_a526e786e21fcf1266a56f20617babf90}
+Called when a widget dies. It is used to be able to recieve a notification when a death of a widget occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event of the death. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1DropDown_a8f6402e1ad3ac77b7db296bbd77a7494}{gcn\+::\+Drop\+Down}, \hyperlink{classgcn_1_1TabbedArea_aacf206f5ea02e67b295b7b26ea2a6eac}{gcn\+::\+Tabbed\+Area}, and \hyperlink{classgcn_1_1BasicContainer_ac6cf8760537dcd167e0f518f556bccf4}{gcn\+::\+Basic\+Container}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/deathlistener.\+hpp\end{DoxyCompactItemize}

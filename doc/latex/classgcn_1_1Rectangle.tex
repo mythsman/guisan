@@ -1,0 +1,142 @@
+\hypertarget{classgcn_1_1Rectangle}{}\section{gcn\+:\+:Rectangle Class Reference}
+\label{classgcn_1_1Rectangle}\index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+
+
+{\ttfamily \#include $<$rectangle.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgcn_1_1Rectangle__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Rectangle_a5bde3ad67de45107822313ecfa965182}{Rectangle} ()
+\item 
+\hyperlink{classgcn_1_1Rectangle_ad2d7d6d90114946b3b538ebde665bd4a}{Rectangle} (int x, int y, int width, int height)
+\item 
+void \hyperlink{classgcn_1_1Rectangle_abceed0ef01fb4947960b0050df365db4}{set\+All} (int x, int y, int width, int height)
+\item 
+bool \hyperlink{classgcn_1_1Rectangle_ae92f66d26b05278708ea20fad4eef618}{intersect} (const \hyperlink{classgcn_1_1Rectangle}{Rectangle} \&rectangle)
+\item 
+bool \hyperlink{classgcn_1_1Rectangle_ad3586596cbb34b093267f4d1a474e2c9}{is\+Point\+In\+Rect} (int x, int y) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries x}\hypertarget{classgcn_1_1Rectangle_ab6dc4177d60791f7bbbd568196579876}{}\label{classgcn_1_1Rectangle_ab6dc4177d60791f7bbbd568196579876}
+
+\item 
+int {\bfseries y}\hypertarget{classgcn_1_1Rectangle_a327e06edb84f23e33e271e05478bfbc3}{}\label{classgcn_1_1Rectangle_a327e06edb84f23e33e271e05478bfbc3}
+
+\item 
+int {\bfseries width}\hypertarget{classgcn_1_1Rectangle_a9a79785063de4f8fc5b414636e20be29}{}\label{classgcn_1_1Rectangle_a9a79785063de4f8fc5b414636e20be29}
+
+\item 
+int {\bfseries height}\hypertarget{classgcn_1_1Rectangle_acc24f64d0e557df385ca7afd41cb38e6}{}\label{classgcn_1_1Rectangle_acc24f64d0e557df385ca7afd41cb38e6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a rectangle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+\subsubsection[{\texorpdfstring{Rectangle()}{Rectangle()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Rectangle_a5bde3ad67de45107822313ecfa965182}{}\label{classgcn_1_1Rectangle_a5bde3ad67de45107822313ecfa965182}
+Constructor. Resets member variables. \index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+\subsubsection[{\texorpdfstring{Rectangle(int x, int y, int width, int height)}{Rectangle(int x, int y, int width, int height)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Rectangle_ad2d7d6d90114946b3b538ebde665bd4a}{}\label{classgcn_1_1Rectangle_ad2d7d6d90114946b3b538ebde665bd4a}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} x coordinate. \\
+\hline
+{\em y} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} y coordinate. \\
+\hline
+{\em width} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} width. \\
+\hline
+{\em height} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} height. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}!intersect@{intersect}}
+\index{intersect@{intersect}!gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+\subsubsection[{\texorpdfstring{intersect(const Rectangle \&rectangle)}{intersect(const Rectangle &rectangle)}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Rectangle\+::intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{rectangle}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Rectangle_ae92f66d26b05278708ea20fad4eef618}{}\label{classgcn_1_1Rectangle_ae92f66d26b05278708ea20fad4eef618}
+Checks if another \hyperlink{classgcn_1_1Rectangle}{Rectangle} intersects with the \hyperlink{classgcn_1_1Rectangle}{Rectangle}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & another \hyperlink{classgcn_1_1Rectangle}{Rectangle}. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}!is\+Point\+In\+Rect@{is\+Point\+In\+Rect}}
+\index{is\+Point\+In\+Rect@{is\+Point\+In\+Rect}!gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+\subsubsection[{\texorpdfstring{is\+Point\+In\+Rect(int x, int y) const }{isPointInRect(int x, int y) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Rectangle\+::is\+Point\+In\+Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Rectangle_ad3586596cbb34b093267f4d1a474e2c9}{}\label{classgcn_1_1Rectangle_ad3586596cbb34b093267f4d1a474e2c9}
+Checks if a point is inside the \hyperlink{classgcn_1_1Rectangle}{Rectangle}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the point x coordinate. \\
+\hline
+{\em y} & the point y coordinate. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Rectangle@{gcn\+::\+Rectangle}!set\+All@{set\+All}}
+\index{set\+All@{set\+All}!gcn\+::\+Rectangle@{gcn\+::\+Rectangle}}
+\subsubsection[{\texorpdfstring{set\+All(int x, int y, int width, int height)}{setAll(int x, int y, int width, int height)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Rectangle\+::set\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Rectangle_abceed0ef01fb4947960b0050df365db4}{}\label{classgcn_1_1Rectangle_abceed0ef01fb4947960b0050df365db4}
+Sets the dimension of a rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} x coordinate. \\
+\hline
+{\em y} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} y coordinate. \\
+\hline
+{\em width} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} width. \\
+\hline
+{\em height} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} height. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/rectangle.\+hpp\item 
+src/rectangle.\+cpp\end{DoxyCompactItemize}

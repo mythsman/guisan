@@ -1,0 +1,153 @@
+\hypertarget{classgcn_1_1KeyEvent}{}\section{gcn\+:\+:Key\+Event Class Reference}
+\label{classgcn_1_1KeyEvent}\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+
+
+{\ttfamily \#include $<$keyevent.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Key\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classgcn_1_1KeyEvent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Key\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1KeyEvent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries P\+R\+E\+S\+S\+ED} = 0, 
+{\bfseries R\+E\+L\+E\+A\+S\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1KeyEvent_a2e395b2d9ec644e95c786b2e0e458229}{Key\+Event} (\hyperlink{classgcn_1_1Widget}{Widget} $\ast$source, bool \hyperlink{classgcn_1_1InputEvent_a15d5dbb808b46dfbf305fd7d9f595538}{is\+Shift\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae70fd17f3725f442353a9ef22a8c6260}{is\+Control\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae3cb422a3cc849aaa4241a93715ba85f}{is\+Alt\+Pressed}, bool \hyperlink{classgcn_1_1InputEvent_ae28913ad630a9728fff150ab14a4b909}{is\+Meta\+Pressed}, unsigned int type, bool \hyperlink{classgcn_1_1KeyEvent_a43ca39da368626ff40a58a2f38dd8bdb}{is\+Numeric\+Pad}, const \hyperlink{classgcn_1_1Key}{Key} \&key)
+\item 
+virtual \hyperlink{classgcn_1_1KeyEvent_affd36fd463ad2132ce07e39f250e0734}{$\sim$\+Key\+Event} ()
+\item 
+unsigned int \hyperlink{classgcn_1_1KeyEvent_a4ab6b411dbbd9f73c40da56bd1f00a35}{get\+Type} () const 
+\item 
+bool \hyperlink{classgcn_1_1KeyEvent_a43ca39da368626ff40a58a2f38dd8bdb}{is\+Numeric\+Pad} () const 
+\item 
+const \hyperlink{classgcn_1_1Key}{Key} \& \hyperlink{classgcn_1_1KeyEvent_a9494c8848b571eb99fd2b61e02c81722}{get\+Key} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries m\+Type}\hypertarget{classgcn_1_1KeyEvent_a747062a5d9a99321643a4c6416674337}{}\label{classgcn_1_1KeyEvent_a747062a5d9a99321643a4c6416674337}
+
+\item 
+bool {\bfseries m\+Is\+Numeric\+Pad}\hypertarget{classgcn_1_1KeyEvent_a28d8e17a74c4a41cf7abbf3b0594dc55}{}\label{classgcn_1_1KeyEvent_a28d8e17a74c4a41cf7abbf3b0594dc55}
+
+\item 
+\hyperlink{classgcn_1_1Key}{Key} {\bfseries m\+Key}\hypertarget{classgcn_1_1KeyEvent_a89b4da2fdfacef40debacee1cbe7aeae}{}\label{classgcn_1_1KeyEvent_a89b4da2fdfacef40debacee1cbe7aeae}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgcn_1_1Key}{Key} event. 
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{classgcn_1_1KeyEvent_a2104110220c710df5758ec2f7749f6ac}{}\label{classgcn_1_1KeyEvent_a2104110220c710df5758ec2f7749f6ac}
+\hyperlink{classgcn_1_1Key}{Key} event types. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}!Key\+Event@{Key\+Event}}
+\index{Key\+Event@{Key\+Event}!gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+\subsubsection[{\texorpdfstring{Key\+Event(\+Widget $\ast$source, bool is\+Shift\+Pressed, bool is\+Control\+Pressed, bool is\+Alt\+Pressed, bool is\+Meta\+Pressed, unsigned int type, bool is\+Numeric\+Pad, const Key \&key)}{KeyEvent(Widget *source, bool isShiftPressed, bool isControlPressed, bool isAltPressed, bool isMetaPressed, unsigned int type, bool isNumericPad, const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Key\+Event\+::\+Key\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Widget} $\ast$}]{source, }
+\item[{bool}]{is\+Shift\+Pressed, }
+\item[{bool}]{is\+Control\+Pressed, }
+\item[{bool}]{is\+Alt\+Pressed, }
+\item[{bool}]{is\+Meta\+Pressed, }
+\item[{unsigned int}]{type, }
+\item[{bool}]{is\+Numeric\+Pad, }
+\item[{const {\bf Key} \&}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyEvent_a2e395b2d9ec644e95c786b2e0e458229}{}\label{classgcn_1_1KeyEvent_a2e395b2d9ec644e95c786b2e0e458229}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source widget of the event. \\
+\hline
+{\em is\+Shift\+Pressed} & true if shift is pressed, false otherwise. \\
+\hline
+{\em is\+Control\+Pressed} & true if control is pressed, false otherwise. \\
+\hline
+{\em is\+Alt\+Pressed} & true if alt is pressed, false otherwise. \\
+\hline
+{\em is\+Meta\+Pressed} & true if meta is pressed, false otherwise. \\
+\hline
+{\em type} & the type of the event. \\
+\hline
+{\em is\+Numeric\+Pad} & true if the event occured on the numeric pad, false otherwise. \\
+\hline
+{\em key} & represents the key of the event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}!````~Key\+Event@{$\sim$\+Key\+Event}}
+\index{````~Key\+Event@{$\sim$\+Key\+Event}!gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+\subsubsection[{\texorpdfstring{$\sim$\+Key\+Event()}{~KeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Key\+Event\+::$\sim$\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1KeyEvent_affd36fd463ad2132ce07e39f250e0734}{}\label{classgcn_1_1KeyEvent_affd36fd463ad2132ce07e39f250e0734}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+\subsubsection[{\texorpdfstring{get\+Key() const }{getKey() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Key} \& gcn\+::\+Key\+Event\+::get\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyEvent_a9494c8848b571eb99fd2b61e02c81722}{}\label{classgcn_1_1KeyEvent_a9494c8848b571eb99fd2b61e02c81722}
+Gets the key of the event.
+
+\begin{DoxyReturn}{Returns}
+the key of the event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+\subsubsection[{\texorpdfstring{get\+Type() const }{getType() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gcn\+::\+Key\+Event\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyEvent_a4ab6b411dbbd9f73c40da56bd1f00a35}{}\label{classgcn_1_1KeyEvent_a4ab6b411dbbd9f73c40da56bd1f00a35}
+Gets the type of the event.
+
+\begin{DoxyReturn}{Returns}
+the type of the event. 
+\end{DoxyReturn}
+\index{gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}!is\+Numeric\+Pad@{is\+Numeric\+Pad}}
+\index{is\+Numeric\+Pad@{is\+Numeric\+Pad}!gcn\+::\+Key\+Event@{gcn\+::\+Key\+Event}}
+\subsubsection[{\texorpdfstring{is\+Numeric\+Pad() const }{isNumericPad() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Event\+::is\+Numeric\+Pad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyEvent_a43ca39da368626ff40a58a2f38dd8bdb}{}\label{classgcn_1_1KeyEvent_a43ca39da368626ff40a58a2f38dd8bdb}
+Checks whether the key event occured on the numeric pad.
+
+\begin{DoxyReturn}{Returns}
+true if key event occured on the numeric pad. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/keyevent.\+hpp\item 
+src/keyevent.\+cpp\end{DoxyCompactItemize}

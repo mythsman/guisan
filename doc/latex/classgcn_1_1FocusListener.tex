@@ -1,0 +1,88 @@
+\hypertarget{classgcn_1_1FocusListener}{}\section{gcn\+:\+:Focus\+Listener Class Reference}
+\label{classgcn_1_1FocusListener}\index{gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}}
+
+
+{\ttfamily \#include $<$focuslistener.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Focus\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classgcn_1_1FocusListener__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgcn_1_1FocusListener_a0590fe4d6d7c97e048e0970f0663620f}{$\sim$\+Focus\+Listener} ()
+\item 
+virtual void \hyperlink{classgcn_1_1FocusListener_a356aa939465d4916ecaa080df4521711}{focus\+Gained} (const \hyperlink{classgcn_1_1Event}{Event} \&event)
+\item 
+virtual void \hyperlink{classgcn_1_1FocusListener_a7523032b39888503179e8142d2433b45}{focus\+Lost} (const \hyperlink{classgcn_1_1Event}{Event} \&event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Listener of focus events from Widgets. To be able to listen for focus events you must make a class which inherits from this class and implements it\textquotesingle{}s functions.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Widget_aa6aaaf472d2a562ea101ad1e407ded60}{Widget\+::add\+Focus\+Listener} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Olof Naessén 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+0.\+7.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}!````~Focus\+Listener@{$\sim$\+Focus\+Listener}}
+\index{````~Focus\+Listener@{$\sim$\+Focus\+Listener}!gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}}
+\subsubsection[{\texorpdfstring{$\sim$\+Focus\+Listener()}{~FocusListener()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+Focus\+Listener\+::$\sim$\+Focus\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1FocusListener_a0590fe4d6d7c97e048e0970f0663620f}{}\label{classgcn_1_1FocusListener_a0590fe4d6d7c97e048e0970f0663620f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}!focus\+Gained@{focus\+Gained}}
+\index{focus\+Gained@{focus\+Gained}!gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}}
+\subsubsection[{\texorpdfstring{focus\+Gained(const Event \&event)}{focusGained(const Event &event)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Focus\+Listener\+::focus\+Gained (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1FocusListener_a356aa939465d4916ecaa080df4521711}{}\label{classgcn_1_1FocusListener_a356aa939465d4916ecaa080df4521711}
+Called when a widget gains focus.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & discribes the event. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}!focus\+Lost@{focus\+Lost}}
+\index{focus\+Lost@{focus\+Lost}!gcn\+::\+Focus\+Listener@{gcn\+::\+Focus\+Listener}}
+\subsubsection[{\texorpdfstring{focus\+Lost(const Event \&event)}{focusLost(const Event &event)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Focus\+Listener\+::focus\+Lost (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1FocusListener_a7523032b39888503179e8142d2433b45}{}\label{classgcn_1_1FocusListener_a7523032b39888503179e8142d2433b45}
+Called when a widget loses focus.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & discribes the event. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classgcn_1_1DropDown_a688cf78090ce646ea35e1ca00a441b12}{gcn\+::\+Drop\+Down}, and \hyperlink{classgcn_1_1Button_a6cee079024ffd4e8eeb8b682aade93c0}{gcn\+::\+Button}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/focuslistener.\+hpp\end{DoxyCompactItemize}

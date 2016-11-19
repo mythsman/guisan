@@ -1,0 +1,7 @@
+<map id="gcn::Window" name="gcn::Window">
+<area shape="rect" id="node2" href="$classgcn_1_1Container.html" title="gcn::Container" alt="" coords="66,155,173,181"/>
+<area shape="rect" id="node3" href="$classgcn_1_1BasicContainer.html" title="gcn::BasicContainer" alt="" coords="49,80,189,107"/>
+<area shape="rect" id="node4" href="$classgcn_1_1Widget.html" title="gcn::Widget" alt="" coords="5,5,97,32"/>
+<area shape="rect" id="node5" href="$classgcn_1_1DeathListener.html" title="gcn::DeathListener" alt="" coords="121,5,253,32"/>
+<area shape="rect" id="node6" href="$classgcn_1_1MouseListener.html" title="gcn::MouseListener" alt="" coords="197,155,333,181"/>
+</map>

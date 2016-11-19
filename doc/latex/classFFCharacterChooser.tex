@@ -1,0 +1,82 @@
+\hypertarget{classFFCharacterChooser}{}\section{F\+F\+Character\+Chooser Class Reference}
+\label{classFFCharacterChooser}\index{F\+F\+Character\+Chooser@{F\+F\+Character\+Chooser}}
+
+
+Inheritance diagram for F\+F\+Character\+Chooser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classFFCharacterChooser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for F\+F\+Character\+Chooser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFFCharacterChooser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classFFCharacterChooser_a5201030dd120d58eb0470269649a3541}{draw} (\hyperlink{classgcn_1_1Graphics}{gcn\+::\+Graphics} $\ast$graphics)
+\item 
+int {\bfseries get\+Selected} ()\hypertarget{classFFCharacterChooser_a45a2b60a3a6e36b5f5ab8c482995f4ca}{}\label{classFFCharacterChooser_a45a2b60a3a6e36b5f5ab8c482995f4ca}
+
+\item 
+void {\bfseries set\+Selected} (int selected)\hypertarget{classFFCharacterChooser_af195b46f2389b2a72d287344316fa795}{}\label{classFFCharacterChooser_af195b46f2389b2a72d287344316fa795}
+
+\item 
+void {\bfseries set\+Distance} (int distance)\hypertarget{classFFCharacterChooser_a9f4cb567c877350287a85f8688f86e32}{}\label{classFFCharacterChooser_a9f4cb567c877350287a85f8688f86e32}
+
+\item 
+void \hyperlink{classFFCharacterChooser_a34d12f0a5f7588ee8dc36da24a75c7df}{key\+Pressed} (\hyperlink{classgcn_1_1KeyEvent}{gcn\+::\+Key\+Event} \&key\+Event)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{F\+F\+Character\+Chooser@{F\+F\+Character\+Chooser}!draw@{draw}}
+\index{draw@{draw}!F\+F\+Character\+Chooser@{F\+F\+Character\+Chooser}}
+\subsubsection[{\texorpdfstring{draw(gcn\+::\+Graphics $\ast$graphics)}{draw(gcn::Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+F\+Character\+Chooser\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf gcn\+::\+Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classFFCharacterChooser_a5201030dd120d58eb0470269649a3541}{}\label{classFFCharacterChooser_a5201030dd120d58eb0470269649a3541}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a Graphics object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{F\+F\+Character\+Chooser@{F\+F\+Character\+Chooser}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!F\+F\+Character\+Chooser@{F\+F\+Character\+Chooser}}
+\subsubsection[{\texorpdfstring{key\+Pressed(gcn\+::\+Key\+Event \&key\+Event)}{keyPressed(gcn::KeyEvent &keyEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+F\+Character\+Chooser\+::key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf gcn\+::\+Key\+Event} \&}]{key\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classFFCharacterChooser_a34d12f0a5f7588ee8dc36da24a75c7df}{}\label{classFFCharacterChooser_a34d12f0a5f7588ee8dc36da24a75c7df}
+Called if a key is pressed when the widget has keyboard focus. If a key is held down the widget will generate multiple key presses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & discribes the event. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1KeyListener_ada6c0d038340d6ee674702268b2d2c67}{gcn\+::\+Key\+Listener}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+demo/include/ffcharacterchooser.\+hpp\item 
+demo/src/ffcharacterchooser.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+\hypertarget{classgcn_1_1Image}{}\section{gcn\+:\+:Image Class Reference}
+\label{classgcn_1_1Image}\index{gcn\+::\+Image@{gcn\+::\+Image}}
+
+
+{\ttfamily \#include $<$image.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Image\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classgcn_1_1Image__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Image\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classgcn_1_1Image__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Image_a883e7a2a2f9fdf12b671bbbcb31eb75d}{Image} ()
+\item 
+virtual \hyperlink{classgcn_1_1Image_aea3f86f45826db27d628bffb3c6bd26c}{$\sim$\+Image} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Image_acfa8910bae0ed3402e9f1f9876e4c4cf}{free} ()=0
+\item 
+virtual int \hyperlink{classgcn_1_1Image_aa367cc8121c1f01a541e615b0a27497c}{get\+Width} () const =0
+\item 
+virtual int \hyperlink{classgcn_1_1Image_a09df6a36dc5a76a75a0dd5720f40ee0d}{get\+Height} () const =0
+\item 
+virtual \hyperlink{classgcn_1_1Color}{Color} \hyperlink{classgcn_1_1Image_a38e79120cc9f81bb36727e2859e04a09}{get\+Pixel} (int x, int y)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Image_a4a023341cacd32ca4448ceec4b79be4a}{put\+Pixel} (int x, int y, const \hyperlink{classgcn_1_1Color}{Color} \&color)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Image_a3e59862b9a8fdb2bd3cffd9ba39969af}{convert\+To\+Display\+Format} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgcn_1_1Image}{Image} $\ast$ \hyperlink{classgcn_1_1Image_ad48bad2ddf8375c222e3731776baa786}{load} (const std\+::string \&filename, bool \hyperlink{classgcn_1_1Image_a3e59862b9a8fdb2bd3cffd9ba39969af}{convert\+To\+Display\+Format}=true)
+\item 
+static \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} $\ast$ \hyperlink{classgcn_1_1Image_ae7660b0958594f7d2287c887c71d3e2d}{get\+Image\+Loader} ()
+\item 
+static void \hyperlink{classgcn_1_1Image_aa042ca170fcce7fa019eed5475319d62}{set\+Image\+Loader} (\hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} $\ast$image\+Loader)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} $\ast$ {\bfseries m\+Image\+Loader} = N\+U\+LL\hypertarget{classgcn_1_1Image_a0226932e40506e397d416d9c253c018b}{}\label{classgcn_1_1Image_a0226932e40506e397d416d9c253c018b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds an image. To be able to use this class you must first set an \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} in \hyperlink{classgcn_1_1Image}{Image} by calling 
+\begin{DoxyCode}
+\hyperlink{classgcn_1_1Image_aa042ca170fcce7fa019eed5475319d62}{Image::setImageLoader}(myImageLoader) 
+\end{DoxyCode}
+ The function is static. If this is not done, the constructor taking a filename will throw an exception. The \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} you use must be compatible with the \hyperlink{classgcn_1_1Graphics}{Graphics} object you use.
+
+E\+X\+A\+M\+P\+LE\+: If you use \hyperlink{classgcn_1_1SDLGraphics}{S\+D\+L\+Graphics} you should use \hyperlink{classgcn_1_1SDLImageLoader}{S\+D\+L\+Image\+Loader}. Otherwise your program will crash in a most bizarre way. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Image@{gcn\+::\+Image}!Image@{Image}}
+\index{Image@{Image}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{Image()}{Image()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+::\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Image_a883e7a2a2f9fdf12b671bbbcb31eb75d}{}\label{classgcn_1_1Image_a883e7a2a2f9fdf12b671bbbcb31eb75d}
+Constructor. \index{gcn\+::\+Image@{gcn\+::\+Image}!````~Image@{$\sim$\+Image}}
+\index{````~Image@{$\sim$\+Image}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image()}{~Image()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+::$\sim$\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Image_aea3f86f45826db27d628bffb3c6bd26c}{}\label{classgcn_1_1Image_aea3f86f45826db27d628bffb3c6bd26c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Image@{gcn\+::\+Image}!convert\+To\+Display\+Format@{convert\+To\+Display\+Format}}
+\index{convert\+To\+Display\+Format@{convert\+To\+Display\+Format}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{convert\+To\+Display\+Format()=0}{convertToDisplayFormat()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Image\+::convert\+To\+Display\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_a3e59862b9a8fdb2bd3cffd9ba39969af}{}\label{classgcn_1_1Image_a3e59862b9a8fdb2bd3cffd9ba39969af}
+Converts the image, if possible, to display format.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Only guaranteed to work before the image has been converted to display format. 
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_a1f1f25745fb9a89a06db56b3e6b2748e}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_ad9b2c696a7c58af497c3830ad9d76861}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!free@{free}}
+\index{free@{free}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{free()=0}{free()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Image\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_acfa8910bae0ed3402e9f1f9876e4c4cf}{}\label{classgcn_1_1Image_acfa8910bae0ed3402e9f1f9876e4c4cf}
+Frees an image. 
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_a5ca72fa90e8f913bbfa37dd067e2c56a}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_a3bc4ad47bfe36987a48226a676f9f576}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+Height() const =0}{getHeight() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int gcn\+::\+Image\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_a09df6a36dc5a76a75a0dd5720f40ee0d}{}\label{classgcn_1_1Image_a09df6a36dc5a76a75a0dd5720f40ee0d}
+Gets the height of the \hyperlink{classgcn_1_1Image}{Image}.
+
+\begin{DoxyReturn}{Returns}
+the image height 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_a88ecce91748e69434abf055404f5b306}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_a92002975749328bf9c46c6a647b949d9}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!get\+Image\+Loader@{get\+Image\+Loader}}
+\index{get\+Image\+Loader@{get\+Image\+Loader}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+Image\+Loader()}{getImageLoader()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Loader} $\ast$ gcn\+::\+Image\+::get\+Image\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classgcn_1_1Image_ae7660b0958594f7d2287c887c71d3e2d}{}\label{classgcn_1_1Image_ae7660b0958594f7d2287c887c71d3e2d}
+Gets the \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} used for loading Images.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} used for loading Images. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1SDLImageLoader}{S\+D\+L\+Image\+Loader}, Allegro\+Image\+Loader 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Image@{gcn\+::\+Image}!get\+Pixel@{get\+Pixel}}
+\index{get\+Pixel@{get\+Pixel}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+Pixel(int x, int y)=0}{getPixel(int x, int y)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Color} gcn\+::\+Image\+::get\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_a38e79120cc9f81bb36727e2859e04a09}{}\label{classgcn_1_1Image_a38e79120cc9f81bb36727e2859e04a09}
+Gets the color of a pixel at coordinate (x, y) in the image.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Only guaranteed to work before the image has been converted to display format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate. \\
+\hline
+{\em y} & the y coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the color of the pixel. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_a68af180d0683001cdf1b49fd36d15cfc}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_af6f2df0d39d68b7c0547943f368f3726}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{get\+Width() const =0}{getWidth() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int gcn\+::\+Image\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_aa367cc8121c1f01a541e615b0a27497c}{}\label{classgcn_1_1Image_aa367cc8121c1f01a541e615b0a27497c}
+Gets the width of the \hyperlink{classgcn_1_1Image}{Image}.
+
+\begin{DoxyReturn}{Returns}
+the image width 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_ad4c50cb4ecbee9dab3e2894dd650a31c}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_aedda43f210a3e661685636684977eb1e}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!load@{load}}
+\index{load@{load}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{load(const std\+::string \&filename, bool convert\+To\+Display\+Format=true)}{load(const std::string &filename, bool convertToDisplayFormat=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} $\ast$ gcn\+::\+Image\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{bool}]{convert\+To\+Display\+Format = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classgcn_1_1Image_ad48bad2ddf8375c222e3731776baa786}{}\label{classgcn_1_1Image_ad48bad2ddf8375c222e3731776baa786}
+Loads an image by calling the \hyperlink{classgcn_1_1Image}{Image} class\textquotesingle{} \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader}.
+
+N\+O\+TE\+: The functions get\+Pixel and put\+Pixel are only guaranteed to work before an image has been converted to display format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file to load. \\
+\hline
+{\em convert\+To\+Display\+Format} & true if the image should be converted to display, false otherwise. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Image@{gcn\+::\+Image}!put\+Pixel@{put\+Pixel}}
+\index{put\+Pixel@{put\+Pixel}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{put\+Pixel(int x, int y, const Color \&color)=0}{putPixel(int x, int y, const Color &color)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Image\+::put\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{const {\bf Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Image_a4a023341cacd32ca4448ceec4b79be4a}{}\label{classgcn_1_1Image_a4a023341cacd32ca4448ceec4b79be4a}
+Puts a pixel with a certain color at coordinate (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate. \\
+\hline
+{\em y} & the y coordinate. \\
+\hline
+{\em color} & the color of the pixel to put. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1OpenGLImage_a8dde453536853dbfc3ea62b21744655b}{gcn\+::\+Open\+G\+L\+Image}, and \hyperlink{classgcn_1_1SDLImage_a707af6ce207dff83174dd91dfd4b4148}{gcn\+::\+S\+D\+L\+Image}.
+
+\index{gcn\+::\+Image@{gcn\+::\+Image}!set\+Image\+Loader@{set\+Image\+Loader}}
+\index{set\+Image\+Loader@{set\+Image\+Loader}!gcn\+::\+Image@{gcn\+::\+Image}}
+\subsubsection[{\texorpdfstring{set\+Image\+Loader(\+Image\+Loader $\ast$image\+Loader)}{setImageLoader(ImageLoader *imageLoader)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+::set\+Image\+Loader (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Loader} $\ast$}]{image\+Loader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classgcn_1_1Image_aa042ca170fcce7fa019eed5475319d62}{}\label{classgcn_1_1Image_aa042ca170fcce7fa019eed5475319d62}
+Sets the \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} to be used for loading images.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: The \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} is static and M\+U\+ST be set before loading images!
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Loader} & the \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} to be used for loading images. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1SDLImageLoader}{S\+D\+L\+Image\+Loader}, Allegro\+Image\+Loader 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/image.\+hpp\item 
+src/image.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="gcn::SelectionEvent" name="gcn::SelectionEvent">
+<area shape="rect" id="node2" href="$classgcn_1_1Event.html" title="gcn::Event" alt="" coords="98,424,184,451"/>
+<area shape="rect" id="node3" href="$classgcn_1_1Widget.html" title="gcn::Widget" alt="" coords="183,217,275,244"/>
+<area shape="rect" id="node8" href="$classgcn_1_1FocusHandler.html" title="gcn::FocusHandler" alt="" coords="303,424,435,451"/>
+<area shape="rect" id="node4" href="$classgcn_1_1DefaultFont.html" title="gcn::DefaultFont" alt="" coords="108,83,227,109"/>
+<area shape="rect" id="node5" href="$classgcn_1_1Font.html" title="gcn::Font" alt="" coords="10,5,88,32"/>
+<area shape="rect" id="node6" href="$classgcn_1_1Color.html" title="gcn::Color" alt="" coords="250,83,333,109"/>
+<area shape="rect" id="node7" href="$classgcn_1_1Rectangle.html" title="gcn::Rectangle" alt="" coords="376,83,487,109"/>
+</map>

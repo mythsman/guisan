@@ -1,0 +1,341 @@
+\hypertarget{classgcn_1_1ImageFont}{}\section{gcn\+:\+:Image\+Font Class Reference}
+\label{classgcn_1_1ImageFont}\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+
+
+{\ttfamily \#include $<$imagefont.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Image\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classgcn_1_1ImageFont__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Image\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classgcn_1_1ImageFont__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1ImageFont_a43a623be5f18290c0ba8d6ce886d74b0}{Image\+Font} (const std\+::string \&filename, const std\+::string \&glyphs)
+\item 
+\hyperlink{classgcn_1_1ImageFont_a663a7535d33714c4dac20518e41a3653}{Image\+Font} (const std\+::string \&filename, unsigned char glyphs\+From=32, unsigned char glyphs\+To=126)
+\item 
+virtual \hyperlink{classgcn_1_1ImageFont_aa65f1677811e42ecdc747a4196806ea7}{$\sim$\+Image\+Font} ()
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_ab7c08a441ed8046320c600d7eee77bde}{draw\+Glyph} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics, unsigned char glyph, int x, int y)
+\item 
+virtual void \hyperlink{classgcn_1_1ImageFont_a6fce0fdaa92f10d9e198311e18e1cea3}{set\+Row\+Spacing} (int spacing)
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_abd478dc1dc02a683775a465f21a56cfc}{get\+Row\+Spacing} ()
+\item 
+virtual void \hyperlink{classgcn_1_1ImageFont_aca8cc062c7b9d232dec6d994a726958e}{set\+Glyph\+Spacing} (int spacing)
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_a3e8595cfdf106632bbc3b55b026d47a5}{get\+Glyph\+Spacing} ()
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_a7f668b99441084f4199982e7d570781d}{get\+Width} (unsigned char glyph) const 
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_a6432c448c9df16a3ca057b2bd9822663}{get\+Width} (const std\+::string \&text) const 
+\item 
+virtual void \hyperlink{classgcn_1_1ImageFont_a8717f4ef08e2ba1a1379a4b8fe4b5002}{draw\+String} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics, const std\+::string \&text, int x, int y)
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_ae18f2d854e42ce5aafd44e8b8c6ff048}{get\+Height} () const 
+\item 
+virtual int \hyperlink{classgcn_1_1ImageFont_a5b0e7a7a7acdcb9fadb232f63608b354}{get\+String\+Index\+At} (const std\+::string \&text, int x)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries add\+Glyph} (unsigned char c, int \&x, int \&y, const \hyperlink{classgcn_1_1Color}{Color} \&separator)\hypertarget{classgcn_1_1ImageFont_a05f3206435b4b746206ba5f8dc6748ca}{}\label{classgcn_1_1ImageFont_a05f3206435b4b746206ba5f8dc6748ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Rectangle}{Rectangle} {\bfseries m\+Glyph} \mbox{[}256\mbox{]}\hypertarget{classgcn_1_1ImageFont_abba14f56fa98e464b7a839e432d3c02b}{}\label{classgcn_1_1ImageFont_abba14f56fa98e464b7a839e432d3c02b}
+
+\item 
+int {\bfseries m\+Height}\hypertarget{classgcn_1_1ImageFont_ad3d7d7cf93af238d8937b23034061e61}{}\label{classgcn_1_1ImageFont_ad3d7d7cf93af238d8937b23034061e61}
+
+\item 
+int {\bfseries m\+Glyph\+Spacing}\hypertarget{classgcn_1_1ImageFont_afb4b350fd417e7dba6ce8f8c14a3b105}{}\label{classgcn_1_1ImageFont_afb4b350fd417e7dba6ce8f8c14a3b105}
+
+\item 
+int {\bfseries m\+Row\+Spacing}\hypertarget{classgcn_1_1ImageFont_ab0a6729c8ff035e2755a3215cadfec74}{}\label{classgcn_1_1ImageFont_ab0a6729c8ff035e2755a3215cadfec74}
+
+\item 
+\hyperlink{classgcn_1_1Image}{Image} $\ast$ {\bfseries m\+Image}\hypertarget{classgcn_1_1ImageFont_a13409336f029a03e4a5ffe7634854ce3}{}\label{classgcn_1_1ImageFont_a13409336f029a03e4a5ffe7634854ce3}
+
+\item 
+std\+::string {\bfseries m\+Filename}\hypertarget{classgcn_1_1ImageFont_ac5ed59920e10fe0d137e365baaf7c568}{}\label{classgcn_1_1ImageFont_ac5ed59920e10fe0d137e365baaf7c568}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A font using an image containing the font data. It implements the font class. You can use any filetype for the font data as long as it can be loaded with your \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader}.
+
+This are two examples of an image containing a font.  
+
+The \hyperlink{classgcn_1_1Image}{Image} font format works like this\+: The first pixel, the pixal at coordinate (0,0), tells which color to look for when seperating glyphs. You create an image with your glyphs and simple separates them with the seperation color. When you create your \hyperlink{classgcn_1_1ImageFont}{Image\+Font} you supply the constructor with the glyphs present in your image. When creating an \hyperlink{classgcn_1_1ImageFont}{Image\+Font} for the image data in the first example above, the following constructor call would be used. 
+\begin{DoxyCode}
+ \hyperlink{classgcn_1_1ImageFont}{gcn::ImageFont} imageFont(\textcolor{stringliteral}{"fixedfont\_big.bmp"},\textcolor{stringliteral}{" abcdefghijklmno\(\backslash\)}
+\textcolor{stringliteral}{pqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"}); 
+\end{DoxyCode}
+ Noteworthy is that the first glyph actually gives the width of space. Glyphs can, as seen in the second example above, be seperated with horizontal lines making it possible to draw glyphs on more then one line in the image. However, these vertical lines must be of one pixel size! 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!Image\+Font@{Image\+Font}}
+\index{Image\+Font@{Image\+Font}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{Image\+Font(const std\+::string \&filename, const std\+::string \&glyphs)}{ImageFont(const std::string &filename, const std::string &glyphs)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Font\+::\+Image\+Font (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{const std\+::string \&}]{glyphs}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageFont_a43a623be5f18290c0ba8d6ce886d74b0}{}\label{classgcn_1_1ImageFont_a43a623be5f18290c0ba8d6ce886d74b0}
+Constructor which takes an image file containing the font and a string containing the glyphs. The glyphs in the string should be in the same order as they appear in the font image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of the image. \\
+\hline
+{\em glyphs} & the glyphs found in the image. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classgcn_1_1Exception}{Exception}} & when glyph list is incorrect or the font file is corrupt or if no \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} exists. \\
+\hline
+\end{DoxyExceptions}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!Image\+Font@{Image\+Font}}
+\index{Image\+Font@{Image\+Font}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{Image\+Font(const std\+::string \&filename, unsigned char glyphs\+From=32, unsigned char glyphs\+To=126)}{ImageFont(const std::string &filename, unsigned char glyphsFrom=32, unsigned char glyphsTo=126)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Font\+::\+Image\+Font (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename, }
+\item[{unsigned char}]{glyphs\+From = {\ttfamily 32}, }
+\item[{unsigned char}]{glyphs\+To = {\ttfamily 126}}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageFont_a663a7535d33714c4dac20518e41a3653}{}\label{classgcn_1_1ImageFont_a663a7535d33714c4dac20518e41a3653}
+Constructor which takes an image file containing the font and two boundaries of A\+S\+C\+II values. The font image should include all glyphs specified with the boundaries in increasing A\+S\+C\+II order. The boundaries are inclusive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of the image. \\
+\hline
+{\em glyphs\+From} & the A\+S\+C\+II value of the first glyph found in the image. \\
+\hline
+{\em glyphs\+To} & the A\+S\+C\+II value of the last glyph found in the image. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classgcn_1_1Exception}{Exception}} & when glyph bondaries are incorrect or the font file is corrupt or if no \hyperlink{classgcn_1_1ImageLoader}{Image\+Loader} exists. \\
+\hline
+\end{DoxyExceptions}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!````~Image\+Font@{$\sim$\+Image\+Font}}
+\index{````~Image\+Font@{$\sim$\+Image\+Font}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image\+Font()}{~ImageFont()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Font\+::$\sim$\+Image\+Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_aa65f1677811e42ecdc747a4196806ea7}{}\label{classgcn_1_1ImageFont_aa65f1677811e42ecdc747a4196806ea7}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!draw\+Glyph@{draw\+Glyph}}
+\index{draw\+Glyph@{draw\+Glyph}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{draw\+Glyph(\+Graphics $\ast$graphics, unsigned char glyph, int x, int y)}{drawGlyph(Graphics *graphics, unsigned char glyph, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::draw\+Glyph (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics, }
+\item[{unsigned char}]{glyph, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_ab7c08a441ed8046320c600d7eee77bde}{}\label{classgcn_1_1ImageFont_ab7c08a441ed8046320c600d7eee77bde}
+Draws a glyph.
+
+N\+O\+TE\+: You normally won\textquotesingle{}t use this function to draw text since the \hyperlink{classgcn_1_1Graphics}{Graphics} class contains better functions for drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a graphics object to be used for drawing. \\
+\hline
+{\em glyph} & a glyph to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the glyph. \\
+\hline
+{\em y} & the y coordinate where to draw the glyph. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of the glyph in pixels. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Graphics}{Graphics} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{draw\+String(\+Graphics $\ast$graphics, const std\+::string \&text, int x, int y)}{drawString(Graphics *graphics, const std::string &text, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Font\+::draw\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics, }
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a8717f4ef08e2ba1a1379a4b8fe4b5002}{}\label{classgcn_1_1ImageFont_a8717f4ef08e2ba1a1379a4b8fe4b5002}
+Draws a string.
+
+N\+O\+TE\+: You normally won\textquotesingle{}t use this function to draw text since \hyperlink{classgcn_1_1Graphics}{Graphics} contains better functions for drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to use for drawing. \\
+\hline
+{\em text} & the string to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the string. \\
+\hline
+{\em y} & the y coordinate where to draw the string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Font_a055c403050f483cc2c67477443d98eee}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+Glyph\+Spacing@{get\+Glyph\+Spacing}}
+\index{get\+Glyph\+Spacing@{get\+Glyph\+Spacing}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+Glyph\+Spacing()}{getGlyphSpacing()}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+Glyph\+Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a3e8595cfdf106632bbc3b55b026d47a5}{}\label{classgcn_1_1ImageFont_a3e8595cfdf106632bbc3b55b026d47a5}
+Gets the spacing between letters in pixels.
+
+\begin{DoxyReturn}{Returns}
+the spacing. 
+\end{DoxyReturn}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_ae18f2d854e42ce5aafd44e8b8c6ff048}{}\label{classgcn_1_1ImageFont_ae18f2d854e42ce5aafd44e8b8c6ff048}
+Gets the height of the glyphs in the font.
+
+\begin{DoxyReturn}{Returns}
+the height of the glyphs int the font. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_aa270d8934a16d4065143e3617b1fa926}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+Row\+Spacing@{get\+Row\+Spacing}}
+\index{get\+Row\+Spacing@{get\+Row\+Spacing}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+Row\+Spacing()}{getRowSpacing()}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+Row\+Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_abd478dc1dc02a683775a465f21a56cfc}{}\label{classgcn_1_1ImageFont_abd478dc1dc02a683775a465f21a56cfc}
+Gets the spacing between rows in pixels.
+
+\begin{DoxyReturn}{Returns}
+the spacing. 
+\end{DoxyReturn}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+String\+Index\+At@{get\+String\+Index\+At}}
+\index{get\+String\+Index\+At@{get\+String\+Index\+At}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+String\+Index\+At(const std\+::string \&text, int x)}{getStringIndexAt(const std::string &text, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+String\+Index\+At (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a5b0e7a7a7acdcb9fadb232f63608b354}{}\label{classgcn_1_1ImageFont_a5b0e7a7a7acdcb9fadb232f63608b354}
+Gets a string index in a string providing an x coordinate. Used to retrive a string index (for a character in a string) at a certain x position. It is especially useful when a mouse clicks in a \hyperlink{classgcn_1_1TextField}{Text\+Field} and you want to know which character was clicked.
+
+\begin{DoxyReturn}{Returns}
+a string index in a string providing an x coordinate. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Font_a3210f4c53424ade4b188b8dfb1f686a4}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+Width(unsigned char glyph) const }{getWidth(unsigned char glyph) const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+Width (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{glyph}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a7f668b99441084f4199982e7d570781d}{}\label{classgcn_1_1ImageFont_a7f668b99441084f4199982e7d570781d}
+Gets a width of a glyph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em glyph} & the glyph which width will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of a glyph 
+\end{DoxyReturn}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{get\+Width(const std\+::string \&text) const }{getWidth(const std::string &text) const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Image\+Font\+::get\+Width (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a6432c448c9df16a3ca057b2bd9822663}{}\label{classgcn_1_1ImageFont_a6432c448c9df16a3ca057b2bd9822663}
+Gets the width of a string. The width of a string is not necesserily the sum of all the widths of it\textquotesingle{}s glyphs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the string to return the width of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of a string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_abb88894b1ebeda28edcac75c537f8e0f}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!set\+Glyph\+Spacing@{set\+Glyph\+Spacing}}
+\index{set\+Glyph\+Spacing@{set\+Glyph\+Spacing}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{set\+Glyph\+Spacing(int spacing)}{setGlyphSpacing(int spacing)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Font\+::set\+Glyph\+Spacing (
+\begin{DoxyParamCaption}
+\item[{int}]{spacing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_aca8cc062c7b9d232dec6d994a726958e}{}\label{classgcn_1_1ImageFont_aca8cc062c7b9d232dec6d994a726958e}
+Sets the spacing between letters in pixels. Default is 0 pixels. The spacing can be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spacing} & the spacing in pixels \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}!set\+Row\+Spacing@{set\+Row\+Spacing}}
+\index{set\+Row\+Spacing@{set\+Row\+Spacing}!gcn\+::\+Image\+Font@{gcn\+::\+Image\+Font}}
+\subsubsection[{\texorpdfstring{set\+Row\+Spacing(int spacing)}{setRowSpacing(int spacing)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Font\+::set\+Row\+Spacing (
+\begin{DoxyParamCaption}
+\item[{int}]{spacing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageFont_a6fce0fdaa92f10d9e198311e18e1cea3}{}\label{classgcn_1_1ImageFont_a6fce0fdaa92f10d9e198311e18e1cea3}
+Sets the spacing between rows in pixels. Default is 0 pixels. The spacing can be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spacing} & the spacing in pixels. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/imagefont.\+hpp\item 
+src/imagefont.\+cpp\end{DoxyCompactItemize}

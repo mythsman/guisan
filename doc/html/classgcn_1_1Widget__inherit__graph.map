@@ -1,0 +1,23 @@
+<map id="gcn::Widget" name="gcn::Widget">
+<area shape="rect" id="node2" href="$classFFCharacterChooser.html" title="FFCharacterChooser" alt="" coords="145,107,289,133"/>
+<area shape="rect" id="node3" href="$classgcn_1_1BasicContainer.html" title="gcn::BasicContainer" alt="" coords="147,157,287,184"/>
+<area shape="rect" id="node12" href="$classgcn_1_1Button.html" title="gcn::Button" alt="" coords="173,208,262,235"/>
+<area shape="rect" id="node14" href="$classgcn_1_1CheckBox.html" title="gcn::CheckBox" alt="" coords="161,259,273,285"/>
+<area shape="rect" id="node15" href="$classgcn_1_1Icon.html" title="gcn::Icon" alt="" coords="179,309,255,336"/>
+<area shape="rect" id="node16" href="$classgcn_1_1Label.html" title="gcn::Label" alt="" coords="176,360,259,387"/>
+<area shape="rect" id="node17" href="$classgcn_1_1ListBox.html" title="gcn::ListBox" alt="" coords="170,411,265,437"/>
+<area shape="rect" id="node19" href="$classgcn_1_1RadioButton.html" title="gcn::RadioButton" alt="" coords="156,461,279,488"/>
+<area shape="rect" id="node20" href="$classgcn_1_1Slider.html" title="gcn::Slider" alt="" coords="175,512,259,539"/>
+<area shape="rect" id="node21" href="$classgcn_1_1TextBox.html" title="gcn::TextBox" alt="" coords="167,563,267,589"/>
+<area shape="rect" id="node22" href="$classgcn_1_1TextField.html" title="gcn::TextField" alt="" coords="165,613,270,640"/>
+<area shape="rect" id="node4" href="$classgcn_1_1Container.html" title="gcn::Container" alt="" coords="347,31,453,57"/>
+<area shape="rect" id="node7" href="$classgcn_1_1DropDown.html" title="gcn::DropDown" alt="" coords="343,81,457,108"/>
+<area shape="rect" id="node8" href="$classgcn_1_1ScrollArea.html" title="gcn::ScrollArea" alt="" coords="345,132,455,159"/>
+<area shape="rect" id="node10" href="$classgcn_1_1Tab.html" title="gcn::Tab" alt="" coords="363,183,437,209"/>
+<area shape="rect" id="node11" href="$classgcn_1_1TabbedArea.html" title="gcn::TabbedArea" alt="" coords="339,233,461,260"/>
+<area shape="rect" id="node5" href="$classFFContainer.html" title="FFContainer" alt="" coords="513,5,607,32"/>
+<area shape="rect" id="node6" href="$classgcn_1_1Window.html" title="gcn::Window" alt="" coords="511,56,609,83"/>
+<area shape="rect" id="node9" href="$classFFScrollArea.html" title="FFScrollArea" alt="" coords="511,132,609,159"/>
+<area shape="rect" id="node13" href="$classgcn_1_1ImageButton.html" title="gcn::ImageButton" alt="" coords="337,284,463,311"/>
+<area shape="rect" id="node18" href="$classFFListBox.html" title="FFListBox" alt="" coords="359,411,441,437"/>
+</map>

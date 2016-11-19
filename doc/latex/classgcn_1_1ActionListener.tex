@@ -1,0 +1,74 @@
+\hypertarget{classgcn_1_1ActionListener}{}\section{gcn\+:\+:Action\+Listener Class Reference}
+\label{classgcn_1_1ActionListener}\index{gcn\+::\+Action\+Listener@{gcn\+::\+Action\+Listener}}
+
+
+{\ttfamily \#include $<$actionlistener.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Action\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1ActionListener__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgcn_1_1ActionListener_a15539005829890078792ce695260114b}{$\sim$\+Action\+Listener} ()
+\item 
+virtual void \hyperlink{classgcn_1_1ActionListener_ae883112ab054a8589b5d82c47763a31d}{action} (const \hyperlink{classgcn_1_1ActionEvent}{Action\+Event} \&action\+Event)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Listener of action events from Widgets. To be able to listen for actions you must make a class which inherits from this class and implements the action function.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Widget_a2782a478efbb087830884d9f2dc8b487}{Widget\+::add\+Action\+Listener} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Olof Naessén 
+
+Per Larsson 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Action\+Listener@{gcn\+::\+Action\+Listener}!````~Action\+Listener@{$\sim$\+Action\+Listener}}
+\index{````~Action\+Listener@{$\sim$\+Action\+Listener}!gcn\+::\+Action\+Listener@{gcn\+::\+Action\+Listener}}
+\subsubsection[{\texorpdfstring{$\sim$\+Action\+Listener()}{~ActionListener()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+Action\+Listener\+::$\sim$\+Action\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1ActionListener_a15539005829890078792ce695260114b}{}\label{classgcn_1_1ActionListener_a15539005829890078792ce695260114b}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Action\+Listener@{gcn\+::\+Action\+Listener}!action@{action}}
+\index{action@{action}!gcn\+::\+Action\+Listener@{gcn\+::\+Action\+Listener}}
+\subsubsection[{\texorpdfstring{action(const Action\+Event \&action\+Event)=0}{action(const ActionEvent &actionEvent)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Action\+Listener\+::action (
+\begin{DoxyParamCaption}
+\item[{const {\bf Action\+Event} \&}]{action\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1ActionListener_ae883112ab054a8589b5d82c47763a31d}{}\label{classgcn_1_1ActionListener_ae883112ab054a8589b5d82c47763a31d}
+Called when an action is recieved from a \hyperlink{classgcn_1_1Widget}{Widget}. It is used to be able to recieve a notification that an action has occured.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Event} & the event of the action. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Implemented in \hyperlink{classgcn_1_1DropDown_aed63325d931d3d9d3df7400bd3b89f3e}{gcn\+::\+Drop\+Down}, \hyperlink{classgcn_1_1TabbedArea_ae9e032989a974cee2f2410779d6b95c3}{gcn\+::\+Tabbed\+Area}, \hyperlink{classFFDemo_ab7c02fe745edd2e4de4a9fd17b30abc2}{F\+F\+Demo}, and \hyperlink{classButtonActionListener_af6e587e3bdc21b68493b303af2753483}{Button\+Action\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/actionlistener.\+hpp\end{DoxyCompactItemize}

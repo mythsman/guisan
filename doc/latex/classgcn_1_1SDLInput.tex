@@ -1,0 +1,211 @@
+\hypertarget{classgcn_1_1SDLInput}{}\section{gcn\+:\+:S\+D\+L\+Input Class Reference}
+\label{classgcn_1_1SDLInput}\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+
+
+{\ttfamily \#include $<$sdlinput.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:S\+D\+L\+Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classgcn_1_1SDLInput__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:S\+D\+L\+Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classgcn_1_1SDLInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1SDLInput_ac354cdcd092ff691cab144c835aeea2e}{S\+D\+L\+Input} ()
+\item 
+virtual void \hyperlink{classgcn_1_1SDLInput_a8bfb0c916495042ee5b33f55c5c710a7}{push\+Input} (S\+D\+L\+\_\+\+Event event)
+\item 
+virtual void \hyperlink{classgcn_1_1SDLInput_a80688b038f80eeaf1ac4b2a24612fc59}{\+\_\+poll\+Input} ()
+\item 
+virtual bool \hyperlink{classgcn_1_1SDLInput_a0f58ca54ecee86f8d85e01f61d3bdbfd}{is\+Key\+Queue\+Empty} ()
+\item 
+virtual \hyperlink{classgcn_1_1KeyInput}{Key\+Input} \hyperlink{classgcn_1_1SDLInput_ab06253df88e9ddabcb69450d5ac64590}{dequeue\+Key\+Input} ()
+\item 
+virtual bool \hyperlink{classgcn_1_1SDLInput_ab12362c0fbbf75260e479f048e49a27c}{is\+Mouse\+Queue\+Empty} ()
+\item 
+virtual \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \hyperlink{classgcn_1_1SDLInput_a396ed15921d71e5c79daeb94ac6d01e9}{dequeue\+Mouse\+Input} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classgcn_1_1SDLInput_ab5046271e910ffbb8020b49363f3675a}{convert\+Mouse\+Button} (int button)
+\item 
+int \hyperlink{classgcn_1_1SDLInput_a3500dfeabf3ee545c2c1c46a25e96b00}{convert\+Key\+Character} (S\+D\+L\+\_\+\+Event event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \hyperlink{classgcn_1_1KeyInput}{Key\+Input} $>$ {\bfseries m\+Key\+Input\+Queue}\hypertarget{classgcn_1_1SDLInput_a6ea157cddb2087e23e1aa91baa96dce6}{}\label{classgcn_1_1SDLInput_a6ea157cddb2087e23e1aa91baa96dce6}
+
+\item 
+std\+::queue$<$ \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} $>$ {\bfseries m\+Mouse\+Input\+Queue}\hypertarget{classgcn_1_1SDLInput_ad41e37deaf51638b6a9c70ac2ddc508d}{}\label{classgcn_1_1SDLInput_ad41e37deaf51638b6a9c70ac2ddc508d}
+
+\item 
+bool {\bfseries m\+Mouse\+Down}\hypertarget{classgcn_1_1SDLInput_acf1293d864c98705de0cb2d7ae7a2da4}{}\label{classgcn_1_1SDLInput_acf1293d864c98705de0cb2d7ae7a2da4}
+
+\item 
+bool {\bfseries m\+Mouse\+In\+Window}\hypertarget{classgcn_1_1SDLInput_a064b1dec0d05aa82df01b54c905e71a8}{}\label{classgcn_1_1SDLInput_a064b1dec0d05aa82df01b54c905e71a8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+DL implementation of \hyperlink{classgcn_1_1Input}{Input}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!S\+D\+L\+Input@{S\+D\+L\+Input}}
+\index{S\+D\+L\+Input@{S\+D\+L\+Input}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{S\+D\+L\+Input()}{SDLInput()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+S\+D\+L\+Input\+::\+S\+D\+L\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1SDLInput_ac354cdcd092ff691cab144c835aeea2e}{}\label{classgcn_1_1SDLInput_ac354cdcd092ff691cab144c835aeea2e}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!\+\_\+poll\+Input@{\+\_\+poll\+Input}}
+\index{\+\_\+poll\+Input@{\+\_\+poll\+Input}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+poll\+Input()}{_pollInput()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+S\+D\+L\+Input\+::\+\_\+poll\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_a80688b038f80eeaf1ac4b2a24612fc59}{}\label{classgcn_1_1SDLInput_a80688b038f80eeaf1ac4b2a24612fc59}
+Polls all input. It exists for input driver compatibility. If you only use S\+DL and plan sticking with S\+DL you can safely ignore this function as it in the S\+DL case does nothing. 
+
+Implements \hyperlink{classgcn_1_1Input_a8e852901ad206985f18ae25e99867cb6}{gcn\+::\+Input}.
+
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!convert\+Key\+Character@{convert\+Key\+Character}}
+\index{convert\+Key\+Character@{convert\+Key\+Character}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{convert\+Key\+Character(\+S\+D\+L\+\_\+\+Event event)}{convertKeyCharacter(SDL_Event event)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+Input\+::convert\+Key\+Character (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1SDLInput_a3500dfeabf3ee545c2c1c46a25e96b00}{}\label{classgcn_1_1SDLInput_a3500dfeabf3ee545c2c1c46a25e96b00}
+Converts an S\+DL event key to a key value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & an S\+DL event with a key to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a key value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Key}{Key} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!convert\+Mouse\+Button@{convert\+Mouse\+Button}}
+\index{convert\+Mouse\+Button@{convert\+Mouse\+Button}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{convert\+Mouse\+Button(int button)}{convertMouseButton(int button)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+Input\+::convert\+Mouse\+Button (
+\begin{DoxyParamCaption}
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1SDLInput_ab5046271e910ffbb8020b49363f3675a}{}\label{classgcn_1_1SDLInput_ab5046271e910ffbb8020b49363f3675a}
+Converts a mouse button from S\+DL to a Guichan mouse button representation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & an S\+DL mouse button. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Guichan mouse button. 
+\end{DoxyReturn}
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!dequeue\+Key\+Input@{dequeue\+Key\+Input}}
+\index{dequeue\+Key\+Input@{dequeue\+Key\+Input}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{dequeue\+Key\+Input()}{dequeueKeyInput()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Key\+Input} gcn\+::\+S\+D\+L\+Input\+::dequeue\+Key\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_ab06253df88e9ddabcb69450d5ac64590}{}\label{classgcn_1_1SDLInput_ab06253df88e9ddabcb69450d5ac64590}
+Dequeues the key input queue.
+
+\begin{DoxyReturn}{Returns}
+key input. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a3c4c2e5a0328dff6f90d81fb22e30d6c}{gcn\+::\+Input}.
+
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!dequeue\+Mouse\+Input@{dequeue\+Mouse\+Input}}
+\index{dequeue\+Mouse\+Input@{dequeue\+Mouse\+Input}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{dequeue\+Mouse\+Input()}{dequeueMouseInput()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse\+Input} gcn\+::\+S\+D\+L\+Input\+::dequeue\+Mouse\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_a396ed15921d71e5c79daeb94ac6d01e9}{}\label{classgcn_1_1SDLInput_a396ed15921d71e5c79daeb94ac6d01e9}
+Dequeues the mouse input queue.
+
+\begin{DoxyReturn}{Returns}
+mouse input. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a974c5ffa91c1f80185f32ac10a5de3e2}{gcn\+::\+Input}.
+
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!is\+Key\+Queue\+Empty@{is\+Key\+Queue\+Empty}}
+\index{is\+Key\+Queue\+Empty@{is\+Key\+Queue\+Empty}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{is\+Key\+Queue\+Empty()}{isKeyQueueEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+S\+D\+L\+Input\+::is\+Key\+Queue\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_a0f58ca54ecee86f8d85e01f61d3bdbfd}{}\label{classgcn_1_1SDLInput_a0f58ca54ecee86f8d85e01f61d3bdbfd}
+Checks whether the key queue is empty or not.
+
+\begin{DoxyReturn}{Returns}
+true if the key queue is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a99c69c2e8d9b4378c4cea1f8beed0cf3}{gcn\+::\+Input}.
+
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!is\+Mouse\+Queue\+Empty@{is\+Mouse\+Queue\+Empty}}
+\index{is\+Mouse\+Queue\+Empty@{is\+Mouse\+Queue\+Empty}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{is\+Mouse\+Queue\+Empty()}{isMouseQueueEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+S\+D\+L\+Input\+::is\+Mouse\+Queue\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_ab12362c0fbbf75260e479f048e49a27c}{}\label{classgcn_1_1SDLInput_ab12362c0fbbf75260e479f048e49a27c}
+Checks whether the mouse queue is empyt or not.
+
+\begin{DoxyReturn}{Returns}
+true if the mouse queue is empty. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Input_a9c59ac0d0ae6c2eb4967f3eb6d9e059f}{gcn\+::\+Input}.
+
+\index{gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}!push\+Input@{push\+Input}}
+\index{push\+Input@{push\+Input}!gcn\+::\+S\+D\+L\+Input@{gcn\+::\+S\+D\+L\+Input}}
+\subsubsection[{\texorpdfstring{push\+Input(\+S\+D\+L\+\_\+\+Event event)}{pushInput(SDL_Event event)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+Input\+::push\+Input (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLInput_a8bfb0c916495042ee5b33f55c5c710a7}{}\label{classgcn_1_1SDLInput_a8bfb0c916495042ee5b33f55c5c710a7}
+Pushes an S\+DL event. It should be called at least once per frame to update input with user input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & an event from S\+DL. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/sdl/sdlinput.\+hpp\item 
+src/sdl/sdlinput.\+cpp\end{DoxyCompactItemize}

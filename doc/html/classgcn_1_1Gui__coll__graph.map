@@ -1,0 +1,10 @@
+<map id="gcn::Gui" name="gcn::Gui">
+<area shape="rect" id="node2" href="$classgcn_1_1Widget.html" title="gcn::Widget" alt="" coords="256,231,348,257"/>
+<area shape="rect" id="node7" href="$classgcn_1_1FocusHandler.html" title="gcn::FocusHandler" alt="" coords="260,437,392,464"/>
+<area shape="rect" id="node3" href="$classgcn_1_1DefaultFont.html" title="gcn::DefaultFont" alt="" coords="5,96,124,123"/>
+<area shape="rect" id="node4" href="$classgcn_1_1Font.html" title="gcn::Font" alt="" coords="134,5,211,32"/>
+<area shape="rect" id="node9" href="$classgcn_1_1Graphics.html" title="gcn::Graphics" alt="" coords="529,164,632,191"/>
+<area shape="rect" id="node5" href="$classgcn_1_1Color.html" title="gcn::Color" alt="" coords="282,96,365,123"/>
+<area shape="rect" id="node6" href="$classgcn_1_1Rectangle.html" title="gcn::Rectangle" alt="" coords="389,96,500,123"/>
+<area shape="rect" id="node8" href="$classgcn_1_1Input.html" title="gcn::Input" alt="" coords="594,437,674,464"/>
+</map>

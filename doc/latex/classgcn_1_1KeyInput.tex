@@ -1,0 +1,339 @@
+\hypertarget{classgcn_1_1KeyInput}{}\section{gcn\+:\+:Key\+Input Class Reference}
+\label{classgcn_1_1KeyInput}\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+
+
+{\ttfamily \#include $<$keyinput.\+hpp$>$}
+
+
+
+Collaboration diagram for gcn\+:\+:Key\+Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classgcn_1_1KeyInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries P\+R\+E\+S\+S\+ED} = 0, 
+{\bfseries R\+E\+L\+E\+A\+S\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1KeyInput_ad12092919d399e0af37fbe5714194b52}{Key\+Input} ()
+\item 
+\hyperlink{classgcn_1_1KeyInput_a3442659a42ade002061c884f6d6ea87e}{Key\+Input} (const \hyperlink{classgcn_1_1Key}{Key} \&key, int type)
+\item 
+void \hyperlink{classgcn_1_1KeyInput_a033ce31e4941b269efa9dca27c186b16}{set\+Type} (int type)
+\item 
+int \hyperlink{classgcn_1_1KeyInput_acbb9c0d8aae09728c39e1c453cd4002e}{get\+Type} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_a889fa8c1075b3e7311aca91c21fc69bc}{set\+Key} (const \hyperlink{classgcn_1_1Key}{Key} \&key)
+\item 
+const \hyperlink{classgcn_1_1Key}{Key} \& \hyperlink{classgcn_1_1KeyInput_a5a626e622a953431595ac8c454c64125}{get\+Key} () const 
+\item 
+bool \hyperlink{classgcn_1_1KeyInput_a67e039afa82ac18a6f00cc1bfad4d2bd}{is\+Shift\+Pressed} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_adefa27624fc510521f4b2c42e01c4731}{set\+Shift\+Pressed} (bool pressed)
+\item 
+bool \hyperlink{classgcn_1_1KeyInput_a4d362a7920c0f8bdb38ac6427c2bb38b}{is\+Control\+Pressed} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_a3ddf1406227b339279a7f465ad2ae37a}{set\+Control\+Pressed} (bool pressed)
+\item 
+bool \hyperlink{classgcn_1_1KeyInput_a3ed1fea3197b183fe292c6cde6f5b182}{is\+Alt\+Pressed} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_ac3fb3252fe3be80e242580f67cb028c7}{set\+Alt\+Pressed} (bool pressed)
+\item 
+bool \hyperlink{classgcn_1_1KeyInput_ab72ffefad5761e03515feffaae0d17cf}{is\+Meta\+Pressed} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_a1f86e7541a8d54471d36d29a4f06fab6}{set\+Meta\+Pressed} (bool pressed)
+\item 
+bool \hyperlink{classgcn_1_1KeyInput_a40b3047f75cf356446df34ede695e955}{is\+Numeric\+Pad} () const 
+\item 
+void \hyperlink{classgcn_1_1KeyInput_a899556dc3854db963d3b4a71cf4dde7c}{set\+Numeric\+Pad} (bool numpad)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Key}{Key} {\bfseries m\+Key}\hypertarget{classgcn_1_1KeyInput_af579abf84cd7919e596812d4dc02a9bc}{}\label{classgcn_1_1KeyInput_af579abf84cd7919e596812d4dc02a9bc}
+
+\item 
+int {\bfseries m\+Type}\hypertarget{classgcn_1_1KeyInput_aa67065f8018e9c7af3790fbe76075290}{}\label{classgcn_1_1KeyInput_aa67065f8018e9c7af3790fbe76075290}
+
+\item 
+int {\bfseries m\+Button}\hypertarget{classgcn_1_1KeyInput_a05ae4969d12ae30a5e8cbfefd5e00dd1}{}\label{classgcn_1_1KeyInput_a05ae4969d12ae30a5e8cbfefd5e00dd1}
+
+\item 
+bool {\bfseries m\+Shift\+Pressed}\hypertarget{classgcn_1_1KeyInput_afbb090fae43e9282ef979bd7c5592569}{}\label{classgcn_1_1KeyInput_afbb090fae43e9282ef979bd7c5592569}
+
+\item 
+bool {\bfseries m\+Control\+Pressed}\hypertarget{classgcn_1_1KeyInput_aa7ecdf141fdb6f94c08532b6023ca4c2}{}\label{classgcn_1_1KeyInput_aa7ecdf141fdb6f94c08532b6023ca4c2}
+
+\item 
+bool {\bfseries m\+Alt\+Pressed}\hypertarget{classgcn_1_1KeyInput_a7342e2085e95617709f00d23bad740d8}{}\label{classgcn_1_1KeyInput_a7342e2085e95617709f00d23bad740d8}
+
+\item 
+bool {\bfseries m\+Meta\+Pressed}\hypertarget{classgcn_1_1KeyInput_a5f4581f20bb0a6da36e967dbbe9e443b}{}\label{classgcn_1_1KeyInput_a5f4581f20bb0a6da36e967dbbe9e443b}
+
+\item 
+bool {\bfseries m\+Numeric\+Pad}\hypertarget{classgcn_1_1KeyInput_a2d2bdbbf601988bed312f152b14f1eb5}{}\label{classgcn_1_1KeyInput_a2d2bdbbf601988bed312f152b14f1eb5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal class representing keyboard input. Generally you won\textquotesingle{}t have to bother using this class. 
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{classgcn_1_1KeyInput_af4f7c6649901c27373b32f778dd83de8}{}\label{classgcn_1_1KeyInput_af4f7c6649901c27373b32f778dd83de8}
+\hyperlink{classgcn_1_1Key}{Key} input types. This enum corresponds to the enum with event types on \hyperlink{classgcn_1_1KeyEvent}{Key\+Event} for easy mapping. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!Key\+Input@{Key\+Input}}
+\index{Key\+Input@{Key\+Input}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{Key\+Input()}{KeyInput()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Key\+Input\+::\+Key\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgcn_1_1KeyInput_ad12092919d399e0af37fbe5714194b52}{}\label{classgcn_1_1KeyInput_ad12092919d399e0af37fbe5714194b52}
+Constructor. \index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!Key\+Input@{Key\+Input}}
+\index{Key\+Input@{Key\+Input}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{Key\+Input(const Key \&key, int type)}{KeyInput(const Key &key, int type)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Key\+Input\+::\+Key\+Input (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key} \&}]{key, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a3442659a42ade002061c884f6d6ea87e}{}\label{classgcn_1_1KeyInput_a3442659a42ade002061c884f6d6ea87e}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the \hyperlink{classgcn_1_1Key}{Key} the input concerns. \\
+\hline
+{\em type} & the type of input. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{get\+Key() const }{getKey() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Key} \& gcn\+::\+Key\+Input\+::get\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_a5a626e622a953431595ac8c454c64125}{}\label{classgcn_1_1KeyInput_a5a626e622a953431595ac8c454c64125}
+Gets the key the input concerns.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgcn_1_1Key}{Key} the input concerns. 
+\end{DoxyReturn}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{get\+Type() const }{getType() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Key\+Input\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_acbb9c0d8aae09728c39e1c453cd4002e}{}\label{classgcn_1_1KeyInput_acbb9c0d8aae09728c39e1c453cd4002e}
+Gets the input type.
+
+\begin{DoxyReturn}{Returns}
+the input type. 
+\end{DoxyReturn}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!is\+Alt\+Pressed@{is\+Alt\+Pressed}}
+\index{is\+Alt\+Pressed@{is\+Alt\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{is\+Alt\+Pressed() const }{isAltPressed() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Input\+::is\+Alt\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_a3ed1fea3197b183fe292c6cde6f5b182}{}\label{classgcn_1_1KeyInput_a3ed1fea3197b183fe292c6cde6f5b182}
+Checks whether alt is pressed.
+
+\begin{DoxyReturn}{Returns}
+true if alt was pressed at the same time as the key. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!is\+Control\+Pressed@{is\+Control\+Pressed}}
+\index{is\+Control\+Pressed@{is\+Control\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{is\+Control\+Pressed() const }{isControlPressed() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Input\+::is\+Control\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_a4d362a7920c0f8bdb38ac6427c2bb38b}{}\label{classgcn_1_1KeyInput_a4d362a7920c0f8bdb38ac6427c2bb38b}
+Checks whether control is pressed.
+
+\begin{DoxyReturn}{Returns}
+true if control was pressed at the same time as the key. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!is\+Meta\+Pressed@{is\+Meta\+Pressed}}
+\index{is\+Meta\+Pressed@{is\+Meta\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{is\+Meta\+Pressed() const }{isMetaPressed() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Input\+::is\+Meta\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_ab72ffefad5761e03515feffaae0d17cf}{}\label{classgcn_1_1KeyInput_ab72ffefad5761e03515feffaae0d17cf}
+Checks whether meta is pressed.
+
+\begin{DoxyReturn}{Returns}
+true if meta was pressed at the same time as the key. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!is\+Numeric\+Pad@{is\+Numeric\+Pad}}
+\index{is\+Numeric\+Pad@{is\+Numeric\+Pad}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{is\+Numeric\+Pad() const }{isNumericPad() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Input\+::is\+Numeric\+Pad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_a40b3047f75cf356446df34ede695e955}{}\label{classgcn_1_1KeyInput_a40b3047f75cf356446df34ede695e955}
+Checks whether the key was pressed at the numeric pad.
+
+\begin{DoxyReturn}{Returns}
+true if key pressed at the numeric pad. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!is\+Shift\+Pressed@{is\+Shift\+Pressed}}
+\index{is\+Shift\+Pressed@{is\+Shift\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{is\+Shift\+Pressed() const }{isShiftPressed() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Key\+Input\+::is\+Shift\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1KeyInput_a67e039afa82ac18a6f00cc1bfad4d2bd}{}\label{classgcn_1_1KeyInput_a67e039afa82ac18a6f00cc1bfad4d2bd}
+Checks whether shift is pressed.
+
+\begin{DoxyReturn}{Returns}
+true if shift was pressed at the same time as the key. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Alt\+Pressed@{set\+Alt\+Pressed}}
+\index{set\+Alt\+Pressed@{set\+Alt\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Alt\+Pressed(bool pressed)}{setAltPressed(bool pressed)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Alt\+Pressed (
+\begin{DoxyParamCaption}
+\item[{bool}]{pressed}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_ac3fb3252fe3be80e242580f67cb028c7}{}\label{classgcn_1_1KeyInput_ac3fb3252fe3be80e242580f67cb028c7}
+Sets the alt pressed flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & the alt flag value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Control\+Pressed@{set\+Control\+Pressed}}
+\index{set\+Control\+Pressed@{set\+Control\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Control\+Pressed(bool pressed)}{setControlPressed(bool pressed)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Control\+Pressed (
+\begin{DoxyParamCaption}
+\item[{bool}]{pressed}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a3ddf1406227b339279a7f465ad2ae37a}{}\label{classgcn_1_1KeyInput_a3ddf1406227b339279a7f465ad2ae37a}
+Sets the control pressed flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & the control flag value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Key(const Key \&key)}{setKey(const Key &key)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key} \&}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a889fa8c1075b3e7311aca91c21fc69bc}{}\label{classgcn_1_1KeyInput_a889fa8c1075b3e7311aca91c21fc69bc}
+Sets the key the input concerns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the \hyperlink{classgcn_1_1Key}{Key} the input concerns. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Meta\+Pressed@{set\+Meta\+Pressed}}
+\index{set\+Meta\+Pressed@{set\+Meta\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Meta\+Pressed(bool pressed)}{setMetaPressed(bool pressed)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Meta\+Pressed (
+\begin{DoxyParamCaption}
+\item[{bool}]{pressed}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a1f86e7541a8d54471d36d29a4f06fab6}{}\label{classgcn_1_1KeyInput_a1f86e7541a8d54471d36d29a4f06fab6}
+Sets the meta pressed flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & the meta flag value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Numeric\+Pad@{set\+Numeric\+Pad}}
+\index{set\+Numeric\+Pad@{set\+Numeric\+Pad}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Numeric\+Pad(bool numpad)}{setNumericPad(bool numpad)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Numeric\+Pad (
+\begin{DoxyParamCaption}
+\item[{bool}]{numpad}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a899556dc3854db963d3b4a71cf4dde7c}{}\label{classgcn_1_1KeyInput_a899556dc3854db963d3b4a71cf4dde7c}
+Sets the numeric pad flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em numpad} & the numeric pad flag value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Shift\+Pressed@{set\+Shift\+Pressed}}
+\index{set\+Shift\+Pressed@{set\+Shift\+Pressed}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Shift\+Pressed(bool pressed)}{setShiftPressed(bool pressed)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Shift\+Pressed (
+\begin{DoxyParamCaption}
+\item[{bool}]{pressed}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_adefa27624fc510521f4b2c42e01c4731}{}\label{classgcn_1_1KeyInput_adefa27624fc510521f4b2c42e01c4731}
+Sets the shift pressed flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressed} & the shift flag value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!gcn\+::\+Key\+Input@{gcn\+::\+Key\+Input}}
+\subsubsection[{\texorpdfstring{set\+Type(int type)}{setType(int type)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Key\+Input\+::set\+Type (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1KeyInput_a033ce31e4941b269efa9dca27c186b16}{}\label{classgcn_1_1KeyInput_a033ce31e4941b269efa9dca27c186b16}
+Sets the input type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of input. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/keyinput.\+hpp\item 
+src/keyinput.\+cpp\end{DoxyCompactItemize}

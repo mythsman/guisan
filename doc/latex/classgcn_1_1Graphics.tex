@@ -1,0 +1,408 @@
+\hypertarget{classgcn_1_1Graphics}{}\section{gcn\+:\+:Graphics Class Reference}
+\label{classgcn_1_1Graphics}\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+
+
+{\ttfamily \#include $<$graphics.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Graphics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classgcn_1_1Graphics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Graphics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classgcn_1_1Graphics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries L\+E\+FT} = 0, 
+{\bfseries C\+E\+N\+T\+ER}, 
+{\bfseries R\+I\+G\+HT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a85e8107504f70fa460b844fb2259c653}{\+\_\+begin\+Draw} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_af6b9381e34ec34f10e9bbf77b7b00c78}{\+\_\+end\+Draw} ()
+\item 
+virtual bool \hyperlink{classgcn_1_1Graphics_ab8f8773da6aa70f5fb554c2a2815c496}{push\+Clip\+Area} (\hyperlink{classgcn_1_1Rectangle}{Rectangle} area)
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a11a3be7969db7490df8a02cb4549b443}{pop\+Clip\+Area} ()
+\item 
+virtual const \hyperlink{classgcn_1_1ClipRectangle}{Clip\+Rectangle} \& \hyperlink{classgcn_1_1Graphics_a642535039e421b0530bd85d71b8f7151}{get\+Current\+Clip\+Area} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_aeb284b30f59d5cfa4c4e25130f4c164e}{draw\+Image} (const \hyperlink{classgcn_1_1Image}{Image} $\ast$image, int srcX, int srcY, int dstX, int dstY, int width, int height)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_aed30c3aa213a2d225b1c119b3f5f8d60}{draw\+Image} (const \hyperlink{classgcn_1_1Image}{Image} $\ast$image, int dstX, int dstY)
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_adfd989a2a8c6771c6368b25f3977ecf4}{draw\+Point} (int x, int y)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a92af7e5f5ed6ebf692803bc1bd1d5db5}{draw\+Line} (int x1, int y1, int x2, int y2)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a8ffb254f53931ce3809a6f10307fcbf2}{draw\+Rectangle} (const \hyperlink{classgcn_1_1Rectangle}{Rectangle} \&rectangle)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a5caac226a94ecf8fdfee1da7cd14f0df}{fill\+Rectangle} (const \hyperlink{classgcn_1_1Rectangle}{Rectangle} \&rectangle)=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a7f438ae2b4cc09c66d77a9b9cb591e7c}{set\+Color} (const \hyperlink{classgcn_1_1Color}{Color} \&color)=0
+\item 
+virtual const \hyperlink{classgcn_1_1Color}{Color} \& \hyperlink{classgcn_1_1Graphics_a509769aaeb7356cd0f595f3ddb962e49}{get\+Color} ()=0
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a7415290eb8b075fae0b4a6fce3912f4e}{set\+Font} (\hyperlink{classgcn_1_1Font}{Font} $\ast$font)
+\item 
+virtual void \hyperlink{classgcn_1_1Graphics_a664fcd573d3e002d9096abdb8ce3279e}{draw\+Text} (const std\+::string \&text, int x, int y, unsigned int alignment=L\+E\+FT)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \hyperlink{classgcn_1_1ClipRectangle}{Clip\+Rectangle} $>$ {\bfseries m\+Clip\+Stack}\hypertarget{classgcn_1_1Graphics_a08be42a39b774cd0ee449a8cc76cc84b}{}\label{classgcn_1_1Graphics_a08be42a39b774cd0ee449a8cc76cc84b}
+
+\item 
+\hyperlink{classgcn_1_1Font}{Font} $\ast$ {\bfseries m\+Font}\hypertarget{classgcn_1_1Graphics_af58494bcfd95382cb7af4f0d573b8b1a}{}\label{classgcn_1_1Graphics_af58494bcfd95382cb7af4f0d573b8b1a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for drawing graphics. It contains all vital functions for drawing. We include implemented \hyperlink{classgcn_1_1Graphics}{Graphics} classes for some common platforms like the Allegro library, the Open\+GL library and the S\+DL library. To make Guichan usable under another platform, a \hyperlink{classgcn_1_1Graphics}{Graphics} class must be implemented.
+
+In \hyperlink{classgcn_1_1Graphics}{Graphics} you can set clip areas to limit drawing to certain areas of the screen. Clip areas are put on a stack, which means that you can push smaller and smaller clip areas onto the stack. All coordinates will be relative to the topmost clip area. In most cases you won\textquotesingle{}t have to worry about the clip areas, unless you want to implement some really complex widget. Pushing and poping of clip areas are handled automatically by container widgets when their child widgets are drawn.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Remember to pop each clip area that you pushed on the stack after you are done with it.
+
+If you feel that \hyperlink{classgcn_1_1Graphics}{Graphics} is to restrictive for your needs, there is no one stopping you from using your own code for drawing in Widgets. You could for instance use pure S\+DL in the drawing of Widgets bypassing \hyperlink{classgcn_1_1Graphics}{Graphics}. This might however hurt portability of your application.
+
+If you implement a \hyperlink{classgcn_1_1Graphics}{Graphics} class not present in Guichan we would be very happy to add it to Guichan.
+
+\begin{DoxySeeAlso}{See also}
+Allegro\+Graphics, \hyperlink{classgcn_1_1OpenGLGraphics}{Open\+G\+L\+Graphics}, \hyperlink{classgcn_1_1SDLGraphics}{S\+D\+L\+Graphics}, \hyperlink{classgcn_1_1Image}{Image} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{classgcn_1_1Graphics_ac99c177417b14be6fc5cdb8cad5d0d76}{}\label{classgcn_1_1Graphics_ac99c177417b14be6fc5cdb8cad5d0d76}
+Alignments for text drawing. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!\+\_\+begin\+Draw@{\+\_\+begin\+Draw}}
+\index{\+\_\+begin\+Draw@{\+\_\+begin\+Draw}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{\+\_\+begin\+Draw()}{_beginDraw()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::\+\_\+begin\+Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_a85e8107504f70fa460b844fb2259c653}{}\label{classgcn_1_1Graphics_a85e8107504f70fa460b844fb2259c653}
+Initializes drawing. Called by the \hyperlink{classgcn_1_1Gui}{Gui} when \hyperlink{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{Gui\+::draw()} is called. It is needed by some implementations of \hyperlink{classgcn_1_1Graphics}{Graphics} to perform preparations before drawing. An example of such an implementation would be \hyperlink{classgcn_1_1OpenGLGraphics}{Open\+G\+L\+Graphics}.
+
+N\+O\+TE\+: You will never need to call this function yourself. \hyperlink{classgcn_1_1Gui}{Gui} will do it for you.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Graphics_af6b9381e34ec34f10e9bbf77b7b00c78}{\+\_\+end\+Draw}, \hyperlink{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{Gui\+::draw} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \hyperlink{classgcn_1_1SDLGraphics_a8a551d5159bb79dd7d77cd081f5d9c78}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_a48173540d3ea957c6ecb7baeb4e48772}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!\+\_\+end\+Draw@{\+\_\+end\+Draw}}
+\index{\+\_\+end\+Draw@{\+\_\+end\+Draw}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{\+\_\+end\+Draw()}{_endDraw()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::\+\_\+end\+Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_af6b9381e34ec34f10e9bbf77b7b00c78}{}\label{classgcn_1_1Graphics_af6b9381e34ec34f10e9bbf77b7b00c78}
+Deinitializes drawing. Called by the \hyperlink{classgcn_1_1Gui}{Gui} when a \hyperlink{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{Gui\+::draw()} is done. done. It should reset any state changes made by \hyperlink{classgcn_1_1Graphics_a85e8107504f70fa460b844fb2259c653}{\+\_\+begin\+Draw()}.
+
+N\+O\+TE\+: You will never need to call this function yourself. \hyperlink{classgcn_1_1Gui}{Gui} will do it for you.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Graphics_a85e8107504f70fa460b844fb2259c653}{\+\_\+begin\+Draw}, \hyperlink{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{Gui\+::draw} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \hyperlink{classgcn_1_1SDLGraphics_a1ec61016736b34271f60e3a88d65c1b7}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_abf1f271776344b1aa28b5eb0faf8bc1d}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Image@{draw\+Image}}
+\index{draw\+Image@{draw\+Image}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Image(const Image $\ast$image, int src\+X, int src\+Y, int dst\+X, int dst\+Y, int width, int height)=0}{drawImage(const Image *image, int srcX, int srcY, int dstX, int dstY, int width, int height)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::draw\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} $\ast$}]{image, }
+\item[{int}]{srcX, }
+\item[{int}]{srcY, }
+\item[{int}]{dstX, }
+\item[{int}]{dstY, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_aeb284b30f59d5cfa4c4e25130f4c164e}{}\label{classgcn_1_1Graphics_aeb284b30f59d5cfa4c4e25130f4c164e}
+Draws a part of an \hyperlink{classgcn_1_1Image}{Image}.
+
+N\+O\+TE\+: Width and height arguments will not scale the \hyperlink{classgcn_1_1Image}{Image} but specifies the size of the part to be drawn. If you want to draw the whole \hyperlink{classgcn_1_1Image}{Image} there is a simplified version of this function.
+
+E\+X\+A\+M\+P\+LE\+:
+\begin{DoxyCode}
+\hyperlink{classgcn_1_1Graphics_aeb284b30f59d5cfa4c4e25130f4c164e}{drawImage}(myImage, 10, 10, 20, 20, 40, 40); 
+\end{DoxyCode}
+ Will draw a rectangular piece of my\+Image starting at coordinate (10, 10) in my\+Image, with width and height 40. The piece will be drawn with it\textquotesingle{}s top left corner at coordinate (20, 20).
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the \hyperlink{classgcn_1_1Image}{Image} to draw. \\
+\hline
+{\em srcX} & source \hyperlink{classgcn_1_1Image}{Image} x coordinate. \\
+\hline
+{\em srcY} & source \hyperlink{classgcn_1_1Image}{Image} y coordinate. \\
+\hline
+{\em dstX} & destination x coordinate. \\
+\hline
+{\em dstY} & destination y coordinate. \\
+\hline
+{\em width} & the width of the piece. \\
+\hline
+{\em height} & the height of the piece. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_adaaf65022086f36b9aa4d9190fd092f0}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_a515a05b859bbdbecf484423f74c862fd}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Image@{draw\+Image}}
+\index{draw\+Image@{draw\+Image}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Image(const Image $\ast$image, int dst\+X, int dst\+Y)}{drawImage(const Image *image, int dstX, int dstY)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Graphics\+::draw\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image} $\ast$}]{image, }
+\item[{int}]{dstX, }
+\item[{int}]{dstY}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_aed30c3aa213a2d225b1c119b3f5f8d60}{}\label{classgcn_1_1Graphics_aed30c3aa213a2d225b1c119b3f5f8d60}
+Draws an image. A simplified version of the other draw\+Image. It will draw a whole image at the coordinate you specify. It is equivalent to calling\+: 
+\begin{DoxyCode}
+ \hyperlink{classgcn_1_1Graphics_aeb284b30f59d5cfa4c4e25130f4c164e}{drawImage}(myImage, 0, 0, dstX, dstY, image->\hyperlink{classgcn_1_1Image_aa367cc8121c1f01a541e615b0a27497c}{getWidth}(), \(\backslash\)
+image->getHeight()); 
+\end{DoxyCode}
+ \index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Line@{draw\+Line}}
+\index{draw\+Line@{draw\+Line}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Line(int x1, int y1, int x2, int y2)=0}{drawLine(int x1, int y1, int x2, int y2)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::draw\+Line (
+\begin{DoxyParamCaption}
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_a92af7e5f5ed6ebf692803bc1bd1d5db5}{}\label{classgcn_1_1Graphics_a92af7e5f5ed6ebf692803bc1bd1d5db5}
+Ddraws a line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the first x coordinate. \\
+\hline
+{\em y1} & the first y coordinate. \\
+\hline
+{\em x2} & the second x coordinate. \\
+\hline
+{\em y2} & the second y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_adcb7d5d91da928a92c82ad1fc5fba273}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_aa6408f704c9900d9aea987e84a234e1c}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Point@{draw\+Point}}
+\index{draw\+Point@{draw\+Point}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Point(int x, int y)=0}{drawPoint(int x, int y)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::draw\+Point (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_adfd989a2a8c6771c6368b25f3977ecf4}{}\label{classgcn_1_1Graphics_adfd989a2a8c6771c6368b25f3977ecf4}
+Draws a single point/pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate. \\
+\hline
+{\em y} & the y coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_a5f670d60ecbf4b716f005db098363915}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_a8094c24245810cd52f069c15b3c98b9b}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Rectangle@{draw\+Rectangle}}
+\index{draw\+Rectangle@{draw\+Rectangle}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Rectangle(const Rectangle \&rectangle)=0}{drawRectangle(const Rectangle &rectangle)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::draw\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{rectangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_a8ffb254f53931ce3809a6f10307fcbf2}{}\label{classgcn_1_1Graphics_a8ffb254f53931ce3809a6f10307fcbf2}
+Draws a simple, non-\/filled, \hyperlink{classgcn_1_1Rectangle}{Rectangle} with one pixel width.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_a17607f95e7af8fc9c55d112753ef9873}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_ae9dac9f5422443c7acbe239d5bca0437}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!draw\+Text@{draw\+Text}}
+\index{draw\+Text@{draw\+Text}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{draw\+Text(const std\+::string \&text, int x, int y, unsigned int alignment=\+L\+E\+F\+T)}{drawText(const std::string &text, int x, int y, unsigned int alignment=LEFT)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Graphics\+::draw\+Text (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{unsigned int}]{alignment = {\ttfamily LEFT}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_a664fcd573d3e002d9096abdb8ce3279e}{}\label{classgcn_1_1Graphics_a664fcd573d3e002d9096abdb8ce3279e}
+Draws text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the text to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the text. \\
+\hline
+{\em y} & the y coordinate where to draw the text. \\
+\hline
+{\em alignment} & Graphics\+::\+L\+E\+FT, Graphics\+::\+C\+E\+N\+T\+ER or Graphics\+::\+R\+I\+G\+HT. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classgcn_1_1Exception}{Exception}} & when no \hyperlink{classgcn_1_1Font}{Font} is set. \\
+\hline
+\end{DoxyExceptions}
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!fill\+Rectangle@{fill\+Rectangle}}
+\index{fill\+Rectangle@{fill\+Rectangle}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{fill\+Rectangle(const Rectangle \&rectangle)=0}{fillRectangle(const Rectangle &rectangle)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::fill\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{rectangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_a5caac226a94ecf8fdfee1da7cd14f0df}{}\label{classgcn_1_1Graphics_a5caac226a94ecf8fdfee1da7cd14f0df}
+Draws a filled \hyperlink{classgcn_1_1Rectangle}{Rectangle}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & the filled \hyperlink{classgcn_1_1Rectangle}{Rectangle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_a8d3fba4fa40d9d5ef436b836dfd25804}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_ac8285ce172eb77ccecc2eceb8c0f1715}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{get\+Color()=0}{getColor()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Color}\& gcn\+::\+Graphics\+::get\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_a509769aaeb7356cd0f595f3ddb962e49}{}\label{classgcn_1_1Graphics_a509769aaeb7356cd0f595f3ddb962e49}
+Gets the \hyperlink{classgcn_1_1Color}{Color} to use when drawing.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgcn_1_1Color}{Color} used when drawing. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_a64363f22dce7278007350cfab8569d58}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_ab14f58fff9092bbdd4b8e2a03df3d0fd}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!get\+Current\+Clip\+Area@{get\+Current\+Clip\+Area}}
+\index{get\+Current\+Clip\+Area@{get\+Current\+Clip\+Area}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{get\+Current\+Clip\+Area()}{getCurrentClipArea()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Clip\+Rectangle} \& gcn\+::\+Graphics\+::get\+Current\+Clip\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_a642535039e421b0530bd85d71b8f7151}{}\label{classgcn_1_1Graphics_a642535039e421b0530bd85d71b8f7151}
+Gets the current clip area. Usefull if you want to do drawing bypassing \hyperlink{classgcn_1_1Graphics}{Graphics}.
+
+\begin{DoxyReturn}{Returns}
+the current clip area. 
+\end{DoxyReturn}
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!pop\+Clip\+Area@{pop\+Clip\+Area}}
+\index{pop\+Clip\+Area@{pop\+Clip\+Area}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{pop\+Clip\+Area()}{popClipArea()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Graphics\+::pop\+Clip\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_a11a3be7969db7490df8a02cb4549b443}{}\label{classgcn_1_1Graphics_a11a3be7969db7490df8a02cb4549b443}
+Removes the topmost clip area from the stack.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classgcn_1_1Exception}{Exception}} & if the stack is empty. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \hyperlink{classgcn_1_1SDLGraphics_a6876d1027cb3feb4a413e3e854812a4b}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_a2435ae6ef201cfcec0500c27115087bd}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!push\+Clip\+Area@{push\+Clip\+Area}}
+\index{push\+Clip\+Area@{push\+Clip\+Area}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{push\+Clip\+Area(\+Rectangle area)}{pushClipArea(Rectangle area)}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Graphics\+::push\+Clip\+Area (
+\begin{DoxyParamCaption}
+\item[{{\bf Rectangle}}]{area}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_ab8f8773da6aa70f5fb554c2a2815c496}{}\label{classgcn_1_1Graphics_ab8f8773da6aa70f5fb554c2a2815c496}
+Pushes a clip area onto the stack. The x and y coordinates in the \hyperlink{classgcn_1_1Rectangle}{Rectangle} will be relative to the last pushed clip area. If the new area falls outside the current clip area, it will be clipped as necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & the clip area to be pushed onto the stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if the the new area lays totally outside the current clip area. Note that an empty clip area will be pused in this case. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classgcn_1_1SDLGraphics_a1fbd23bf7540f15bb9e07ee378d60e25}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_ad1929d5ca4171cf22158b3c6235de3b3}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{set\+Color(const Color \&color)=0}{setColor(const Color &color)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gcn\+::\+Graphics\+::set\+Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classgcn_1_1Graphics_a7f438ae2b4cc09c66d77a9b9cb591e7c}{}\label{classgcn_1_1Graphics_a7f438ae2b4cc09c66d77a9b9cb591e7c}
+Sets the \hyperlink{classgcn_1_1Color}{Color} to use when drawing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & a \hyperlink{classgcn_1_1Color}{Color}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classgcn_1_1SDLGraphics_a26298c36c21fc6e16b02a932627adae6}{gcn\+::\+S\+D\+L\+Graphics}, and \hyperlink{classgcn_1_1OpenGLGraphics_abc2a3c312c4d56a0e806eea924bcf400}{gcn\+::\+Open\+G\+L\+Graphics}.
+
+\index{gcn\+::\+Graphics@{gcn\+::\+Graphics}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!gcn\+::\+Graphics@{gcn\+::\+Graphics}}
+\subsubsection[{\texorpdfstring{set\+Font(\+Font $\ast$font)}{setFont(Font *font)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Graphics\+::set\+Font (
+\begin{DoxyParamCaption}
+\item[{{\bf Font} $\ast$}]{font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Graphics_a7415290eb8b075fae0b4a6fce3912f4e}{}\label{classgcn_1_1Graphics_a7415290eb8b075fae0b4a6fce3912f4e}
+Sets the font to use when drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & the \hyperlink{classgcn_1_1Font}{Font} to use when drawing. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/graphics.\+hpp\item 
+src/graphics.\+cpp\end{DoxyCompactItemize}

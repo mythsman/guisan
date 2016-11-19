@@ -1,0 +1,153 @@
+\hypertarget{classgcn_1_1Exception}{}\section{gcn\+:\+:Exception Class Reference}
+\label{classgcn_1_1Exception}\index{gcn\+::\+Exception@{gcn\+::\+Exception}}
+
+
+{\ttfamily \#include $<$exception.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Exception_ac6c412a3c4d4f1727b8c847b5dd63bf2}{Exception} ()
+\item 
+\hyperlink{classgcn_1_1Exception_a4f475350e88e0538f51ec91fb357c729}{Exception} (const std\+::string \&message)
+\item 
+\hyperlink{classgcn_1_1Exception_ac3bae5d8753050442871681b59b63773}{Exception} (const std\+::string \&message, const std\+::string \&function, const std\+::string \&filename, int line)
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1Exception_ac409ab0094bd0e9e341f01a532e2fe96}{get\+Function} () const 
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1Exception_a7c1ca793f383c6dd92eb7fb1694260de}{get\+Message} () const 
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1Exception_a7918049e3407ace4a59361c1a29b81ac}{get\+Filename} () const 
+\item 
+int \hyperlink{classgcn_1_1Exception_a93a217b190df8d70405e9feb09c18c00}{get\+Line} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries m\+Function}\hypertarget{classgcn_1_1Exception_ac4cecdef532e30f82d9095789732cfaa}{}\label{classgcn_1_1Exception_ac4cecdef532e30f82d9095789732cfaa}
+
+\item 
+std\+::string {\bfseries m\+Message}\hypertarget{classgcn_1_1Exception_a1337ec9291e5587eb2a544212aaa1355}{}\label{classgcn_1_1Exception_a1337ec9291e5587eb2a544212aaa1355}
+
+\item 
+std\+::string {\bfseries m\+Filename}\hypertarget{classgcn_1_1Exception_a698a27a1b9d2fba424141d228f5a97a0}{}\label{classgcn_1_1Exception_a698a27a1b9d2fba424141d228f5a97a0}
+
+\item 
+int {\bfseries m\+Line}\hypertarget{classgcn_1_1Exception_aaac5868e205d6e89d1546e18ac244daf}{}\label{classgcn_1_1Exception_aaac5868e205d6e89d1546e18ac244daf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An exception containing a message, a file and a line number. Guichan will only throw exceptions of this class. You can use this class for your own exceptions. A nifty feature of the excpetion class is that it can tell you from which line and file it was thrown. To make things easier when throwing exceptions there exists a macro for creating exceptions which automatically sets the filename and line number.
+
+E\+X\+A\+M\+P\+LE\+:
+\begin{DoxyCode}
+\textcolor{keywordflow}{throw} GCN\_EXCEPTION(\textcolor{stringliteral}{"my error message"});
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{Exception()}{Exception()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Exception\+::\+Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Exception_ac6c412a3c4d4f1727b8c847b5dd63bf2}{}\label{classgcn_1_1Exception_ac6c412a3c4d4f1727b8c847b5dd63bf2}
+Constructor. \index{gcn\+::\+Exception@{gcn\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{Exception(const std\+::string \&message)}{Exception(const std::string &message)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Exception\+::\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Exception_a4f475350e88e0538f51ec91fb357c729}{}\label{classgcn_1_1Exception_a4f475350e88e0538f51ec91fb357c729}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the error message. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{Exception(const std\+::string \&message, const std\+::string \&function, const std\+::string \&filename, int line)}{Exception(const std::string &message, const std::string &function, const std::string &filename, int line)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Exception\+::\+Exception (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message, }
+\item[{const std\+::string \&}]{function, }
+\item[{const std\+::string \&}]{filename, }
+\item[{int}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Exception_ac3bae5d8753050442871681b59b63773}{}\label{classgcn_1_1Exception_ac3bae5d8753050442871681b59b63773}
+Constructor.
+
+N\+O\+TE\+: Don\textquotesingle{}t use this constructor. Use the G\+C\+N\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON macro instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the error message. \\
+\hline
+{\em function} & the function name. \\
+\hline
+{\em filename} & the name of the file. \\
+\hline
+{\em line} & the line number. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!get\+Filename@{get\+Filename}}
+\index{get\+Filename@{get\+Filename}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{get\+Filename() const }{getFilename() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Exception\+::get\+Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Exception_a7918049e3407ace4a59361c1a29b81ac}{}\label{classgcn_1_1Exception_a7918049e3407ace4a59361c1a29b81ac}
+Gets the filename in which the exceptions was thrown.
+
+\begin{DoxyReturn}{Returns}
+the filename in which the exception was thrown. 
+\end{DoxyReturn}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!get\+Function@{get\+Function}}
+\index{get\+Function@{get\+Function}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{get\+Function() const }{getFunction() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Exception\+::get\+Function (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Exception_ac409ab0094bd0e9e341f01a532e2fe96}{}\label{classgcn_1_1Exception_ac409ab0094bd0e9e341f01a532e2fe96}
+Gets the function name in which the exception was thrown.
+
+\begin{DoxyReturn}{Returns}
+the function name in which the exception was thrown. 
+\end{DoxyReturn}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!get\+Line@{get\+Line}}
+\index{get\+Line@{get\+Line}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{get\+Line() const }{getLine() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Exception\+::get\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Exception_a93a217b190df8d70405e9feb09c18c00}{}\label{classgcn_1_1Exception_a93a217b190df8d70405e9feb09c18c00}
+Gets the line number of the line where the exception was thrown.
+
+\begin{DoxyReturn}{Returns}
+the line number of the line where the exception was thrown. 
+\end{DoxyReturn}
+\index{gcn\+::\+Exception@{gcn\+::\+Exception}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!gcn\+::\+Exception@{gcn\+::\+Exception}}
+\subsubsection[{\texorpdfstring{get\+Message() const }{getMessage() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Exception\+::get\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Exception_a7c1ca793f383c6dd92eb7fb1694260de}{}\label{classgcn_1_1Exception_a7c1ca793f383c6dd92eb7fb1694260de}
+Gets the error message of the exception.
+
+\begin{DoxyReturn}{Returns}
+the error message. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/exception.\+hpp\item 
+src/exception.\+cpp\end{DoxyCompactItemize}

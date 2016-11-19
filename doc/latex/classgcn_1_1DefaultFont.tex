@@ -1,0 +1,172 @@
+\hypertarget{classgcn_1_1DefaultFont}{}\section{gcn\+:\+:Default\+Font Class Reference}
+\label{classgcn_1_1DefaultFont}\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+
+
+{\ttfamily \#include $<$defaultfont.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Default\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classgcn_1_1DefaultFont__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Default\+Font\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classgcn_1_1DefaultFont__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgcn_1_1DefaultFont_ab606ee0708758b5fafd19cfc8938b624}{$\sim$\+Default\+Font} ()
+\item 
+virtual int \hyperlink{classgcn_1_1DefaultFont_a5b6ab73374e18e7f22696b7b2a1afa08}{draw\+Glyph} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics, unsigned char glyph, int x, int y)
+\item 
+virtual void \hyperlink{classgcn_1_1DefaultFont_a3cdd4f449bd2114312df6970c6ae2571}{draw\+String} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics, const std\+::string \&text, int x, int y)
+\item 
+virtual int \hyperlink{classgcn_1_1DefaultFont_a62d609afe7f0d0dec90a0ae1cb4731ea}{get\+Width} (const std\+::string \&text) const 
+\item 
+virtual int \hyperlink{classgcn_1_1DefaultFont_a64f2f7bcce5d3780106634e36ac0a52a}{get\+Height} () const 
+\item 
+virtual int \hyperlink{classgcn_1_1DefaultFont_a10b802c51de668171c2255f2e11fc063}{get\+String\+Index\+At} (const std\+::string \&text, int x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A font only capable of drawing rectangles. It is used by default merely to show that no font have been set. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!````~Default\+Font@{$\sim$\+Default\+Font}}
+\index{````~Default\+Font@{$\sim$\+Default\+Font}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{$\sim$\+Default\+Font()}{~DefaultFont()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+Default\+Font\+::$\sim$\+Default\+Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_ab606ee0708758b5fafd19cfc8938b624}{}\label{classgcn_1_1DefaultFont_ab606ee0708758b5fafd19cfc8938b624}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!draw\+Glyph@{draw\+Glyph}}
+\index{draw\+Glyph@{draw\+Glyph}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{draw\+Glyph(\+Graphics $\ast$graphics, unsigned char glyph, int x, int y)}{drawGlyph(Graphics *graphics, unsigned char glyph, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Default\+Font\+::draw\+Glyph (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics, }
+\item[{unsigned char}]{glyph, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_a5b6ab73374e18e7f22696b7b2a1afa08}{}\label{classgcn_1_1DefaultFont_a5b6ab73374e18e7f22696b7b2a1afa08}
+Draws a glyph as a rectangle. The glyphs always be drawn as rectangles no matter the glyph.
+
+N\+O\+TE\+: You normally won\textquotesingle{}t use this function to draw text since the \hyperlink{classgcn_1_1Graphics}{Graphics} class contains better functions for drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to be used for drawing. \\
+\hline
+{\em glyph} & a glyph to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the glyph. \\
+\hline
+{\em y} & the y coordinate where to draw the glyph. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of the glyph in pixels. 
+\end{DoxyReturn}
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{draw\+String(\+Graphics $\ast$graphics, const std\+::string \&text, int x, int y)}{drawString(Graphics *graphics, const std::string &text, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Default\+Font\+::draw\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics, }
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_a3cdd4f449bd2114312df6970c6ae2571}{}\label{classgcn_1_1DefaultFont_a3cdd4f449bd2114312df6970c6ae2571}
+Draws a string.
+
+N\+O\+TE\+: You normally won\textquotesingle{}t use this function to draw text since \hyperlink{classgcn_1_1Graphics}{Graphics} contains better functions for drawing text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to use for drawing. \\
+\hline
+{\em text} & the string to draw. \\
+\hline
+{\em x} & the x coordinate where to draw the string. \\
+\hline
+{\em y} & the y coordinate where to draw the string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Font_a055c403050f483cc2c67477443d98eee}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Default\+Font\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_a64f2f7bcce5d3780106634e36ac0a52a}{}\label{classgcn_1_1DefaultFont_a64f2f7bcce5d3780106634e36ac0a52a}
+Gets the height of the glyphs in the font.
+
+\begin{DoxyReturn}{Returns}
+the height of the glyphs int the font. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_aa270d8934a16d4065143e3617b1fa926}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!get\+String\+Index\+At@{get\+String\+Index\+At}}
+\index{get\+String\+Index\+At@{get\+String\+Index\+At}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{get\+String\+Index\+At(const std\+::string \&text, int x)}{getStringIndexAt(const std::string &text, int x)}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Default\+Font\+::get\+String\+Index\+At (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_a10b802c51de668171c2255f2e11fc063}{}\label{classgcn_1_1DefaultFont_a10b802c51de668171c2255f2e11fc063}
+Gets a string index in a string providing an x coordinate. Used to retrive a string index (for a character in a string) at a certain x position. It is especially useful when a mouse clicks in a \hyperlink{classgcn_1_1TextField}{Text\+Field} and you want to know which character was clicked.
+
+\begin{DoxyReturn}{Returns}
+a string index in a string providing an x coordinate. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Font_a3210f4c53424ade4b188b8dfb1f686a4}{gcn\+::\+Font}.
+
+\index{gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+Default\+Font@{gcn\+::\+Default\+Font}}
+\subsubsection[{\texorpdfstring{get\+Width(const std\+::string \&text) const }{getWidth(const std::string &text) const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Default\+Font\+::get\+Width (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{text}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1DefaultFont_a62d609afe7f0d0dec90a0ae1cb4731ea}{}\label{classgcn_1_1DefaultFont_a62d609afe7f0d0dec90a0ae1cb4731ea}
+Gets the width of a string. The width of a string is not necesserily the sum of all the widths of it\textquotesingle{}s glyphs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the string to return the width of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the width of a string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Font_abb88894b1ebeda28edcac75c537f8e0f}{gcn\+::\+Font}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/defaultfont.\+hpp\item 
+src/defaultfont.\+cpp\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@ AR      = ar
 DIRS	=$(shell find ./src -maxdepth 3 -type d)
 FILES	= $(foreach dir,$(DIRS),$(wildcard $(dir)/*.cpp))
 INCLUDE	=-I./include  
-CFLAGS  := -g -Wall -O3 $(INCLUDE)
+CFLAGS  := -g -w -O3 $(INCLUDE)
 CXXFLAGS:= $(CFLAGS)
 #i think you should do anything here
   
@@ -18,16 +18,18 @@ OBJS    = $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
 everything : $(TARGET)
   
 all : $(TARGET)
+	cd demo && make && cd ..
+	cd examples && make && cd ..
   
 objs : $(OBJS)
   
-rebuild: veryclean everything
+rebuild: everything
                 
 clean :
-	rm -fr *.o
-    
-veryclean : clean
-	rm -fr $(TARGET)
+	find . -name *.o |xargs rm -f
+	rm -rf $(TARGET)
+	cd demo && make clean && cd ..
+	cd examples && make clean && cd ..
   
 $(TARGET) : $(OBJS)
 	$(AR) cr $(TARGET) $(OBJS)

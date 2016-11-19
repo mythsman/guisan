@@ -1,0 +1,228 @@
+\hypertarget{classgcn_1_1Tab}{}\section{gcn\+:\+:Tab Class Reference}
+\label{classgcn_1_1Tab}\index{gcn\+::\+Tab@{gcn\+::\+Tab}}
+
+
+{\ttfamily \#include $<$tab.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Tab\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classgcn_1_1Tab__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Tab\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1Tab__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Tab_adcbc5f154b1aec324beba6eac4c701db}{Tab} ()
+\item 
+virtual \hyperlink{classgcn_1_1Tab_ab72b2bed8aff33cbf6311c3f8c23d81f}{$\sim$\+Tab} ()
+\item 
+void \hyperlink{classgcn_1_1Tab_af485fff985502edc64bb4b46b6c2900e}{adjust\+Size} ()
+\item 
+void \hyperlink{classgcn_1_1Tab_a47675b463cba120b6aff006e8f850311}{set\+Tabbed\+Area} (\hyperlink{classgcn_1_1TabbedArea}{Tabbed\+Area} $\ast$tabbed\+Area)
+\item 
+\hyperlink{classgcn_1_1TabbedArea}{Tabbed\+Area} $\ast$ \hyperlink{classgcn_1_1Tab_aad047e37efa76663e44f01d35d9c7926}{get\+Tabbed\+Area} ()
+\item 
+void \hyperlink{classgcn_1_1Tab_a2c312a8d89c9641a1a32813612a51dc5}{set\+Caption} (const std\+::string \&caption)
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1Tab_a9ded51d0d15437edec0a7f9edb7bec2c}{get\+Caption} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1Tab_a4e4c7f8d8e3b883e3f0836cb76ab0ae6}{draw} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1Tab_a48f08dbcc6dd3a0b767e6d272fbe1487}{draw\+Border} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1Tab_a8f18f8c49721c7faf85e01d9562d0ceb}{mouse\+Entered} (\hyperlink{classgcn_1_1MouseEvent}{Mouse\+Event} \&mouse\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1Tab_a6769831c91c15dc87a81a32461ac5878}{mouse\+Exited} (\hyperlink{classgcn_1_1MouseEvent}{Mouse\+Event} \&mouse\+Event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Label}{Label} $\ast$ {\bfseries m\+Label}\hypertarget{classgcn_1_1Tab_aaad9c09f218f5c686f105f4270ec35f7}{}\label{classgcn_1_1Tab_aaad9c09f218f5c686f105f4270ec35f7}
+
+\item 
+\hyperlink{classgcn_1_1TabbedArea}{Tabbed\+Area} $\ast$ {\bfseries m\+Tabbed\+Area}\hypertarget{classgcn_1_1Tab_a2591b36659b17e7c13c7946bf2611266}{}\label{classgcn_1_1Tab_a2591b36659b17e7c13c7946bf2611266}
+
+\item 
+std\+::string {\bfseries m\+Caption}\hypertarget{classgcn_1_1Tab_aced27fef515eac3e9cd53df77894d9b6}{}\label{classgcn_1_1Tab_aced27fef515eac3e9cd53df77894d9b6}
+
+\item 
+bool {\bfseries m\+Has\+Mouse}\hypertarget{classgcn_1_1Tab_a42e6b954f5f13c760a2fa3801392afe6}{}\label{classgcn_1_1Tab_a42e6b954f5f13c760a2fa3801392afe6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple tab widget used as the default tab in the \hyperlink{classgcn_1_1TabbedArea}{Tabbed\+Area} widget. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!Tab@{Tab}}
+\index{Tab@{Tab}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{Tab()}{Tab()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Tab\+::\+Tab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Tab_adcbc5f154b1aec324beba6eac4c701db}{}\label{classgcn_1_1Tab_adcbc5f154b1aec324beba6eac4c701db}
+Constructor. \index{gcn\+::\+Tab@{gcn\+::\+Tab}!````~Tab@{$\sim$\+Tab}}
+\index{````~Tab@{$\sim$\+Tab}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{$\sim$\+Tab()}{~Tab()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Tab\+::$\sim$\+Tab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Tab_ab72b2bed8aff33cbf6311c3f8c23d81f}{}\label{classgcn_1_1Tab_ab72b2bed8aff33cbf6311c3f8c23d81f}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!adjust\+Size@{adjust\+Size}}
+\index{adjust\+Size@{adjust\+Size}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{adjust\+Size()}{adjustSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::adjust\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Tab_af485fff985502edc64bb4b46b6c2900e}{}\label{classgcn_1_1Tab_af485fff985502edc64bb4b46b6c2900e}
+Adjusts the tab size to fit the label. \index{gcn\+::\+Tab@{gcn\+::\+Tab}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{draw(\+Graphics $\ast$graphics)}{draw(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Tab_a4e4c7f8d8e3b883e3f0836cb76ab0ae6}{}\label{classgcn_1_1Tab_a4e4c7f8d8e3b883e3f0836cb76ab0ae6}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{draw\+Border(\+Graphics $\ast$graphics)}{drawBorder(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::draw\+Border (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Tab_a48f08dbcc6dd3a0b767e6d272fbe1487}{}\label{classgcn_1_1Tab_a48f08dbcc6dd3a0b767e6d272fbe1487}
+Draws the widget border. A border is drawn around a widget. The width and height of the border is therefore the widgets height+2$\ast$bordersize. Think of a painting that has a certain size, the border surrounds the painting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Widget_a58c3b2f513d8e029e321fd88a974f5c4}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!get\+Caption@{get\+Caption}}
+\index{get\+Caption@{get\+Caption}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{get\+Caption() const }{getCaption() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Tab\+::get\+Caption (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1Tab_a9ded51d0d15437edec0a7f9edb7bec2c}{}\label{classgcn_1_1Tab_a9ded51d0d15437edec0a7f9edb7bec2c}
+Gets the caption of the tab.
+
+\begin{DoxyReturn}{Returns}
+The caption of the tab. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!get\+Tabbed\+Area@{get\+Tabbed\+Area}}
+\index{get\+Tabbed\+Area@{get\+Tabbed\+Area}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{get\+Tabbed\+Area()}{getTabbedArea()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tabbed\+Area} $\ast$ gcn\+::\+Tab\+::get\+Tabbed\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Tab_aad047e37efa76663e44f01d35d9c7926}{}\label{classgcn_1_1Tab_aad047e37efa76663e44f01d35d9c7926}
+Gets the tabbed are the tab is a part of.
+
+\begin{DoxyReturn}{Returns}
+The tabbed are the tab is a part of. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!mouse\+Entered@{mouse\+Entered}}
+\index{mouse\+Entered@{mouse\+Entered}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{mouse\+Entered(\+Mouse\+Event \&mouse\+Event)}{mouseEntered(MouseEvent &mouseEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::mouse\+Entered (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+Event} \&}]{mouse\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Tab_a8f18f8c49721c7faf85e01d9562d0ceb}{}\label{classgcn_1_1Tab_a8f18f8c49721c7faf85e01d9562d0ceb}
+Called when the mouse has entered into the widget area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & describes the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Reimplemented from \hyperlink{classgcn_1_1MouseListener_a5d0fc52c1fd750eb76560fbc27672dac}{gcn\+::\+Mouse\+Listener}.
+
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!mouse\+Exited@{mouse\+Exited}}
+\index{mouse\+Exited@{mouse\+Exited}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{mouse\+Exited(\+Mouse\+Event \&mouse\+Event)}{mouseExited(MouseEvent &mouseEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::mouse\+Exited (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+Event} \&}]{mouse\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Tab_a6769831c91c15dc87a81a32461ac5878}{}\label{classgcn_1_1Tab_a6769831c91c15dc87a81a32461ac5878}
+Called when the mouse has exited the widget area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & describes the event. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1MouseListener_ac84dd820bbcf3bf9268776db69cbf114}{gcn\+::\+Mouse\+Listener}.
+
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!set\+Caption@{set\+Caption}}
+\index{set\+Caption@{set\+Caption}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{set\+Caption(const std\+::string \&caption)}{setCaption(const std::string &caption)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::set\+Caption (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Tab_a2c312a8d89c9641a1a32813612a51dc5}{}\label{classgcn_1_1Tab_a2c312a8d89c9641a1a32813612a51dc5}
+Sets the caption of the tab.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the tab. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tab@{gcn\+::\+Tab}!set\+Tabbed\+Area@{set\+Tabbed\+Area}}
+\index{set\+Tabbed\+Area@{set\+Tabbed\+Area}!gcn\+::\+Tab@{gcn\+::\+Tab}}
+\subsubsection[{\texorpdfstring{set\+Tabbed\+Area(\+Tabbed\+Area $\ast$tabbed\+Area)}{setTabbedArea(TabbedArea *tabbedArea)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tab\+::set\+Tabbed\+Area (
+\begin{DoxyParamCaption}
+\item[{{\bf Tabbed\+Area} $\ast$}]{tabbed\+Area}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Tab_a47675b463cba120b6aff006e8f850311}{}\label{classgcn_1_1Tab_a47675b463cba120b6aff006e8f850311}
+Sets the tabbed area the tab should be a part of.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tabbed\+Area} & The tabbed area the tab should be a part of. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/tab.\+hpp\item 
+src/widgets/tab.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,616 @@
+\hypertarget{classgcn_1_1Gui}{}\section{gcn\+:\+:Gui Class Reference}
+\label{classgcn_1_1Gui}\index{gcn\+::\+Gui@{gcn\+::\+Gui}}
+
+
+{\ttfamily \#include $<$gui.\+hpp$>$}
+
+
+
+Collaboration diagram for gcn\+:\+:Gui\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1Gui__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Gui_ada0ae56b26099a1bbb70fc4bb8d77da1}{Gui} ()
+\item 
+virtual \hyperlink{classgcn_1_1Gui_a89c4b4fafd6bc85646f90f6d03826d48}{$\sim$\+Gui} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a69ce39ec8962ae93f428a01ffec677de}{set\+Top} (\hyperlink{classgcn_1_1Widget}{Widget} $\ast$top)
+\item 
+virtual \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ \hyperlink{classgcn_1_1Gui_a020f9c4e1f533797c294630725561377}{get\+Top} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_af8583f7e03da6cfe63794d05e185e1c0}{set\+Graphics} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual \hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$ \hyperlink{classgcn_1_1Gui_a1f17a7727de5c35dc19bc1452cf37017}{get\+Graphics} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a317e8327dc9aee497f2a9ce1033d16c7}{set\+Input} (\hyperlink{classgcn_1_1Input}{Input} $\ast$input)
+\item 
+virtual \hyperlink{classgcn_1_1Input}{Input} $\ast$ \hyperlink{classgcn_1_1Gui_a9382a845e764178c741264e1a3acf837}{get\+Input} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a66744ebd628213d574bb6a7010781b1f}{logic} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{draw} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a273aa54779ea4d7b2f58e4a6b5907f48}{focus\+None} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a5d2546bd8c6dbe288640163b85e94194}{set\+Tabbing\+Enabled} (bool tabbing)
+\item 
+virtual bool \hyperlink{classgcn_1_1Gui_aa77a86f825e8d03ea461e58a449b0179}{is\+Tabbing\+Enabled} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a871191dc235cf6dd81aa8151eccd21a6}{add\+Global\+Key\+Listener} (\hyperlink{classgcn_1_1KeyListener}{Key\+Listener} $\ast$key\+Listener)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a34a9488faca688e56b25df4a7297f4ea}{remove\+Global\+Key\+Listener} (\hyperlink{classgcn_1_1KeyListener}{Key\+Listener} $\ast$key\+Listener)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} $\ast$ $>$ {\bfseries Key\+Listener\+List}\hypertarget{classgcn_1_1Gui_a1005100d790e06dafa0a8d338a14f289}{}\label{classgcn_1_1Gui_a1005100d790e06dafa0a8d338a14f289}
+
+\item 
+typedef Key\+Listener\+List\+::iterator {\bfseries Key\+Listener\+List\+Iterator}\hypertarget{classgcn_1_1Gui_a0a34fd3c5461fed924e22ccf36508a77}{}\label{classgcn_1_1Gui_a0a34fd3c5461fed924e22ccf36508a77}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a1208b3a8e98f54890864e020db204d82}{handle\+Mouse\+Input} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a9ccdd4c90d5909c6a79d9e421aef0772}{handle\+Key\+Input} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_adc19660c008400343a35c47307861192}{handle\+Mouse\+Moved} (const \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \&mouse\+Input)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a24cf9a608ac21b734ef5e9d5a3a36b31}{handle\+Mouse\+Pressed} (const \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \&mouse\+Input)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_ac0d9aa81a137206e6d73604994523842}{handle\+Mouse\+Wheel\+Moved\+Down} (const \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \&mouse\+Input)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a949c5513a73f39f94efecb84cd4d02d6}{handle\+Mouse\+Wheel\+Moved\+Up} (const \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \&mouse\+Input)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a2516448db507647152d97d8b600d2203}{handle\+Mouse\+Released} (const \hyperlink{classgcn_1_1MouseInput}{Mouse\+Input} \&mouse\+Input)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a762a5583087900e1414091d3a3f3f18b}{handle\+Modal\+Focus} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a9f85d69ebed46ca9d8441ac93cbbc1ec}{handle\+Modal\+Mouse\+Input\+Focus} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a89afef358be49be921161f7c9d818976}{handle\+Modal\+Focus\+Gained} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a4841624147d75ceccd080e2c98a3ff3e}{handle\+Modal\+Focus\+Released} ()
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a5aca2b2c0e168d5be705578b41bb2989}{distribute\+Mouse\+Event} (\hyperlink{classgcn_1_1Widget}{Widget} $\ast$source, int type, int button, int x, int y, bool force=false, bool to\+Source\+Only=false)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_aabaf700c710b66b93185c7733d820b07}{distribute\+Key\+Event} (\hyperlink{classgcn_1_1KeyEvent}{Key\+Event} \&key\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1Gui_a815207b12b22f2154cb8873f74f00d40}{distribute\+Key\+Event\+To\+Global\+Key\+Listeners} (\hyperlink{classgcn_1_1KeyEvent}{Key\+Event} \&key\+Event)
+\item 
+virtual \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ \hyperlink{classgcn_1_1Gui_adbe10b9a50543f7f0ecaed5eb162c3c4}{get\+Widget\+At} (int x, int y)
+\item 
+virtual \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ \hyperlink{classgcn_1_1Gui_a5e018eff39f41e7e7a9e52e3dd8a919e}{get\+Mouse\+Event\+Source} (int x, int y)
+\item 
+virtual \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ \hyperlink{classgcn_1_1Gui_ad2e0e4f5cdfb5bc0901fdf81d222196f}{get\+Key\+Event\+Source} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Widget}{Widget} $\ast$ {\bfseries m\+Top}\hypertarget{classgcn_1_1Gui_a604a47aac29b2b2d102fb9adf33046dd}{}\label{classgcn_1_1Gui_a604a47aac29b2b2d102fb9adf33046dd}
+
+\item 
+\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$ {\bfseries m\+Graphics}\hypertarget{classgcn_1_1Gui_abf24a26828a0714cb5b35874f1aeb2aa}{}\label{classgcn_1_1Gui_abf24a26828a0714cb5b35874f1aeb2aa}
+
+\item 
+\hyperlink{classgcn_1_1Input}{Input} $\ast$ {\bfseries m\+Input}\hypertarget{classgcn_1_1Gui_a3a5628dce778c217e817b40e552c1dd4}{}\label{classgcn_1_1Gui_a3a5628dce778c217e817b40e552c1dd4}
+
+\item 
+\hyperlink{classgcn_1_1FocusHandler}{Focus\+Handler} $\ast$ {\bfseries m\+Focus\+Handler}\hypertarget{classgcn_1_1Gui_a6d52184d92b5fb94c9e431310e822bb9}{}\label{classgcn_1_1Gui_a6d52184d92b5fb94c9e431310e822bb9}
+
+\item 
+bool {\bfseries m\+Tabbing}\hypertarget{classgcn_1_1Gui_a1cb20f54584e46d504fabaeca4937991}{}\label{classgcn_1_1Gui_a1cb20f54584e46d504fabaeca4937991}
+
+\item 
+Key\+Listener\+List {\bfseries m\+Key\+Listeners}\hypertarget{classgcn_1_1Gui_ad8ab94f193d8a00eebc9c562e723a94c}{}\label{classgcn_1_1Gui_ad8ab94f193d8a00eebc9c562e723a94c}
+
+\item 
+bool {\bfseries m\+Shift\+Pressed}\hypertarget{classgcn_1_1Gui_a5b45556c2b53be0f21adb7e8374d9ca9}{}\label{classgcn_1_1Gui_a5b45556c2b53be0f21adb7e8374d9ca9}
+
+\item 
+bool {\bfseries m\+Meta\+Pressed}\hypertarget{classgcn_1_1Gui_af12c89543b16cffb8c2d3696058ea105}{}\label{classgcn_1_1Gui_af12c89543b16cffb8c2d3696058ea105}
+
+\item 
+bool {\bfseries m\+Control\+Pressed}\hypertarget{classgcn_1_1Gui_afc00084e5947095924a868c2a3e39c39}{}\label{classgcn_1_1Gui_afc00084e5947095924a868c2a3e39c39}
+
+\item 
+bool {\bfseries m\+Alt\+Pressed}\hypertarget{classgcn_1_1Gui_a678962cf7e90a820660e37e36a020881}{}\label{classgcn_1_1Gui_a678962cf7e90a820660e37e36a020881}
+
+\item 
+unsigned int {\bfseries m\+Last\+Mouse\+Press\+Button}\hypertarget{classgcn_1_1Gui_ac2b85afc91a28d5e9b3b88c685b4e102}{}\label{classgcn_1_1Gui_ac2b85afc91a28d5e9b3b88c685b4e102}
+
+\item 
+int {\bfseries m\+Last\+Mouse\+Press\+Time\+Stamp}\hypertarget{classgcn_1_1Gui_acde4e38a2c4c1078ff88920b93167fb0}{}\label{classgcn_1_1Gui_acde4e38a2c4c1078ff88920b93167fb0}
+
+\item 
+int {\bfseries m\+Last\+MouseX}\hypertarget{classgcn_1_1Gui_a06bbfa9a446a238918ea21018e3b17a2}{}\label{classgcn_1_1Gui_a06bbfa9a446a238918ea21018e3b17a2}
+
+\item 
+int {\bfseries m\+Last\+MouseY}\hypertarget{classgcn_1_1Gui_a68df34ed2f71cdcff2b80f8deca645d4}{}\label{classgcn_1_1Gui_a68df34ed2f71cdcff2b80f8deca645d4}
+
+\item 
+int {\bfseries m\+Click\+Count}\hypertarget{classgcn_1_1Gui_ab08a032e0ec6b8cabed5dae39f5be9ce}{}\label{classgcn_1_1Gui_ab08a032e0ec6b8cabed5dae39f5be9ce}
+
+\item 
+int {\bfseries m\+Last\+Mouse\+Drag\+Button}\hypertarget{classgcn_1_1Gui_a2277fca30ae196ee34b231724454d268}{}\label{classgcn_1_1Gui_a2277fca30ae196ee34b231724454d268}
+
+\item 
+std\+::deque$<$ \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ $>$ {\bfseries m\+Widget\+With\+Mouse\+Queue}\hypertarget{classgcn_1_1Gui_a0a6fc16b8724b80350742f05bf79aff1}{}\label{classgcn_1_1Gui_a0a6fc16b8724b80350742f05bf79aff1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgcn_1_1Gui}{Gui} core class. Contains a special widget called the top widget. If you want to be able to have more then one \hyperlink{classgcn_1_1Widget}{Widget} in your \hyperlink{classgcn_1_1Gui}{Gui}, the top widget should be a \hyperlink{classgcn_1_1Container}{Container}.
+
+N\+O\+TE\+: For the \hyperlink{classgcn_1_1Gui}{Gui} to function properly you need to set a \hyperlink{classgcn_1_1Graphics}{Graphics} object to use and an \hyperlink{classgcn_1_1Input}{Input} object to use. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!Gui@{Gui}}
+\index{Gui@{Gui}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{Gui()}{Gui()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Gui\+::\+Gui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1Gui_ada0ae56b26099a1bbb70fc4bb8d77da1}{}\label{classgcn_1_1Gui_ada0ae56b26099a1bbb70fc4bb8d77da1}
+Constructor. \index{gcn\+::\+Gui@{gcn\+::\+Gui}!````~Gui@{$\sim$\+Gui}}
+\index{````~Gui@{$\sim$\+Gui}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{$\sim$\+Gui()}{~Gui()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Gui\+::$\sim$\+Gui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a89c4b4fafd6bc85646f90f6d03826d48}{}\label{classgcn_1_1Gui_a89c4b4fafd6bc85646f90f6d03826d48}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!add\+Global\+Key\+Listener@{add\+Global\+Key\+Listener}}
+\index{add\+Global\+Key\+Listener@{add\+Global\+Key\+Listener}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{add\+Global\+Key\+Listener(\+Key\+Listener $\ast$key\+Listener)}{addGlobalKeyListener(KeyListener *keyListener)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::add\+Global\+Key\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Listener} $\ast$}]{key\+Listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a871191dc235cf6dd81aa8151eccd21a6}{}\label{classgcn_1_1Gui_a871191dc235cf6dd81aa8151eccd21a6}
+Adds a global \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} to the \hyperlink{classgcn_1_1Gui}{Gui}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Listener} & a \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} to add. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!distribute\+Key\+Event@{distribute\+Key\+Event}}
+\index{distribute\+Key\+Event@{distribute\+Key\+Event}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{distribute\+Key\+Event(\+Key\+Event \&key\+Event)}{distributeKeyEvent(KeyEvent &keyEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::distribute\+Key\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Event} \&}]{key\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_aabaf700c710b66b93185c7733d820b07}{}\label{classgcn_1_1Gui_aabaf700c710b66b93185c7733d820b07}
+Distributes a key event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & the key event to distribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!distribute\+Key\+Event\+To\+Global\+Key\+Listeners@{distribute\+Key\+Event\+To\+Global\+Key\+Listeners}}
+\index{distribute\+Key\+Event\+To\+Global\+Key\+Listeners@{distribute\+Key\+Event\+To\+Global\+Key\+Listeners}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{distribute\+Key\+Event\+To\+Global\+Key\+Listeners(\+Key\+Event \&key\+Event)}{distributeKeyEventToGlobalKeyListeners(KeyEvent &keyEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::distribute\+Key\+Event\+To\+Global\+Key\+Listeners (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Event} \&}]{key\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a815207b12b22f2154cb8873f74f00d40}{}\label{classgcn_1_1Gui_a815207b12b22f2154cb8873f74f00d40}
+Distributes a key event to the global key listeners.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & the key event to distribute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!distribute\+Mouse\+Event@{distribute\+Mouse\+Event}}
+\index{distribute\+Mouse\+Event@{distribute\+Mouse\+Event}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{distribute\+Mouse\+Event(\+Widget $\ast$source, int type, int button, int x, int y, bool force=false, bool to\+Source\+Only=false)}{distributeMouseEvent(Widget *source, int type, int button, int x, int y, bool force=false, bool toSourceOnly=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::distribute\+Mouse\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Widget} $\ast$}]{source, }
+\item[{int}]{type, }
+\item[{int}]{button, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{bool}]{force = {\ttfamily false}, }
+\item[{bool}]{to\+Source\+Only = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a5aca2b2c0e168d5be705578b41bb2989}{}\label{classgcn_1_1Gui_a5aca2b2c0e168d5be705578b41bb2989}
+Distributes a mouse event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the event to distribute, \\
+\hline
+{\em button} & The button of the event (if any used) to distribute. \\
+\hline
+{\em x} & The x coordinate of the event. \\
+\hline
+{\em y} & The y coordinate of the event. \\
+\hline
+{\em fource} & indicates whether the distribution should be forced or not. A forced distribution distributes the event even if a widget is not enabled, not visible, another widget has modal focus or another widget has modal mouse input focus. Default value is false. \\
+\hline
+{\em to\+Source\+Only} & indicates whether the distribution should be to the source widget only or to it\textquotesingle{}s parent\textquotesingle{}s mouse listeners as well.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}{}\label{classgcn_1_1Gui_ad231f982fb8182b16ecf11075054f4ac}
+Draws the \hyperlink{classgcn_1_1Gui}{Gui}. By calling this funcion all draw functions down in the \hyperlink{classgcn_1_1Gui}{Gui} hierarchy will be called. \index{gcn\+::\+Gui@{gcn\+::\+Gui}!focus\+None@{focus\+None}}
+\index{focus\+None@{focus\+None}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{focus\+None()}{focusNone()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::focus\+None (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a273aa54779ea4d7b2f58e4a6b5907f48}{}\label{classgcn_1_1Gui_a273aa54779ea4d7b2f58e4a6b5907f48}
+Focus none of the Widgets in the \hyperlink{classgcn_1_1Gui}{Gui}. \index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Graphics@{get\+Graphics}}
+\index{get\+Graphics@{get\+Graphics}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Graphics() const }{getGraphics() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphics} $\ast$ gcn\+::\+Gui\+::get\+Graphics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a1f17a7727de5c35dc19bc1452cf37017}{}\label{classgcn_1_1Gui_a1f17a7727de5c35dc19bc1452cf37017}
+Gets the \hyperlink{classgcn_1_1Graphics}{Graphics} object used for drawing.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgcn_1_1Graphics}{Graphics} object used for drawing. N\+U\+LL if no \hyperlink{classgcn_1_1Graphics}{Graphics} object has been set. 
+\end{DoxyReturn}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Input@{get\+Input}}
+\index{get\+Input@{get\+Input}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Input() const }{getInput() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input} $\ast$ gcn\+::\+Gui\+::get\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a9382a845e764178c741264e1a3acf837}{}\label{classgcn_1_1Gui_a9382a845e764178c741264e1a3acf837}
+Gets the \hyperlink{classgcn_1_1Input}{Input} object being used for input handling.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgcn_1_1Input}{Input} object used for handling input. N\+U\+LL if no \hyperlink{classgcn_1_1Input}{Input} object has been set. 
+\end{DoxyReturn}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Key\+Event\+Source@{get\+Key\+Event\+Source}}
+\index{get\+Key\+Event\+Source@{get\+Key\+Event\+Source}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Key\+Event\+Source()}{getKeyEventSource()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Widget} $\ast$ gcn\+::\+Gui\+::get\+Key\+Event\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_ad2e0e4f5cdfb5bc0901fdf81d222196f}{}\label{classgcn_1_1Gui_ad2e0e4f5cdfb5bc0901fdf81d222196f}
+Gets the source of the key event.
+
+\begin{DoxyReturn}{Returns}
+the source widget of the key event. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Mouse\+Event\+Source@{get\+Mouse\+Event\+Source}}
+\index{get\+Mouse\+Event\+Source@{get\+Mouse\+Event\+Source}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Mouse\+Event\+Source(int x, int y)}{getMouseEventSource(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Widget} $\ast$ gcn\+::\+Gui\+::get\+Mouse\+Event\+Source (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a5e018eff39f41e7e7a9e52e3dd8a919e}{}\label{classgcn_1_1Gui_a5e018eff39f41e7e7a9e52e3dd8a919e}
+Gets the source of the mouse event.
+
+\begin{DoxyReturn}{Returns}
+the source widget of the mouse event. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Top@{get\+Top}}
+\index{get\+Top@{get\+Top}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Top() const }{getTop() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Widget} $\ast$ gcn\+::\+Gui\+::get\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a020f9c4e1f533797c294630725561377}{}\label{classgcn_1_1Gui_a020f9c4e1f533797c294630725561377}
+Gets the top \hyperlink{classgcn_1_1Widget}{Widget}.
+
+\begin{DoxyReturn}{Returns}
+the top widget. N\+U\+LL if no top widget has been set. 
+\end{DoxyReturn}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!get\+Widget\+At@{get\+Widget\+At}}
+\index{get\+Widget\+At@{get\+Widget\+At}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{get\+Widget\+At(int x, int y)}{getWidgetAt(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Widget} $\ast$ gcn\+::\+Gui\+::get\+Widget\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_adbe10b9a50543f7f0ecaed5eb162c3c4}{}\label{classgcn_1_1Gui_adbe10b9a50543f7f0ecaed5eb162c3c4}
+Gets the widget at a certain position.
+
+\begin{DoxyReturn}{Returns}
+the widget at a certain position. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Key\+Input@{handle\+Key\+Input}}
+\index{handle\+Key\+Input@{handle\+Key\+Input}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Key\+Input()}{handleKeyInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Key\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a9ccdd4c90d5909c6a79d9e421aef0772}{}\label{classgcn_1_1Gui_a9ccdd4c90d5909c6a79d9e421aef0772}
+Handles key input.
+
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Modal\+Focus@{handle\+Modal\+Focus}}
+\index{handle\+Modal\+Focus@{handle\+Modal\+Focus}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Modal\+Focus()}{handleModalFocus()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Modal\+Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a762a5583087900e1414091d3a3f3f18b}{}\label{classgcn_1_1Gui_a762a5583087900e1414091d3a3f3f18b}
+Handles modal focus. Modal focus needs to be checked at each logic iteration as it might be necessary to distribute mouse entered or mouse exited events.
+
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Modal\+Focus\+Gained@{handle\+Modal\+Focus\+Gained}}
+\index{handle\+Modal\+Focus\+Gained@{handle\+Modal\+Focus\+Gained}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Modal\+Focus\+Gained()}{handleModalFocusGained()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Modal\+Focus\+Gained (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a89afef358be49be921161f7c9d818976}{}\label{classgcn_1_1Gui_a89afef358be49be921161f7c9d818976}
+Handles modal focus gained. If modal focus has been gaind it might be necessary to distribute mouse entered or mouse exited events.
+
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Modal\+Focus\+Released@{handle\+Modal\+Focus\+Released}}
+\index{handle\+Modal\+Focus\+Released@{handle\+Modal\+Focus\+Released}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Modal\+Focus\+Released()}{handleModalFocusReleased()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Modal\+Focus\+Released (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a4841624147d75ceccd080e2c98a3ff3e}{}\label{classgcn_1_1Gui_a4841624147d75ceccd080e2c98a3ff3e}
+Handles modal mouse input focus gained. If modal focus has been gaind it might be necessary to distribute mouse entered or mouse exited events.
+
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Modal\+Mouse\+Input\+Focus@{handle\+Modal\+Mouse\+Input\+Focus}}
+\index{handle\+Modal\+Mouse\+Input\+Focus@{handle\+Modal\+Mouse\+Input\+Focus}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Modal\+Mouse\+Input\+Focus()}{handleModalMouseInputFocus()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Modal\+Mouse\+Input\+Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a9f85d69ebed46ca9d8441ac93cbbc1ec}{}\label{classgcn_1_1Gui_a9f85d69ebed46ca9d8441ac93cbbc1ec}
+Handles modal mouse input focus. Modal mouse input focus needs to be checked at each logic iteration as it might be necessary to distribute mouse entered or mouse exited events.
+
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Input@{handle\+Mouse\+Input}}
+\index{handle\+Mouse\+Input@{handle\+Mouse\+Input}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Input()}{handleMouseInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a1208b3a8e98f54890864e020db204d82}{}\label{classgcn_1_1Gui_a1208b3a8e98f54890864e020db204d82}
+Handles all mouse input.
+
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Moved@{handle\+Mouse\+Moved}}
+\index{handle\+Mouse\+Moved@{handle\+Mouse\+Moved}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Moved(const Mouse\+Input \&mouse\+Input)}{handleMouseMoved(const MouseInput &mouseInput)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Moved (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Input} \&}]{mouse\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_adc19660c008400343a35c47307861192}{}\label{classgcn_1_1Gui_adc19660c008400343a35c47307861192}
+Handles mouse moved input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Input} & the mouse input to handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Pressed@{handle\+Mouse\+Pressed}}
+\index{handle\+Mouse\+Pressed@{handle\+Mouse\+Pressed}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Pressed(const Mouse\+Input \&mouse\+Input)}{handleMousePressed(const MouseInput &mouseInput)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Pressed (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Input} \&}]{mouse\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a24cf9a608ac21b734ef5e9d5a3a36b31}{}\label{classgcn_1_1Gui_a24cf9a608ac21b734ef5e9d5a3a36b31}
+Handles mouse pressed input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Input} & the mouse input to handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Released@{handle\+Mouse\+Released}}
+\index{handle\+Mouse\+Released@{handle\+Mouse\+Released}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Released(const Mouse\+Input \&mouse\+Input)}{handleMouseReleased(const MouseInput &mouseInput)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Released (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Input} \&}]{mouse\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a2516448db507647152d97d8b600d2203}{}\label{classgcn_1_1Gui_a2516448db507647152d97d8b600d2203}
+Handles mouse released input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Input} & the mouse input to handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Wheel\+Moved\+Down@{handle\+Mouse\+Wheel\+Moved\+Down}}
+\index{handle\+Mouse\+Wheel\+Moved\+Down@{handle\+Mouse\+Wheel\+Moved\+Down}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Wheel\+Moved\+Down(const Mouse\+Input \&mouse\+Input)}{handleMouseWheelMovedDown(const MouseInput &mouseInput)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Wheel\+Moved\+Down (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Input} \&}]{mouse\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_ac0d9aa81a137206e6d73604994523842}{}\label{classgcn_1_1Gui_ac0d9aa81a137206e6d73604994523842}
+Handles mouse wheel moved down input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Input} & the mouse input to handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!handle\+Mouse\+Wheel\+Moved\+Up@{handle\+Mouse\+Wheel\+Moved\+Up}}
+\index{handle\+Mouse\+Wheel\+Moved\+Up@{handle\+Mouse\+Wheel\+Moved\+Up}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{handle\+Mouse\+Wheel\+Moved\+Up(const Mouse\+Input \&mouse\+Input)}{handleMouseWheelMovedUp(const MouseInput &mouseInput)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::handle\+Mouse\+Wheel\+Moved\+Up (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Input} \&}]{mouse\+Input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a949c5513a73f39f94efecb84cd4d02d6}{}\label{classgcn_1_1Gui_a949c5513a73f39f94efecb84cd4d02d6}
+Handles mouse wheel moved up input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Input} & the mouse input to handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!is\+Tabbing\+Enabled@{is\+Tabbing\+Enabled}}
+\index{is\+Tabbing\+Enabled@{is\+Tabbing\+Enabled}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{is\+Tabbing\+Enabled()}{isTabbingEnabled()}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Gui\+::is\+Tabbing\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_aa77a86f825e8d03ea461e58a449b0179}{}\label{classgcn_1_1Gui_aa77a86f825e8d03ea461e58a449b0179}
+Checks if tabbing is enabled.
+
+\begin{DoxyReturn}{Returns}
+true if tabbing is enabled. 
+\end{DoxyReturn}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!logic@{logic}}
+\index{logic@{logic}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{logic()}{logic()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::logic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a66744ebd628213d574bb6a7010781b1f}{}\label{classgcn_1_1Gui_a66744ebd628213d574bb6a7010781b1f}
+Performs the \hyperlink{classgcn_1_1Gui}{Gui} logic. By calling this function all logic functions down in the \hyperlink{classgcn_1_1Gui}{Gui} heirarchy will be called. What performs in Logic can be just about anything like adjusting a Widgets size or doing some calculations.
+
+N\+O\+TE\+: Logic also deals with user input (Mouse and Keyboard) for Widgets. \index{gcn\+::\+Gui@{gcn\+::\+Gui}!remove\+Global\+Key\+Listener@{remove\+Global\+Key\+Listener}}
+\index{remove\+Global\+Key\+Listener@{remove\+Global\+Key\+Listener}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{remove\+Global\+Key\+Listener(\+Key\+Listener $\ast$key\+Listener)}{removeGlobalKeyListener(KeyListener *keyListener)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::remove\+Global\+Key\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Listener} $\ast$}]{key\+Listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a34a9488faca688e56b25df4a7297f4ea}{}\label{classgcn_1_1Gui_a34a9488faca688e56b25df4a7297f4ea}
+Remove global \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} from the \hyperlink{classgcn_1_1Gui}{Gui}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Listener} & a \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classgcn_1_1Exception}{Exception}} & if the \hyperlink{classgcn_1_1KeyListener}{Key\+Listener} hasn\textquotesingle{}t been added. \\
+\hline
+\end{DoxyExceptions}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!set\+Graphics@{set\+Graphics}}
+\index{set\+Graphics@{set\+Graphics}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{set\+Graphics(\+Graphics $\ast$graphics)}{setGraphics(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::set\+Graphics (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_af8583f7e03da6cfe63794d05e185e1c0}{}\label{classgcn_1_1Gui_af8583f7e03da6cfe63794d05e185e1c0}
+Sets the \hyperlink{classgcn_1_1Graphics}{Graphics} object to use for drawing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & the \hyperlink{classgcn_1_1Graphics}{Graphics} object to use for drawing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1SDLGraphics}{S\+D\+L\+Graphics}, \hyperlink{classgcn_1_1OpenGLGraphics}{Open\+G\+L\+Graphics}, Allegro\+Graphics 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!set\+Input@{set\+Input}}
+\index{set\+Input@{set\+Input}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{set\+Input(\+Input $\ast$input)}{setInput(Input *input)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::set\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf Input} $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a317e8327dc9aee497f2a9ce1033d16c7}{}\label{classgcn_1_1Gui_a317e8327dc9aee497f2a9ce1033d16c7}
+Sets the \hyperlink{classgcn_1_1Input}{Input} object to use for input handling.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the \hyperlink{classgcn_1_1Input}{Input} object to use for input handling. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1SDLInput}{S\+D\+L\+Input}, Allegro\+Input 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!set\+Tabbing\+Enabled@{set\+Tabbing\+Enabled}}
+\index{set\+Tabbing\+Enabled@{set\+Tabbing\+Enabled}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{set\+Tabbing\+Enabled(bool tabbing)}{setTabbingEnabled(bool tabbing)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::set\+Tabbing\+Enabled (
+\begin{DoxyParamCaption}
+\item[{bool}]{tabbing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a5d2546bd8c6dbe288640163b85e94194}{}\label{classgcn_1_1Gui_a5d2546bd8c6dbe288640163b85e94194}
+Toggles the use of the tab key to focus Widgets. By default, tabbing is enabled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tabbing} & set to false if you want to disable tabbing. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Gui@{gcn\+::\+Gui}!set\+Top@{set\+Top}}
+\index{set\+Top@{set\+Top}!gcn\+::\+Gui@{gcn\+::\+Gui}}
+\subsubsection[{\texorpdfstring{set\+Top(\+Widget $\ast$top)}{setTop(Widget *top)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Gui\+::set\+Top (
+\begin{DoxyParamCaption}
+\item[{{\bf Widget} $\ast$}]{top}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1Gui_a69ce39ec8962ae93f428a01ffec677de}{}\label{classgcn_1_1Gui_a69ce39ec8962ae93f428a01ffec677de}
+Sets the top \hyperlink{classgcn_1_1Widget}{Widget}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & the top \hyperlink{classgcn_1_1Widget}{Widget}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/gui.\+hpp\item 
+src/gui.\+cpp\end{DoxyCompactItemize}

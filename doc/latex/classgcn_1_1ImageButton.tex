@@ -1,0 +1,157 @@
+\hypertarget{classgcn_1_1ImageButton}{}\section{gcn\+:\+:Image\+Button Class Reference}
+\label{classgcn_1_1ImageButton}\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+
+
+{\ttfamily \#include $<$imagebutton.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Image\+Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1ImageButton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Image\+Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1ImageButton__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1ImageButton_a54da62f658134fc699d4ae806f4412e6}{Image\+Button} (const std\+::string \&filename)
+\item 
+\hyperlink{classgcn_1_1ImageButton_a9186ef6e694608195576ef2bc06e8011}{Image\+Button} (\hyperlink{classgcn_1_1Image}{Image} $\ast$image)
+\item 
+virtual \hyperlink{classgcn_1_1ImageButton_a0cdce026743d26b826c1be62b69f08cf}{$\sim$\+Image\+Button} ()
+\item 
+void \hyperlink{classgcn_1_1ImageButton_a5ab1a6bebc05437c4c366989dc2b8f0b}{adjust\+Size} ()
+\item 
+void \hyperlink{classgcn_1_1ImageButton_ae2c285107583baa3232dee18e3f396a6}{set\+Image} (\hyperlink{classgcn_1_1Image}{Image} $\ast$image)
+\item 
+\hyperlink{classgcn_1_1Image}{Image} $\ast$ \hyperlink{classgcn_1_1ImageButton_ac1730921714aae0893366137fe775ff0}{get\+Image} ()
+\item 
+void \hyperlink{classgcn_1_1ImageButton_a067e502ef22fa2f443c575aca9cfe179}{draw} (\hyperlink{classgcn_1_1Graphics}{gcn\+::\+Graphics} $\ast$graphics)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Image}{gcn\+::\+Image} $\ast$ {\bfseries m\+Image}\hypertarget{classgcn_1_1ImageButton_afc26c98ffb51c5e5eebc3f101375a6cc}{}\label{classgcn_1_1ImageButton_afc26c98ffb51c5e5eebc3f101375a6cc}
+
+\item 
+bool \hyperlink{classgcn_1_1ImageButton_a0e8f9179ab310d84934f1093caa66eb6}{m\+Internal\+Image}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple button that displays an image instead of a caption. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!Image\+Button@{Image\+Button}}
+\index{Image\+Button@{Image\+Button}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{Image\+Button(const std\+::string \&filename)}{ImageButton(const std::string &filename)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Button\+::\+Image\+Button (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageButton_a54da62f658134fc699d4ae806f4412e6}{}\label{classgcn_1_1ImageButton_a54da62f658134fc699d4ae806f4412e6}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image to display. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!Image\+Button@{Image\+Button}}
+\index{Image\+Button@{Image\+Button}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{Image\+Button(\+Image $\ast$image)}{ImageButton(Image *image)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Button\+::\+Image\+Button (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} $\ast$}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageButton_a9186ef6e694608195576ef2bc06e8011}{}\label{classgcn_1_1ImageButton_a9186ef6e694608195576ef2bc06e8011}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to display. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!````~Image\+Button@{$\sim$\+Image\+Button}}
+\index{````~Image\+Button@{$\sim$\+Image\+Button}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image\+Button()}{~ImageButton()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Image\+Button\+::$\sim$\+Image\+Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageButton_a0cdce026743d26b826c1be62b69f08cf}{}\label{classgcn_1_1ImageButton_a0cdce026743d26b826c1be62b69f08cf}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!adjust\+Size@{adjust\+Size}}
+\index{adjust\+Size@{adjust\+Size}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{adjust\+Size()}{adjustSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Button\+::adjust\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageButton_a5ab1a6bebc05437c4c366989dc2b8f0b}{}\label{classgcn_1_1ImageButton_a5ab1a6bebc05437c4c366989dc2b8f0b}
+Adjusts the size of the image button to fit the image. \index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{draw(gcn\+::\+Graphics $\ast$graphics)}{draw(gcn::Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Button\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf gcn\+::\+Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1ImageButton_a067e502ef22fa2f443c575aca9cfe179}{}\label{classgcn_1_1ImageButton_a067e502ef22fa2f443c575aca9cfe179}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Button_a741dca35284e5155cd99c1e962e3d1e8}{gcn\+::\+Button}.
+
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{get\+Image()}{getImage()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image}$\ast$ gcn\+::\+Image\+Button\+::get\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageButton_ac1730921714aae0893366137fe775ff0}{}\label{classgcn_1_1ImageButton_ac1730921714aae0893366137fe775ff0}
+Gets the image of the image button.
+
+\begin{DoxyReturn}{Returns}
+The image of the image button. 
+\end{DoxyReturn}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{set\+Image(\+Image $\ast$image)}{setImage(Image *image)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Image\+Button\+::set\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Image} $\ast$}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ImageButton_ae2c285107583baa3232dee18e3f396a6}{}\label{classgcn_1_1ImageButton_ae2c285107583baa3232dee18e3f396a6}
+Sets the image to display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to display. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}!m\+Internal\+Image@{m\+Internal\+Image}}
+\index{m\+Internal\+Image@{m\+Internal\+Image}!gcn\+::\+Image\+Button@{gcn\+::\+Image\+Button}}
+\subsubsection[{\texorpdfstring{m\+Internal\+Image}{mInternalImage}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Image\+Button\+::m\+Internal\+Image\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1ImageButton_a0e8f9179ab310d84934f1093caa66eb6}{}\label{classgcn_1_1ImageButton_a0e8f9179ab310d84934f1093caa66eb6}
+True if the image has been loaded internally, false otherwise. An image not loaded internally should not be deleted in the destructor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/imagebutton.\+hpp\item 
+src/widgets/imagebutton.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,313 @@
+\hypertarget{classgcn_1_1CheckBox}{}\section{gcn\+:\+:Check\+Box Class Reference}
+\label{classgcn_1_1CheckBox}\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+
+
+{\ttfamily \#include $<$checkbox.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Check\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1CheckBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Check\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1CheckBox__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1CheckBox_a0e81d7b6fd1e6b0d196c8d800a8e2610}{Check\+Box} ()
+\item 
+\hyperlink{classgcn_1_1CheckBox_aab17607081d115e303b847b0e57338ec}{Check\+Box} (const std\+::string \&caption, bool selected=false)
+\item 
+virtual \hyperlink{classgcn_1_1CheckBox_aec8d239efd70e47dcb4fdf7684d747e3}{$\sim$\+Check\+Box} ()
+\item 
+bool \hyperlink{classgcn_1_1CheckBox_aa50cd949abb713529eb8fa60d85ead45}{is\+Selected} () const 
+\item 
+void \hyperlink{classgcn_1_1CheckBox_afc33cf5fe07bd1c121f76ecc2a6f0729}{set\+Selected} (bool selected)
+\item 
+const std\+::string \& \hyperlink{classgcn_1_1CheckBox_ae8fa88932da62ef67d0d4f6b39bbaf15}{get\+Caption} () const 
+\item 
+void \hyperlink{classgcn_1_1CheckBox_a155f63ad8ffcf2f8200c3ffef274247d}{set\+Caption} (const std\+::string \&caption)
+\item 
+void \hyperlink{classgcn_1_1CheckBox_a18dd39feee57e6bfcef69fc9f5b00d08}{adjust\+Size} ()
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_acd76dee289dcd7cc07ade85ce74c7d7c}{draw} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_a385eb0b9601f128646dc28b0e34c0293}{draw\+Border} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_a40a70ca664f54dd568b3522e6fb6e7ce}{key\+Pressed} (\hyperlink{classgcn_1_1KeyEvent}{Key\+Event} \&key\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_a968db12a9f01c70979ca06a179e8d565}{mouse\+Clicked} (\hyperlink{classgcn_1_1MouseEvent}{Mouse\+Event} \&mouse\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_adedbb4f9840c41a9e6943d2757986dff}{mouse\+Dragged} (\hyperlink{classgcn_1_1MouseEvent}{Mouse\+Event} \&mouse\+Event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_ab2aad0c0ee5a68d446aeb582143fac01}{draw\+Box} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1CheckBox_a65e7e1e0c924a2dc249131f7961aaeba}{toggle\+Selected} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classgcn_1_1CheckBox_a2d0b704f55081d3282730fd77660d9c1}{m\+Selected}
+\item 
+std\+::string \hyperlink{classgcn_1_1CheckBox_a09a931daf166102f459b169d19840484}{m\+Caption}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An implementation of a check box where a user can select or deselect the check box and where the status of the check box is displayed to the user. A check box is capable of displaying a caption.
+
+If a check box\textquotesingle{}s state changes an action event will be sent to all action listeners of the check box. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!Check\+Box@{Check\+Box}}
+\index{Check\+Box@{Check\+Box}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{Check\+Box()}{CheckBox()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Check\+Box\+::\+Check\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1CheckBox_a0e81d7b6fd1e6b0d196c8d800a8e2610}{}\label{classgcn_1_1CheckBox_a0e81d7b6fd1e6b0d196c8d800a8e2610}
+Contructor. \index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!Check\+Box@{Check\+Box}}
+\index{Check\+Box@{Check\+Box}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{Check\+Box(const std\+::string \&caption, bool selected=false)}{CheckBox(const std::string &caption, bool selected=false)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Check\+Box\+::\+Check\+Box (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption, }
+\item[{bool}]{selected = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1CheckBox_aab17607081d115e303b847b0e57338ec}{}\label{classgcn_1_1CheckBox_aab17607081d115e303b847b0e57338ec}
+Constructor. The check box will be automatically resized to fit it\textquotesingle{}s caption.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the check box. \\
+\hline
+{\em marked} & True if the check box is selected, false otherwise. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!````~Check\+Box@{$\sim$\+Check\+Box}}
+\index{````~Check\+Box@{$\sim$\+Check\+Box}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{$\sim$\+Check\+Box()}{~CheckBox()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual gcn\+::\+Check\+Box\+::$\sim$\+Check\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_aec8d239efd70e47dcb4fdf7684d747e3}{}\label{classgcn_1_1CheckBox_aec8d239efd70e47dcb4fdf7684d747e3}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!adjust\+Size@{adjust\+Size}}
+\index{adjust\+Size@{adjust\+Size}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{adjust\+Size()}{adjustSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::adjust\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1CheckBox_a18dd39feee57e6bfcef69fc9f5b00d08}{}\label{classgcn_1_1CheckBox_a18dd39feee57e6bfcef69fc9f5b00d08}
+Adjusts the check box\textquotesingle{}s size to fit the caption. \index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{draw(\+Graphics $\ast$graphics)}{draw(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_acd76dee289dcd7cc07ade85ce74c7d7c}{}\label{classgcn_1_1CheckBox_acd76dee289dcd7cc07ade85ce74c7d7c}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{draw\+Border(\+Graphics $\ast$graphics)}{drawBorder(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::draw\+Border (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_a385eb0b9601f128646dc28b0e34c0293}{}\label{classgcn_1_1CheckBox_a385eb0b9601f128646dc28b0e34c0293}
+Draws the widget border. A border is drawn around a widget. The width and height of the border is therefore the widgets height+2$\ast$bordersize. Think of a painting that has a certain size, the border surrounds the painting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Widget_a58c3b2f513d8e029e321fd88a974f5c4}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!draw\+Box@{draw\+Box}}
+\index{draw\+Box@{draw\+Box}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{draw\+Box(\+Graphics $\ast$graphics)}{drawBox(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::draw\+Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_ab2aad0c0ee5a68d446aeb582143fac01}{}\label{classgcn_1_1CheckBox_ab2aad0c0ee5a68d446aeb582143fac01}
+Draws the box of the check box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & A \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!get\+Caption@{get\+Caption}}
+\index{get\+Caption@{get\+Caption}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{get\+Caption() const }{getCaption() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& gcn\+::\+Check\+Box\+::get\+Caption (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1CheckBox_ae8fa88932da62ef67d0d4f6b39bbaf15}{}\label{classgcn_1_1CheckBox_ae8fa88932da62ef67d0d4f6b39bbaf15}
+Gets the caption of the check box.
+
+\begin{DoxyReturn}{Returns}
+The caption of the check box. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1CheckBox_a155f63ad8ffcf2f8200c3ffef274247d}{set\+Caption} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!is\+Selected@{is\+Selected}}
+\index{is\+Selected@{is\+Selected}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{is\+Selected() const }{isSelected() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Check\+Box\+::is\+Selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classgcn_1_1CheckBox_aa50cd949abb713529eb8fa60d85ead45}{}\label{classgcn_1_1CheckBox_aa50cd949abb713529eb8fa60d85ead45}
+Checks if the check box is selected.
+
+\begin{DoxyReturn}{Returns}
+True if the check box is selected, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1CheckBox_afc33cf5fe07bd1c121f76ecc2a6f0729}{set\+Selected} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{key\+Pressed(\+Key\+Event \&key\+Event)}{keyPressed(KeyEvent &keyEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Event} \&}]{key\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_a40a70ca664f54dd568b3522e6fb6e7ce}{}\label{classgcn_1_1CheckBox_a40a70ca664f54dd568b3522e6fb6e7ce}
+Called if a key is pressed when the widget has keyboard focus. If a key is held down the widget will generate multiple key presses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & discribes the event. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1KeyListener_ada6c0d038340d6ee674702268b2d2c67}{gcn\+::\+Key\+Listener}.
+
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{mouse\+Clicked(\+Mouse\+Event \&mouse\+Event)}{mouseClicked(MouseEvent &mouseEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::mouse\+Clicked (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+Event} \&}]{mouse\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_a968db12a9f01c70979ca06a179e8d565}{}\label{classgcn_1_1CheckBox_a968db12a9f01c70979ca06a179e8d565}
+Called when a mouse button is pressed and released (clicked) on the widget area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & describes the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Reimplemented from \hyperlink{classgcn_1_1MouseListener_ae1a2c416d10cc035bd941e99ac49a0f0}{gcn\+::\+Mouse\+Listener}.
+
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{mouse\+Dragged(\+Mouse\+Event \&mouse\+Event)}{mouseDragged(MouseEvent &mouseEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::mouse\+Dragged (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+Event} \&}]{mouse\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_adedbb4f9840c41a9e6943d2757986dff}{}\label{classgcn_1_1CheckBox_adedbb4f9840c41a9e6943d2757986dff}
+Called when the mouse has moved and the mouse has previously been pressed on the widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & describes the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Reimplemented from \hyperlink{classgcn_1_1MouseListener_a5e2764977dd75e52d116f9ba6311a46b}{gcn\+::\+Mouse\+Listener}.
+
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!set\+Caption@{set\+Caption}}
+\index{set\+Caption@{set\+Caption}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{set\+Caption(const std\+::string \&caption)}{setCaption(const std::string &caption)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::set\+Caption (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1CheckBox_a155f63ad8ffcf2f8200c3ffef274247d}{}\label{classgcn_1_1CheckBox_a155f63ad8ffcf2f8200c3ffef274247d}
+Sets the caption of the check box. It\textquotesingle{}s advisable to call adjust\+Size after setting of the caption to adjust the check box\textquotesingle{}s size to fit the caption.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the check box. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1CheckBox_ae8fa88932da62ef67d0d4f6b39bbaf15}{get\+Caption}, \hyperlink{classgcn_1_1CheckBox_a18dd39feee57e6bfcef69fc9f5b00d08}{adjust\+Size} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!set\+Selected@{set\+Selected}}
+\index{set\+Selected@{set\+Selected}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{set\+Selected(bool selected)}{setSelected(bool selected)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::set\+Selected (
+\begin{DoxyParamCaption}
+\item[{bool}]{selected}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1CheckBox_afc33cf5fe07bd1c121f76ecc2a6f0729}{}\label{classgcn_1_1CheckBox_afc33cf5fe07bd1c121f76ecc2a6f0729}
+Sets the check box to be selected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & True if the check box should be set as selected. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1CheckBox_aa50cd949abb713529eb8fa60d85ead45}{is\+Selected} 
+\end{DoxySeeAlso}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!toggle\+Selected@{toggle\+Selected}}
+\index{toggle\+Selected@{toggle\+Selected}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{toggle\+Selected()}{toggleSelected()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Check\+Box\+::toggle\+Selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classgcn_1_1CheckBox_a65e7e1e0c924a2dc249131f7961aaeba}{}\label{classgcn_1_1CheckBox_a65e7e1e0c924a2dc249131f7961aaeba}
+Toggles the check box between being selected and not being selected. 
+
+\subsection{Member Data Documentation}
+\index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!m\+Caption@{m\+Caption}}
+\index{m\+Caption@{m\+Caption}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{m\+Caption}{mCaption}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string gcn\+::\+Check\+Box\+::m\+Caption\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1CheckBox_a09a931daf166102f459b169d19840484}{}\label{classgcn_1_1CheckBox_a09a931daf166102f459b169d19840484}
+Holds the caption of the check box. \index{gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}!m\+Selected@{m\+Selected}}
+\index{m\+Selected@{m\+Selected}!gcn\+::\+Check\+Box@{gcn\+::\+Check\+Box}}
+\subsubsection[{\texorpdfstring{m\+Selected}{mSelected}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Check\+Box\+::m\+Selected\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1CheckBox_a2d0b704f55081d3282730fd77660d9c1}{}\label{classgcn_1_1CheckBox_a2d0b704f55081d3282730fd77660d9c1}
+True if the check box is selected, false otherwise. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/checkbox.\+hpp\item 
+src/widgets/checkbox.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+\hypertarget{classgcn_1_1SDLImage}{}\section{gcn\+:\+:S\+D\+L\+Image Class Reference}
+\label{classgcn_1_1SDLImage}\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+
+
+{\ttfamily \#include $<$sdlimage.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:S\+D\+L\+Image\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classgcn_1_1SDLImage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:S\+D\+L\+Image\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classgcn_1_1SDLImage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1SDLImage_a47271c3b3b77dc33af535a294ffbbaf5}{S\+D\+L\+Image} (S\+D\+L\+\_\+\+Surface $\ast$surface, bool auto\+Free)
+\item 
+virtual \hyperlink{classgcn_1_1SDLImage_aac706c9b974d455c78234019c8810bec}{$\sim$\+S\+D\+L\+Image} ()
+\item 
+virtual S\+D\+L\+\_\+\+Surface $\ast$ \hyperlink{classgcn_1_1SDLImage_a6de7994d61fbab88647d8554a17ff708}{get\+Surface} () const 
+\item 
+virtual void \hyperlink{classgcn_1_1SDLImage_a3bc4ad47bfe36987a48226a676f9f576}{free} ()
+\item 
+virtual int \hyperlink{classgcn_1_1SDLImage_aedda43f210a3e661685636684977eb1e}{get\+Width} () const 
+\item 
+virtual int \hyperlink{classgcn_1_1SDLImage_a92002975749328bf9c46c6a647b949d9}{get\+Height} () const 
+\item 
+virtual \hyperlink{classgcn_1_1Color}{Color} \hyperlink{classgcn_1_1SDLImage_af6f2df0d39d68b7c0547943f368f3726}{get\+Pixel} (int x, int y)
+\item 
+virtual void \hyperlink{classgcn_1_1SDLImage_a707af6ce207dff83174dd91dfd4b4148}{put\+Pixel} (int x, int y, const \hyperlink{classgcn_1_1Color}{Color} \&color)
+\item 
+virtual void \hyperlink{classgcn_1_1SDLImage_ad9b2c696a7c58af497c3830ad9d76861}{convert\+To\+Display\+Format} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries m\+Surface}\hypertarget{classgcn_1_1SDLImage_a4bf5919ded9c1b71495746f54a6a54ff}{}\label{classgcn_1_1SDLImage_a4bf5919ded9c1b71495746f54a6a54ff}
+
+\item 
+bool {\bfseries m\+Auto\+Free}\hypertarget{classgcn_1_1SDLImage_a4cbb771d212e3f72773ef2e6fae20565}{}\label{classgcn_1_1SDLImage_a4cbb771d212e3f72773ef2e6fae20565}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+S\+DL implementation of \hyperlink{classgcn_1_1Image}{Image}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!S\+D\+L\+Image@{S\+D\+L\+Image}}
+\index{S\+D\+L\+Image@{S\+D\+L\+Image}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{S\+D\+L\+Image(\+S\+D\+L\+\_\+\+Surface $\ast$surface, bool auto\+Free)}{SDLImage(SDL_Surface *surface, bool autoFree)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+S\+D\+L\+Image\+::\+S\+D\+L\+Image (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{surface, }
+\item[{bool}]{auto\+Free}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1SDLImage_a47271c3b3b77dc33af535a294ffbbaf5}{}\label{classgcn_1_1SDLImage_a47271c3b3b77dc33af535a294ffbbaf5}
+Constructor. Load an image from an S\+DL surface.
+
+N\+O\+TE\+: The functions get\+Pixel and put\+Pixel are only guaranteed to work before an image has been converted to display format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & the surface from which to load. \\
+\hline
+{\em auto\+Free} & true if the surface should automatically be deleted. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!````~S\+D\+L\+Image@{$\sim$\+S\+D\+L\+Image}}
+\index{````~S\+D\+L\+Image@{$\sim$\+S\+D\+L\+Image}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{$\sim$\+S\+D\+L\+Image()}{~SDLImage()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+S\+D\+L\+Image\+::$\sim$\+S\+D\+L\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_aac706c9b974d455c78234019c8810bec}{}\label{classgcn_1_1SDLImage_aac706c9b974d455c78234019c8810bec}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!convert\+To\+Display\+Format@{convert\+To\+Display\+Format}}
+\index{convert\+To\+Display\+Format@{convert\+To\+Display\+Format}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{convert\+To\+Display\+Format()}{convertToDisplayFormat()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+Image\+::convert\+To\+Display\+Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_ad9b2c696a7c58af497c3830ad9d76861}{}\label{classgcn_1_1SDLImage_ad9b2c696a7c58af497c3830ad9d76861}
+Converts the image, if possible, to display format.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Only guaranteed to work before the image has been converted to display format. 
+
+Implements \hyperlink{classgcn_1_1Image_a3e59862b9a8fdb2bd3cffd9ba39969af}{gcn\+::\+Image}.
+
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!free@{free}}
+\index{free@{free}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{free()}{free()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+Image\+::free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_a3bc4ad47bfe36987a48226a676f9f576}{}\label{classgcn_1_1SDLImage_a3bc4ad47bfe36987a48226a676f9f576}
+Frees an image. 
+
+Implements \hyperlink{classgcn_1_1Image_acfa8910bae0ed3402e9f1f9876e4c4cf}{gcn\+::\+Image}.
+
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+Image\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_a92002975749328bf9c46c6a647b949d9}{}\label{classgcn_1_1SDLImage_a92002975749328bf9c46c6a647b949d9}
+Gets the height of the \hyperlink{classgcn_1_1Image}{Image}.
+
+\begin{DoxyReturn}{Returns}
+the image height 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Image_a09df6a36dc5a76a75a0dd5720f40ee0d}{gcn\+::\+Image}.
+
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!get\+Pixel@{get\+Pixel}}
+\index{get\+Pixel@{get\+Pixel}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{get\+Pixel(int x, int y)}{getPixel(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} gcn\+::\+S\+D\+L\+Image\+::get\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_af6f2df0d39d68b7c0547943f368f3726}{}\label{classgcn_1_1SDLImage_af6f2df0d39d68b7c0547943f368f3726}
+Gets the color of a pixel at coordinate (x, y) in the image.
+
+I\+M\+P\+O\+R\+T\+A\+NT\+: Only guaranteed to work before the image has been converted to display format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate. \\
+\hline
+{\em y} & the y coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the color of the pixel. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Image_a38e79120cc9f81bb36727e2859e04a09}{gcn\+::\+Image}.
+
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!get\+Surface@{get\+Surface}}
+\index{get\+Surface@{get\+Surface}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{get\+Surface() const }{getSurface() const }}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Surface $\ast$ gcn\+::\+S\+D\+L\+Image\+::get\+Surface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_a6de7994d61fbab88647d8554a17ff708}{}\label{classgcn_1_1SDLImage_a6de7994d61fbab88647d8554a17ff708}
+Gets the S\+DL surface for the image.
+
+\begin{DoxyReturn}{Returns}
+the S\+DL surface for the image. 
+\end{DoxyReturn}
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{get\+Width() const }{getWidth() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+S\+D\+L\+Image\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_aedda43f210a3e661685636684977eb1e}{}\label{classgcn_1_1SDLImage_aedda43f210a3e661685636684977eb1e}
+Gets the width of the \hyperlink{classgcn_1_1Image}{Image}.
+
+\begin{DoxyReturn}{Returns}
+the image width 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgcn_1_1Image_aa367cc8121c1f01a541e615b0a27497c}{gcn\+::\+Image}.
+
+\index{gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}!put\+Pixel@{put\+Pixel}}
+\index{put\+Pixel@{put\+Pixel}!gcn\+::\+S\+D\+L\+Image@{gcn\+::\+S\+D\+L\+Image}}
+\subsubsection[{\texorpdfstring{put\+Pixel(int x, int y, const Color \&color)}{putPixel(int x, int y, const Color &color)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+S\+D\+L\+Image\+::put\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{const {\bf Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1SDLImage_a707af6ce207dff83174dd91dfd4b4148}{}\label{classgcn_1_1SDLImage_a707af6ce207dff83174dd91dfd4b4148}
+Puts a pixel with a certain color at coordinate (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate. \\
+\hline
+{\em y} & the y coordinate. \\
+\hline
+{\em color} & the color of the pixel to put. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Image_a4a023341cacd32ca4448ceec4b79be4a}{gcn\+::\+Image}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/sdl/sdlimage.\+hpp\item 
+src/sdl/sdlimage.\+cpp\end{DoxyCompactItemize}

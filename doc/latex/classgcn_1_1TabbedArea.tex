@@ -1,0 +1,420 @@
+\hypertarget{classgcn_1_1TabbedArea}{}\section{gcn\+:\+:Tabbed\+Area Class Reference}
+\label{classgcn_1_1TabbedArea}\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+
+
+{\ttfamily \#include $<$tabbedarea.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Tabbed\+Area\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1TabbedArea__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Tabbed\+Area\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgcn_1_1TabbedArea__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1TabbedArea_aed578d5b2a0c072ff77e79782d52dc28}{Tabbed\+Area} ()
+\item 
+virtual \hyperlink{classgcn_1_1TabbedArea_affdf70918265af9d18145f9cd21c3d24}{$\sim$\+Tabbed\+Area} ()
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_a84753d8bf44694e4a1c7a8050f903540}{add\+Tab} (const std\+::string \&caption, \hyperlink{classgcn_1_1Widget}{Widget} $\ast$widget)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_aba5478d208073e5a7f9cc799f6d6f706}{add\+Tab} (\hyperlink{classgcn_1_1Tab}{Tab} $\ast$tab, \hyperlink{classgcn_1_1Widget}{Widget} $\ast$widget)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_a3a8fc1e6c3609f0567c3419bcf865500}{remove\+Tab\+With\+Index} (unsigned int index)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_aa813aba837a253e3d8c23d77b529f7ce}{remove\+Tab} (\hyperlink{classgcn_1_1Tab}{Tab} $\ast$tab)
+\item 
+virtual bool \hyperlink{classgcn_1_1TabbedArea_a14a7d3980448832bd1e7bfc650a31fe1}{is\+Tab\+Selected} (unsigned int index) const 
+\item 
+virtual bool \hyperlink{classgcn_1_1TabbedArea_aa299c2a2151307db1cc095c8bbf60289}{is\+Tab\+Selected} (\hyperlink{classgcn_1_1Tab}{Tab} $\ast$tab)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_ae2df5d32eb72072615a1cdef27e1b862}{set\+Selected\+Tab\+With\+Index} (unsigned int index)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_a0f869364a98aaaac589eeeaf90c7fd99}{set\+Selected\+Tab} (\hyperlink{classgcn_1_1Tab}{Tab} $\ast$tab)
+\item 
+virtual int \hyperlink{classgcn_1_1TabbedArea_a05e02eaf4de1f3ea4471a882eb3eb59c}{get\+Selected\+Tab\+Index} () const 
+\item 
+\hyperlink{classgcn_1_1Tab}{Tab} $\ast$ \hyperlink{classgcn_1_1TabbedArea_ab41289b4485a54860d2442e346633806}{get\+Selected\+Tab} ()
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_ad7abaa45021349d40becd9603106b844}{draw} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_aa5ea5876476beaa9c6badc87bccd221c}{draw\+Border} (\hyperlink{classgcn_1_1Graphics}{Graphics} $\ast$graphics)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_a4adbdd819c9af603b20728d6e4cd5ce9}{logic} ()
+\item 
+void {\bfseries set\+Width} (int width)\hypertarget{classgcn_1_1TabbedArea_ad6d054c9472cf00bc07cb02bddef765c}{}\label{classgcn_1_1TabbedArea_ad6d054c9472cf00bc07cb02bddef765c}
+
+\item 
+void {\bfseries set\+Height} (int height)\hypertarget{classgcn_1_1TabbedArea_adc89c1f7dc1153fbdda50480134b6c06}{}\label{classgcn_1_1TabbedArea_adc89c1f7dc1153fbdda50480134b6c06}
+
+\item 
+void {\bfseries set\+Size} (int width, int height)\hypertarget{classgcn_1_1TabbedArea_a8270714564a9468a1a6ac2fab4888c09}{}\label{classgcn_1_1TabbedArea_a8270714564a9468a1a6ac2fab4888c09}
+
+\item 
+void {\bfseries set\+Dimension} (const \hyperlink{classgcn_1_1Rectangle}{Rectangle} \&dimension)\hypertarget{classgcn_1_1TabbedArea_a1e602bc43a066aede7cc22cf47ffd015}{}\label{classgcn_1_1TabbedArea_a1e602bc43a066aede7cc22cf47ffd015}
+
+\item 
+void \hyperlink{classgcn_1_1TabbedArea_ae9e032989a974cee2f2410779d6b95c3}{action} (const \hyperlink{classgcn_1_1ActionEvent}{Action\+Event} \&action\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_aacf206f5ea02e67b295b7b26ea2a6eac}{death} (const \hyperlink{classgcn_1_1Event}{Event} \&event)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_acf74259509f87beb23bdd645325fd0e9}{key\+Pressed} (\hyperlink{classgcn_1_1KeyEvent}{Key\+Event} \&key\+Event)
+\item 
+virtual void \hyperlink{classgcn_1_1TabbedArea_a235f0d2a7162a9cab6ad0fb68d60f08e}{mouse\+Pressed} (\hyperlink{classgcn_1_1MouseEvent}{Mouse\+Event} \&mouse\+Event)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgcn_1_1TabbedArea_acb0a69800cb3ead2340d15f586ba733e}{adjust\+Size} ()
+\item 
+void {\bfseries adjust\+Tab\+Positions} ()\hypertarget{classgcn_1_1TabbedArea_ac6e2c9c6248547fcd1967df5b40a4b5f}{}\label{classgcn_1_1TabbedArea_ac6e2c9c6248547fcd1967df5b40a4b5f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1Tab}{Tab} $\ast$ {\bfseries m\+Selected\+Tab}\hypertarget{classgcn_1_1TabbedArea_a1046afb3d40607305377a162a1c57455}{}\label{classgcn_1_1TabbedArea_a1046afb3d40607305377a162a1c57455}
+
+\item 
+\hyperlink{classgcn_1_1Container}{Container} $\ast$ {\bfseries m\+Tab\+Container}\hypertarget{classgcn_1_1TabbedArea_a35d3dd92f4335768b3c8660a65f402d0}{}\label{classgcn_1_1TabbedArea_a35d3dd92f4335768b3c8660a65f402d0}
+
+\item 
+\hyperlink{classgcn_1_1Container}{Container} $\ast$ {\bfseries m\+Widget\+Container}\hypertarget{classgcn_1_1TabbedArea_aa5f33fdf4dbafb5657d3f5da7eeacc87}{}\label{classgcn_1_1TabbedArea_aa5f33fdf4dbafb5657d3f5da7eeacc87}
+
+\item 
+std\+::vector$<$ \hyperlink{classgcn_1_1Tab}{Tab} $\ast$ $>$ {\bfseries m\+Tabs\+To\+Clean\+Up}\hypertarget{classgcn_1_1TabbedArea_a6127cdec0f2e62730ff48889aba32597}{}\label{classgcn_1_1TabbedArea_a6127cdec0f2e62730ff48889aba32597}
+
+\item 
+std\+::vector$<$ std\+::pair$<$ \hyperlink{classgcn_1_1Tab}{Tab} $\ast$, \hyperlink{classgcn_1_1Widget}{Widget} $\ast$ $>$ $>$ {\bfseries m\+Tabs}\hypertarget{classgcn_1_1TabbedArea_acb225a940b0c112cd026b00b151460e2}{}\label{classgcn_1_1TabbedArea_acb225a940b0c112cd026b00b151460e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+With the tabbed area widget several widgets can share the same space. The widget to view is selected by the user by using tabs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!Tabbed\+Area@{Tabbed\+Area}}
+\index{Tabbed\+Area@{Tabbed\+Area}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{Tabbed\+Area()}{TabbedArea()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Tabbed\+Area\+::\+Tabbed\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1TabbedArea_aed578d5b2a0c072ff77e79782d52dc28}{}\label{classgcn_1_1TabbedArea_aed578d5b2a0c072ff77e79782d52dc28}
+Constructor. \index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!````~Tabbed\+Area@{$\sim$\+Tabbed\+Area}}
+\index{````~Tabbed\+Area@{$\sim$\+Tabbed\+Area}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{$\sim$\+Tabbed\+Area()}{~TabbedArea()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Tabbed\+Area\+::$\sim$\+Tabbed\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_affdf70918265af9d18145f9cd21c3d24}{}\label{classgcn_1_1TabbedArea_affdf70918265af9d18145f9cd21c3d24}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!action@{action}}
+\index{action@{action}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{action(const Action\+Event \&action\+Event)}{action(const ActionEvent &actionEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::action (
+\begin{DoxyParamCaption}
+\item[{const {\bf Action\+Event} \&}]{action\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_ae9e032989a974cee2f2410779d6b95c3}{}\label{classgcn_1_1TabbedArea_ae9e032989a974cee2f2410779d6b95c3}
+Called when an action is recieved from a \hyperlink{classgcn_1_1Widget}{Widget}. It is used to be able to recieve a notification that an action has occured.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Event} & the event of the action. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Implements \hyperlink{classgcn_1_1ActionListener_ae883112ab054a8589b5d82c47763a31d}{gcn\+::\+Action\+Listener}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!add\+Tab@{add\+Tab}}
+\index{add\+Tab@{add\+Tab}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{add\+Tab(const std\+::string \&caption, Widget $\ast$widget)}{addTab(const std::string &caption, Widget *widget)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::add\+Tab (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{caption, }
+\item[{{\bf Widget} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a84753d8bf44694e4a1c7a8050f903540}{}\label{classgcn_1_1TabbedArea_a84753d8bf44694e4a1c7a8050f903540}
+Adds a tab to the tabbed area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & The caption of the tab. \\
+\hline
+{\em widget} & The widget to view when the tab is selected. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!add\+Tab@{add\+Tab}}
+\index{add\+Tab@{add\+Tab}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{add\+Tab(\+Tab $\ast$tab, Widget $\ast$widget)}{addTab(Tab *tab, Widget *widget)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::add\+Tab (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab} $\ast$}]{tab, }
+\item[{{\bf Widget} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_aba5478d208073e5a7f9cc799f6d6f706}{}\label{classgcn_1_1TabbedArea_aba5478d208073e5a7f9cc799f6d6f706}
+Adds a tab to the tabbed area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The tab widget for the tab. \\
+\hline
+{\em widget} & The widget to view when the tab is selected. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!adjust\+Size@{adjust\+Size}}
+\index{adjust\+Size@{adjust\+Size}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{adjust\+Size()}{adjustSize()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::adjust\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classgcn_1_1TabbedArea_acb0a69800cb3ead2340d15f586ba733e}{}\label{classgcn_1_1TabbedArea_acb0a69800cb3ead2340d15f586ba733e}
+Adjusts the size of the tabbed area. \index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!death@{death}}
+\index{death@{death}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{death(const Event \&event)}{death(const Event &event)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::death (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_aacf206f5ea02e67b295b7b26ea2a6eac}{}\label{classgcn_1_1TabbedArea_aacf206f5ea02e67b295b7b26ea2a6eac}
+Called when a widget dies. It is used to be able to recieve a notification when a death of a widget occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event of the death. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1BasicContainer_ac6cf8760537dcd167e0f518f556bccf4}{gcn\+::\+Basic\+Container}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!draw@{draw}}
+\index{draw@{draw}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{draw(\+Graphics $\ast$graphics)}{draw(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_ad7abaa45021349d40becd9603106b844}{}\label{classgcn_1_1TabbedArea_ad7abaa45021349d40becd9603106b844}
+Draws the widget. It is called by the parent widget when it is time for the widget to draw itself. The graphics object is set up so that all drawing is relative to the widget, i.\+e coordinate (0,0) is the top-\/left corner of the widget. It is not possible to draw outside of a widgets dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classgcn_1_1Widget_acc595221d6a2d1afe1043c16dc37d212}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{draw\+Border(\+Graphics $\ast$graphics)}{drawBorder(Graphics *graphics)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::draw\+Border (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphics} $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_aa5ea5876476beaa9c6badc87bccd221c}{}\label{classgcn_1_1TabbedArea_aa5ea5876476beaa9c6badc87bccd221c}
+Draws the widget border. A border is drawn around a widget. The width and height of the border is therefore the widgets height+2$\ast$bordersize. Think of a painting that has a certain size, the border surrounds the painting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & a \hyperlink{classgcn_1_1Graphics}{Graphics} object to draw with. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1Widget_a58c3b2f513d8e029e321fd88a974f5c4}{gcn\+::\+Widget}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!get\+Selected\+Tab@{get\+Selected\+Tab}}
+\index{get\+Selected\+Tab@{get\+Selected\+Tab}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{get\+Selected\+Tab()}{getSelectedTab()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab} $\ast$ gcn\+::\+Tabbed\+Area\+::get\+Selected\+Tab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1TabbedArea_ab41289b4485a54860d2442e346633806}{}\label{classgcn_1_1TabbedArea_ab41289b4485a54860d2442e346633806}
+Gets the selected tab.
+
+\begin{DoxyReturn}{Returns}
+The selected tab. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!get\+Selected\+Tab\+Index@{get\+Selected\+Tab\+Index}}
+\index{get\+Selected\+Tab\+Index@{get\+Selected\+Tab\+Index}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{get\+Selected\+Tab\+Index() const }{getSelectedTabIndex() const }}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Tabbed\+Area\+::get\+Selected\+Tab\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a05e02eaf4de1f3ea4471a882eb3eb59c}{}\label{classgcn_1_1TabbedArea_a05e02eaf4de1f3ea4471a882eb3eb59c}
+Gets the index of the selected tab.
+
+\begin{DoxyReturn}{Returns}
+The undex of the selected tab. If no tab is selected -\/1 will be returned. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!is\+Tab\+Selected@{is\+Tab\+Selected}}
+\index{is\+Tab\+Selected@{is\+Tab\+Selected}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{is\+Tab\+Selected(unsigned int index) const }{isTabSelected(unsigned int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Tabbed\+Area\+::is\+Tab\+Selected (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a14a7d3980448832bd1e7bfc650a31fe1}{}\label{classgcn_1_1TabbedArea_a14a7d3980448832bd1e7bfc650a31fe1}
+Checks whether a tab given an index is selected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the tab to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tab is selected, false otherwise. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!is\+Tab\+Selected@{is\+Tab\+Selected}}
+\index{is\+Tab\+Selected@{is\+Tab\+Selected}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{is\+Tab\+Selected(\+Tab $\ast$tab)}{isTabSelected(Tab *tab)}}]{\setlength{\rightskip}{0pt plus 5cm}bool gcn\+::\+Tabbed\+Area\+::is\+Tab\+Selected (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_aa299c2a2151307db1cc095c8bbf60289}{}\label{classgcn_1_1TabbedArea_aa299c2a2151307db1cc095c8bbf60289}
+Checks whether a tab is selected or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The tab to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tab is selected, false otherwise. 
+\end{DoxyReturn}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{key\+Pressed(\+Key\+Event \&key\+Event)}{keyPressed(KeyEvent &keyEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf Key\+Event} \&}]{key\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_acf74259509f87beb23bdd645325fd0e9}{}\label{classgcn_1_1TabbedArea_acf74259509f87beb23bdd645325fd0e9}
+Called if a key is pressed when the widget has keyboard focus. If a key is held down the widget will generate multiple key presses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & discribes the event. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classgcn_1_1KeyListener_ada6c0d038340d6ee674702268b2d2c67}{gcn\+::\+Key\+Listener}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!logic@{logic}}
+\index{logic@{logic}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{logic()}{logic()}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::logic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a4adbdd819c9af603b20728d6e4cd5ce9}{}\label{classgcn_1_1TabbedArea_a4adbdd819c9af603b20728d6e4cd5ce9}
+Called for all widgets in the gui each time \hyperlink{classgcn_1_1Gui_a66744ebd628213d574bb6a7010781b1f}{Gui\+::logic} is called. You can do logic stuff here like playing an animation.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgcn_1_1Gui}{Gui} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classgcn_1_1BasicContainer_a65972968364c62bf244985b2900eaf25}{gcn\+::\+Basic\+Container}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{mouse\+Pressed(\+Mouse\+Event \&mouse\+Event)}{mousePressed(MouseEvent &mouseEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::mouse\+Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+Event} \&}]{mouse\+Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a235f0d2a7162a9cab6ad0fb68d60f08e}{}\label{classgcn_1_1TabbedArea_a235f0d2a7162a9cab6ad0fb68d60f08e}
+Called when a mouse button has been pressed on the widget area.
+
+N\+O\+TE\+: A mouse press is N\+OT equal to a mouse click. Use mouse\+Click\+Message to check for mouse clicks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & describes the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+6.\+0 
+\end{DoxySince}
+
+
+Reimplemented from \hyperlink{classgcn_1_1MouseListener_af81ee6190a48a18585f6e738e381abd3}{gcn\+::\+Mouse\+Listener}.
+
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!remove\+Tab@{remove\+Tab}}
+\index{remove\+Tab@{remove\+Tab}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{remove\+Tab(\+Tab $\ast$tab)}{removeTab(Tab *tab)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::remove\+Tab (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_aa813aba837a253e3d8c23d77b529f7ce}{}\label{classgcn_1_1TabbedArea_aa813aba837a253e3d8c23d77b529f7ce}
+Removes a tab from the tabbed area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The tab to remove. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!remove\+Tab\+With\+Index@{remove\+Tab\+With\+Index}}
+\index{remove\+Tab\+With\+Index@{remove\+Tab\+With\+Index}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{remove\+Tab\+With\+Index(unsigned int index)}{removeTabWithIndex(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::remove\+Tab\+With\+Index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a3a8fc1e6c3609f0567c3419bcf865500}{}\label{classgcn_1_1TabbedArea_a3a8fc1e6c3609f0567c3419bcf865500}
+Removes a tab from the tabbed area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the tab to remove. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!set\+Selected\+Tab@{set\+Selected\+Tab}}
+\index{set\+Selected\+Tab@{set\+Selected\+Tab}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{set\+Selected\+Tab(\+Tab $\ast$tab)}{setSelectedTab(Tab *tab)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::set\+Selected\+Tab (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_a0f869364a98aaaac589eeeaf90c7fd99}{}\label{classgcn_1_1TabbedArea_a0f869364a98aaaac589eeeaf90c7fd99}
+Sets a tab to be selected or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The tab to be selected. \\
+\hline
+\end{DoxyParams}
+\index{gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}!set\+Selected\+Tab\+With\+Index@{set\+Selected\+Tab\+With\+Index}}
+\index{set\+Selected\+Tab\+With\+Index@{set\+Selected\+Tab\+With\+Index}!gcn\+::\+Tabbed\+Area@{gcn\+::\+Tabbed\+Area}}
+\subsubsection[{\texorpdfstring{set\+Selected\+Tab\+With\+Index(unsigned int index)}{setSelectedTabWithIndex(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void gcn\+::\+Tabbed\+Area\+::set\+Selected\+Tab\+With\+Index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classgcn_1_1TabbedArea_ae2df5d32eb72072615a1cdef27e1b862}{}\label{classgcn_1_1TabbedArea_ae2df5d32eb72072615a1cdef27e1b862}
+Sets a tab given an index to be selected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the tab to be selected. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/widgets/tabbedarea.\+hpp\item 
+src/widgets/tabbedarea.\+cpp\end{DoxyCompactItemize}

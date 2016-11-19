@@ -1,0 +1,117 @@
+\hypertarget{classgcn_1_1ClipRectangle}{}\section{gcn\+:\+:Clip\+Rectangle Class Reference}
+\label{classgcn_1_1ClipRectangle}\index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+
+
+{\ttfamily \#include $<$cliprectangle.\+hpp$>$}
+
+
+
+Inheritance diagram for gcn\+:\+:Clip\+Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgcn_1_1ClipRectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gcn\+:\+:Clip\+Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classgcn_1_1ClipRectangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgcn_1_1ClipRectangle_af4b463769706f943b604ceaaf583d27c}{Clip\+Rectangle} ()
+\item 
+\hyperlink{classgcn_1_1ClipRectangle_a64655edef4076373470ea6146063dd92}{Clip\+Rectangle} (int x, int y, int width, int height, int \hyperlink{classgcn_1_1ClipRectangle_afe946bf9f906a4f571c9a6bdbd9fb730}{x\+Offset}, int \hyperlink{classgcn_1_1ClipRectangle_a322306940b67c677e14cb0cab5b6eb3e}{y\+Offset})
+\item 
+const \hyperlink{classgcn_1_1ClipRectangle}{Clip\+Rectangle} \& \hyperlink{classgcn_1_1ClipRectangle_af4d051916713471ee1025a5056b47a94}{operator=} (const \hyperlink{classgcn_1_1Rectangle}{Rectangle} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classgcn_1_1ClipRectangle_afe946bf9f906a4f571c9a6bdbd9fb730}{x\+Offset}
+\item 
+int \hyperlink{classgcn_1_1ClipRectangle_a322306940b67c677e14cb0cab5b6eb3e}{y\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A rectangle used when dealing with clipping. It is a regular \hyperlink{classgcn_1_1Rectangle}{Rectangle} extended with variables for x offsets and y offsets. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}!Clip\+Rectangle@{Clip\+Rectangle}}
+\index{Clip\+Rectangle@{Clip\+Rectangle}!gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+\subsubsection[{\texorpdfstring{Clip\+Rectangle()}{ClipRectangle()}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Clip\+Rectangle\+::\+Clip\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ClipRectangle_af4b463769706f943b604ceaaf583d27c}{}\label{classgcn_1_1ClipRectangle_af4b463769706f943b604ceaaf583d27c}
+Constructor. \index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}!Clip\+Rectangle@{Clip\+Rectangle}}
+\index{Clip\+Rectangle@{Clip\+Rectangle}!gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+\subsubsection[{\texorpdfstring{Clip\+Rectangle(int x, int y, int width, int height, int x\+Offset, int y\+Offset)}{ClipRectangle(int x, int y, int width, int height, int xOffset, int yOffset)}}]{\setlength{\rightskip}{0pt plus 5cm}gcn\+::\+Clip\+Rectangle\+::\+Clip\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{x\+Offset, }
+\item[{int}]{y\+Offset}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ClipRectangle_a64655edef4076373470ea6146063dd92}{}\label{classgcn_1_1ClipRectangle_a64655edef4076373470ea6146063dd92}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the rectangle x coordinate. \\
+\hline
+{\em y} & the rectangle y coordinate. \\
+\hline
+{\em width} & the rectangle width. \\
+\hline
+{\em height} & the rectangle height. \\
+\hline
+{\em x\+Offset} & origin of drawing (used by \hyperlink{classgcn_1_1Graphics}{Graphics}). \\
+\hline
+{\em y\+Offset} & origin of drawing (used by \hyperlink{classgcn_1_1Graphics}{Graphics}) . \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}!operator=@{operator=}}
+\index{operator=@{operator=}!gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+\subsubsection[{\texorpdfstring{operator=(const Rectangle \&other)}{operator=(const Rectangle &other)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Clip\+Rectangle} \& gcn\+::\+Clip\+Rectangle\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classgcn_1_1ClipRectangle_af4d051916713471ee1025a5056b47a94}{}\label{classgcn_1_1ClipRectangle_af4d051916713471ee1025a5056b47a94}
+Copies x, y, width and height field from a \hyperlink{classgcn_1_1Rectangle}{Rectangle}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the \hyperlink{classgcn_1_1Rectangle}{Rectangle} to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classgcn_1_1ClipRectangle}{Clip\+Rectangle}. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}!x\+Offset@{x\+Offset}}
+\index{x\+Offset@{x\+Offset}!gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+\subsubsection[{\texorpdfstring{x\+Offset}{xOffset}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Clip\+Rectangle\+::x\+Offset}\hypertarget{classgcn_1_1ClipRectangle_afe946bf9f906a4f571c9a6bdbd9fb730}{}\label{classgcn_1_1ClipRectangle_afe946bf9f906a4f571c9a6bdbd9fb730}
+x-\/origin of drawing (used by \hyperlink{classgcn_1_1Graphics}{Graphics}). \index{gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}!y\+Offset@{y\+Offset}}
+\index{y\+Offset@{y\+Offset}!gcn\+::\+Clip\+Rectangle@{gcn\+::\+Clip\+Rectangle}}
+\subsubsection[{\texorpdfstring{y\+Offset}{yOffset}}]{\setlength{\rightskip}{0pt plus 5cm}int gcn\+::\+Clip\+Rectangle\+::y\+Offset}\hypertarget{classgcn_1_1ClipRectangle_a322306940b67c677e14cb0cab5b6eb3e}{}\label{classgcn_1_1ClipRectangle_a322306940b67c677e14cb0cab5b6eb3e}
+y-\/origin of drawing (used by \hyperlink{classgcn_1_1Graphics}{Graphics}). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/guisan/cliprectangle.\+hpp\item 
+src/cliprectangle.\+cpp\end{DoxyCompactItemize}

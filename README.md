@@ -15,6 +15,7 @@ This version is modified by mythsman ,you can fork it from [https://github.com/m
 * remove some useless files
 * add doxygen documentation
 * add windows support
+* change "SDL.h" to "SDL2/SDL.h" etc. , and you can manually change if to fit your configration
 
 ## Runtime requirements:
 

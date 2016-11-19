@@ -5,7 +5,7 @@ AR      = ar
 DIRS	=$(shell find ./src -maxdepth 3 -type d)
 FILES	= $(foreach dir,$(DIRS),$(wildcard $(dir)/*.cpp))
 INCLUDE	=-I./include  
-CFLAGS  := -g -w -O3 $(INCLUDE)
+CFLAGS  := -g -w -O3  $(INCLUDE)
 CXXFLAGS:= $(CFLAGS)
 #i think you should do anything here
   

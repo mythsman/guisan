@@ -1,21 +1,22 @@
 CC		=g++
 INCLUDE	=-I../include
-CXXFLAGS=-g -w -O3 $(INCLUDE)
-LIBS	=../lib/libguisan.a
-LDLIBS	=-lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+LDFLAGS	=-L../lib
+LIBS	=-lSDL2_ttf -lSDL2_mixer -lguisan -lSDL2_image -lSDL2
+CFLAGS	=-g -w -O3 $(INCLUDE) $(LDFLAGS)
+CXXFLAGS=$(CFLAGS)
 
 .PHONY:all clean  
-  
+ 
 all	:sdlhelloworld sdlaction sdlwidgets
 
 sdlhelloworld:sdlhelloworld.o
-	$(CC) sdlhelloworld.cpp $(LIBS) $(INCLUDE) -o sdlhelloworld $(LDLIBS)
+	$(CC) $(CXXFLAGS) -o sdlhelloworld sdlhelloworld.o $(LIBS)
 
 sdlaction:sdlaction.o
-	$(CC) sdlaction.cpp $(LIBS) $(INCLUDE) -o sdlaction $(LDLIBS)
+	$(CC) $(CXXFLAGS) -o sdlaction sdlaction.o $(LIBS)
 
 sdlwidgets:sdlwidgets.o
-	$(CC) sdlwidgets.cpp $(LIBS) $(INCLUDE) -o sdlwidgets $(LDLIBS)
+	$(CC) $(CXXFLAGS) -o sdlwidgets sdlwidgets.o $(LIBS)
 
 clean:
 	rm -rf sdlhelloworld sdlaction sdlwidgets *.o

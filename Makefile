@@ -1,36 +1,27 @@
 TARGET  = lib/libguisan.a
   
-#compile and lib parameter
 AR      = ar
+
 DIRS	=$(shell find ./src -maxdepth 3 -type d)
-FILES	= $(foreach dir,$(DIRS),$(wildcard $(dir)/*.cpp))
-INCLUDE	=-I./include  
-CFLAGS  := -g -w -O3  $(INCLUDE)
-CXXFLAGS:= $(CFLAGS)
-#i think you should do anything here
-  
-#source file
-SOURCE  = $(FILES)
+SOURCE	= $(foreach dir,$(DIRS),$(wildcard $(dir)/*.cpp))
 OBJS    = $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
+
+INCLUDE	=-I./include  
+CFLAGS  = -g -w -O3  $(INCLUDE)
+CXXFLAGS= $(CFLAGS)
   
-.PHONY : everything objs clean veryclean rebuild
   
-everything : $(TARGET)
-  
-all : $(TARGET)
-	cd demo && make && cd ..
-	cd examples && make && cd ..
-  
-objs : $(OBJS)
-  
-rebuild: everything
-                
-clean :
-	find . -name *.o |xargs rm -f
-	rm -rf $(TARGET)
-	cd demo && make clean && cd ..
-	cd examples && make clean && cd ..
+.PHONY : all clean
   
 $(TARGET) : $(OBJS)
 	$(AR) cr $(TARGET) $(OBJS)
 
+all : $(TARGET)
+	cd demo&&make all&&cd ..
+	cd examples&&make all&&cd ..
+  
+clean :
+	cd demo&&make clean&&cd ..
+	cd examples&&make clean&&cd ..
+	find . -name *.o |xargs rm -f
+	rm -rf $(TARGET)
